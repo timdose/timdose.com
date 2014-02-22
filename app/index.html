@@ -12,6 +12,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -27,45 +28,233 @@
 
 
         <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">bootstrap</h3>
-            </div>
-
+            <header class="header">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <h3 class="text-muted">Tim Dosé</h3>
+            </header>
+        </div>
+        <div class="container">
             <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+                <h1>Tim Dosé</h1>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+        <div class="container">
+            <div class="row work-available">
+                <div class="col-lg-12">
+                    <h2>Web Work Available on Request</h2>
+                    <p>
+                        Nearly all of my recent work has been working on internal projects at <a href="http://yodle.com">Yodle</a>. 
+                        I can probably share if you ask, but I can't just leave it out in public.
+                        I'm sure you understand...
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+        <div class="container">
+            <div class="row cms3">
+                <div class="col-lg-12">
+                    <h2>Yodle CMS3</h2>
 
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+                    <p>CMS3 is a microsite publisher optimized for AB testing, mass updates, and visual variety. This has occupied the majority of my recent time at Yodle</p>
+
+                    <div class="container features">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa fa-arrows-alt fa-3x"></i>
+                                <h4>Built for Scale</h4>
+                                <ul>
+                                    <li>Powers over 11,000 clients in hundreds of industries.</li>
+                                    <li>Mass updates allow nimble fixes and new features even at scale. No one is left in the dust!</li>
+                                    <li>Integrates with Yodle's </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <i class="fa fa-gears fa-3x"></i>
+                                <h4>Built for (Controlled) Customization</h4>
+                                <ul>
+                                    <li>Modular design system along 4 dimensions: layout, style, font, and color.</li>
+                                    <li>Hundreds of possible combinations for a site's look and feel.</li>
+                                    <li>Clients can customize logo, photos, and content.</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <i class="fa fa-flask fa-3x"></i>
+                                <h4>Built for Testing</h4>
+                                <ul>
+                                    <li>Lightweight AB testing via <a href="http://optimizely.com">Optimizely</a></li>
+                                    <li>Sites can easily be republished with a new feature or theme for more robust AB testing.</li>
+                                    <li>Optimizations can be easily rolled out after successful tests.</li>
+                                    <li>Aggregated analytics across all of CMS3 means smaller sites can still benefit from testing despite lower traffic.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="examples container">
+                        <div class="row">
+                            <h3>Example Sites</h3>
+                            <div class="example-sites">
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                                <div class="example-site col-md-3">
+                                    <img data-src="holder.js/240x320">
+                                    <div class="title"><a href="#">Example.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <h3>CMS3 Modular Design System</h3>
+                            <div class="col-md-6">
+                                <h4>Layout</h4>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Style</h4>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Color</h4>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Font</h4>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                                <div class="example-site col-md-3 col-xs-6">
+                                    <img data-src="holder.js/100x120">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <h3>For the Geeks</h3>
+                            <div class="technology col-md-2">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li><a href="#">CherryPy</a></li>
+                                    <li><a href="#">Jinja</a></li>
+                                    <li><a href="#">LESS</a></li>
+                                    <li><a href="#">YAML</a></li>
+                                    <li><a href="#">JSON</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-10">
+                                <h4>How a Page Is Compiled in CMS3</h4>
+                                <img data-src="holder.js/100%x400">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
+
+            <footer class="footer">
+                <div class="contact">
+                    <p>Tim Dosé</p>
+                    <p><a href="tel:+19175755359">917-575-5359</a></p>
+                    <p><a href="mailto:tim@timdose.com">tim@timdose.com</a></p>
+                </div>
+            </footer>
 
         </div>
+
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/holderjs/holder.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
