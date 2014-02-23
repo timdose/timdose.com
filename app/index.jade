@@ -1,0 +1,248 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title bootstrap
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+    script(src='bower_components/modernizr/modernizr.js')
+  body
+    //if lt IE 10
+      p.browsehappy
+        | You are using an
+        strong outdated
+        | browser&period; Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        | to improve your experience&period;
+    .container
+      header.header
+        nav
+          ul.nav.nav-pills.pull-right
+            li.active
+              a(href='#') Homey
+            li
+              a(href='#') About
+            li
+              a(href='#') Contact
+        h3.text-muted Tim Dos&eacute;
+    .container
+      .jumbotron
+        h1 Tim Dos&eacute;
+        ul
+          li Web Design!
+          li Web Development
+    .container
+      .row.work-available
+        .col-lg-12
+          h2 Web Work Available on Request
+          p
+            | Nearly all of my recent work has been working on internal projects at
+            a(href='http://yodle.com') Yodle
+            | &period;
+            | I can probably share if you ask&comma; but I can&apos;t just leave it out in public&period;
+            | I&apos;m sure you understand&period;&period;&period;
+    .container
+      .row.cms3
+        .col-lg-12
+          h2 Yodle CMS3
+          p
+            | CMS3 is a microsite publisher optimized for scale&comma; controlled customizability&comma; and AB Testing&period; This has occupied the all of my recent time at Yodle &lpar;and much more of my life outside of work than I care to admit&rpar;&period;
+          .container.features
+            .row
+              .col-md-4
+                i.fa.fa-arrows-alt.fa-3x
+                h4 Built for Scale
+                ul
+                  li Powers over 11&comma;000 clients in hundreds of industries&period;
+                  li
+                    | Mass updates allow nimble fixes and new features even at scale&period; No one is left in the dust&excl;
+                  li Integrates with Yodle&apos;s 
+              .col-md-4
+                i.fa.fa-gears.fa-3x
+                h4 Built for &lpar;Controlled&rpar; Customization
+                ul
+                  li Modular design system along 4 dimensions&colon; layout&comma; style&comma; font&comma; and color&period;
+                  li Hundreds of possible combinations for a site&apos;s look and feel&period;
+                  li Clients can customize logo&comma; photos&comma; and content&period;
+                  li
+                    | Clearly defined methods of customization mean the state of any site is always clear and queryable&period;
+              .col-md-4
+                i.fa.fa-flask.fa-3x
+                h4 Built for Testing
+                ul
+                  li
+                    | Lightweight AB testing via
+                    a(href='http://optimizely.com') Optimizely
+                  li
+                    | Sites can easily be republished with a new feature or theme for more robust AB testing&period;
+                  li Optimizations can be easily rolled out after successful tests&period;
+                  li
+                    | Aggregated analytics across all of CMS3 means smaller sites can still benefit from testing despite lower traffic&period;
+          .examples.container
+            .row
+              h3 CMS3 Example Sites
+              .example-sites
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+                .example-site.col-md-3.col-sm-6
+                  img(data-src='holder.js/240x320')
+                  .title
+                    a(href='#') Example&period;com
+          .container
+            .row
+              h3 CMS3 Modular Design System
+              .col-md-6
+                h4 Layout
+                .example-site.col-sm-3.col-xs-6
+                  .thumbnail
+                    a(href='images/cms3-layout-1.jpg')
+                      img(src='images/cms3-layout-1.jpg')
+                .example-site.col-sm-3.col-xs-6
+                  .thumbnail
+                    a(href='images/cms3-layout-2.jpg')
+                      img(src='images/cms3-layout-2.jpg')
+                .example-site.col-sm-3.col-xs-6
+                  .thumbnail
+                    a(href='images/cms3-layout-3.jpg')
+                      img(src='images/cms3-layout-3.jpg')
+                .example-site.col-sm-3.col-xs-6
+                  .thumbnail
+                    a(href='images/cms3-layout-4.jpg')
+                      img(src='images/cms3-layout-4.jpg')
+              .col-md-6
+                h4 Style
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+              .col-md-6
+                h4 Color
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+              .col-md-6
+                h4 Font
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+                .example-site.col-sm-3.col-xs-6
+                  img(data-src='holder.js/100x120')
+          .container
+            .row
+              h3 For the Geeks
+              .technology.col-md-2
+                h4 Technology
+                ul
+                  li
+                    a(href='#') HTML5
+                  li
+                    a(href='#') CSS3
+                  li
+                    a(href='#') CherryPy
+                  li
+                    a(href='#') Jinja
+                  li
+                    a(href='#') LESS
+                  li
+                    a(href='#') YAML
+                  li
+                    a(href='#') JSON
+              .col-md-10
+                h4 How a Page Is Created in CMS3
+                a(href='images/cms3-renderer-process.png')
+                  img.scale-to-fit(src='images/cms3-renderer-process.png')
+      footer.footer
+        .contact
+          p Tim Dos&eacute;
+          p
+            a(href='tel:+19175755359') 917-575-5359
+          p
+            a(href='mailto:tim@timdose.com') tim&commat;timdose&period;com
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='bower_components/holderjs/holder.js')
+    // endbower
+    // endbuild
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //- script
+    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //-   e.src='//www.google-analytics.com/analytics.js';
+    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //-   ga('create','UA-XXXXX-X');ga('send','pageview');
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+    // build:js scripts/plugins.js
+    script(src='bower_components/bootstrap/js/affix.js')
+    script(src='bower_components/bootstrap/js/alert.js')
+    script(src='bower_components/bootstrap/js/dropdown.js')
+    script(src='bower_components/bootstrap/js/tooltip.js')
+    script(src='bower_components/bootstrap/js/modal.js')
+    script(src='bower_components/bootstrap/js/transition.js')
+    script(src='bower_components/bootstrap/js/button.js')
+    script(src='bower_components/bootstrap/js/popover.js')
+    script(src='bower_components/bootstrap/js/carousel.js')
+    script(src='bower_components/bootstrap/js/scrollspy.js')
+    script(src='bower_components/bootstrap/js/collapse.js')
+    script(src='bower_components/bootstrap/js/tab.js')
+    // endbuild
