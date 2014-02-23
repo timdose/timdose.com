@@ -8,6 +8,17 @@
     padding: 0.2em 0;
 }
 
-img.scale-to-fit {
+.scale-to-fit {
   width: 100%;
+}
+
+.example-site {
+  .thumbnail {
+    width: 120px;
+    height: 65px;
+    overflow: hidden;
+  }
+  img {
+    .scale-to-fit;
+  }
 }
