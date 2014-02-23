@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                 tasks: ['less:server', 'autoprefixer']
             },
             jade: {
-                files: ['<%= yeoman.app %>/{,*/}*.jade'],
+                files: ['<%= yeoman.app %>/{,*/}*.jade', '<%= yeoman.app %>/views/{,*/}*.jade'],
                 tasks: ['jade', 'autoprefixer']
             },
             styles: {

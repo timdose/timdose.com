@@ -1,3 +1,5 @@
+include views/mixins.jade
+
 doctype html
 //if lt IE 7
   html.no-js.lt-ie9.lt-ie8.lt-ie7  
@@ -55,8 +57,7 @@ html.no-js
           h2 Web Work Available on Request
           p
             | Nearly all of my recent work has been working on internal projects at
-            a(href='http://yodle.com') Yodle
-            | .
+            | <a href="http://yodle.com">Yodle</a>.
             | I can probably share if you ask, but I can't just leave it out in public.
             | I'm sure you understand...
     .container
@@ -90,99 +91,50 @@ html.no-js
                 ul
                   li
                     | Lightweight AB testing via
-                    a(href='http://optimizely.com') Optimizely
+                    | <a href="http://optimizely.com">Optimizely</a>.
                   li
                     | Sites can easily be republished with a new feature or theme for more robust AB testing.
                   li Optimizations can be easily rolled out after successful tests.
                   li
                     | Aggregated analytics across all of CMS3 means smaller sites can still benefit from testing despite lower traffic.
+          
           .examples.container
             .row
               h3 CMS3 Example Sites
               .example-sites
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
+                each val in [1,2,3,4,5,6,7,8]
+                  .example-site.col-md-3.col-sm-6
+                    img(data-src='holder.js/240x320')
+                    .title
+                      a(href='#') Example.com
+                
           .container
             .row
               h3 CMS3 Modular Design System
               .col-md-6
                 h4 Layout
-                .example-site.col-sm-3.col-xs-6
-                  .thumbnail
-                    a(href='images/cms3-layout-1.jpg')
-                      img(src='images/cms3-layout-1.jpg')
-                .example-site.col-sm-3.col-xs-6
-                  .thumbnail
-                    a(href='images/cms3-layout-2.jpg')
-                      img(src='images/cms3-layout-2.jpg')
-                .example-site.col-sm-3.col-xs-6
-                  .thumbnail
-                    a(href='images/cms3-layout-3.jpg')
-                      img(src='images/cms3-layout-3.jpg')
-                .example-site.col-sm-3.col-xs-6
-                  .thumbnail
-                    a(href='images/cms3-layout-4.jpg')
-                      img(src='images/cms3-layout-4.jpg')
+                each val in [1,2,3,4]
+                  .example-site.col-sm-3.col-xs-6
+                    +thumbnail('images/cms3-layout-' + val +'.jpg', 'images/cms3-layout-' + val +'.jpg')
+
               .col-md-6
                 h4 Style
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
+                each val in [1,2,3,4]
+                  .example-site.col-sm-3.col-xs-6
+                    +thumbnail('holder.js/100x120','#')
+
               .col-md-6
                 h4 Color
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
+                each val in [1,2,3,4]
+                  .example-site.col-sm-3.col-xs-6
+                    +thumbnail('holder.js/100x120','#')
+
               .col-md-6
-                h4 Fontssss
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
-                .example-site.col-sm-3.col-xs-6
-                  img(data-src='holder.js/100x120')
+                h4 Font
+                each val in [1,2,3,4]
+                  .example-site.col-sm-3.col-xs-6
+                    +thumbnail('holder.js/100x120','#')
+
           .container
             .row
               h3 For the Geeks
