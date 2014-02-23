@@ -45,16 +45,26 @@ module.exports = function (grunt) {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
                 tasks: ['less:server', 'autoprefixer']
             },
+            jade: {
+                files: ['<%= yeoman.app %>/{,*/}*.jade'],
+                tasks: ['jade:dist', 'autoprefixer']
+            },
+            // jade: {
+            //     files: ['<%= yeoman.app %>/templates/{,*/}*.jade'],
+            //     tasks: ['jade:server', 'autoprefixer']
+            // },
             styles: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
+
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= yeoman.app %>/{,*/}*.html',
+                    '.tmp/{,*/}*.html',
+                    // '<%= yeoman.app %>/{,*/}*.html',
                     '.tmp/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
                 ]
@@ -163,6 +173,20 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jade: {
+            dist: {
+                options: {
+                    pretty: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '.tmp',
+                    src: '*.jade',
+                    ext: '.html'
+                }]
+            }
+        },
 
         // Add vendor prefixed styles
         autoprefixer: {
@@ -208,7 +232,8 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            // html: '<%= yeoman.app %>/index.html'
+            html: '.tmp/index'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -253,10 +278,16 @@ module.exports = function (grunt) {
                     removeRedundantAttributes: true,
                     useShortDoctype: true
                 },
+                // files: [{
+                //     expand: true,
+                //     cwd: '<%= yeoman.dist %>',
+                //     src: '{,*/}*.html',
+                //     dest: '<%= yeoman.dist %>'
+                // }]
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.dist %>',
-                    src: '{,*/}*.html',
+                    cwd: '.tmp',
+                    src: '*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
             }
@@ -332,6 +363,7 @@ module.exports = function (grunt) {
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
+                'jade',
                 'less:server',
                 'copy:styles'
             ],
@@ -384,6 +416,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'jade',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
