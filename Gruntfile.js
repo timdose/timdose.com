@@ -47,12 +47,8 @@ module.exports = function (grunt) {
             },
             jade: {
                 files: ['<%= yeoman.app %>/{,*/}*.jade'],
-                tasks: ['jade:dist', 'autoprefixer']
+                tasks: ['jade', 'autoprefixer']
             },
-            // jade: {
-            //     files: ['<%= yeoman.app %>/templates/{,*/}*.jade'],
-            //     tasks: ['jade:server', 'autoprefixer']
-            // },
             styles: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
@@ -233,7 +229,7 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>'
             },
             // html: '<%= yeoman.app %>/index.html'
-            html: '.tmp/index'
+            html: '.tmp/index.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -363,7 +359,6 @@ module.exports = function (grunt) {
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
-                'jade',
                 'less:server',
                 'copy:styles'
             ],
@@ -387,6 +382,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+            'jade',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -427,7 +423,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin'
+        // 'htmlmin'
     ]);
 
     grunt.registerTask('default', [
