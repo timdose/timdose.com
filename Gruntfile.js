@@ -147,7 +147,10 @@ module.exports = function (grunt) {
         // Compiles LESS to CSS and generates necessary files if requested
         less: {
             options: {
-                paths: ['<%= yeoman.app %>/bower_components'],
+                paths: [
+                    '<%= yeoman.app %>/bower_components',
+                    '<%= yeoman.app %>/styles/include'
+                ],
             },
             dist: {
                 options: {

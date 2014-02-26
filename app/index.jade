@@ -53,42 +53,33 @@ html.no-js
             li Web Development
     .main-content
       .container
-        .row.work-available
-          .col-lg-12
-            h2 Web Work Available on Request
-            p
-              | Nearly all of my recent work has been working on internal projects at
-              | <a href="http://yodle.com">Yodle</a>.
-              | I can probably share if you ask, but I can't just leave it out in public.
-              | I'm sure you understand...
-      .container
         .row.cms3
           .col-lg-12
             h2 Yodle CMS3
-            p
+            p.lead
               | CMS3 is a microsite publisher optimized for scale, controlled customizability, and AB Testing. This has occupied the all of my recent time at Yodle (and much more of my life outside of work than I care to admit).
-            .container.features
+            .features.container
               .row
                 .col-md-4
                   h4
-                    i.fa.fa-arrows-alt.fa-3x
-                    .title Built for Scale
+                    i.fa.fa-arrows-alt.fa-2x
+                    .text Built for Scale
                   ul
                     li Powers over 11,000 clients in hundreds of industries.
                     li Mass updates allow nimble fixes and new features even at scale. No one is left in the dust&excl;
+                    li Clearly defined methods of customization mean the state of any site is always clear and queryable.
                 .col-md-4
                   h4
-                    i.fa.fa-gears.fa-3x
-                    .title Built for (Controlled) Customization
+                    i.fa.fa-gears.fa-2x
+                    .text Built for (Controlled) Customization
                   ul
                     li Modular design system along 4 dimensions: layout, style, font, and color. Each dimension completely interchangeable.
                     li Hundreds of possible combinations for a site's look and feel.
                     li Clients can customize logo, photos, and content.
-                    li Clearly defined methods of customization mean the state of any site is always clear and queryable.
                 .col-md-4
                   h4
-                    i.fa.fa-flask.fa-3x
-                    .title Built for Testing
+                    i.fa.fa-flask.fa-2x
+                    .text Built for Testing
                   ul
                     li
                       | Lightweight AB testing via
@@ -97,7 +88,7 @@ html.no-js
                     li Optimizations can be easily rolled out after successful tests.
                     li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points without the actual traffic.
             
-            .examples.container
+            .example-sites.container
               .row
                 h3 CMS3 Example Sites
                 .example-sites
@@ -107,16 +98,18 @@ html.no-js
                       .title
                         a(href='#') Example.com
                   
-            .container
+            .design-system.container
               .row
                 h3 CMS3 Modular Design System
                 each component in ['Layout', 'Style', 'Font', 'Color']
                   .col-md-6
-                    h4= component
-                    each val in [1,2,3,4]
-                      .example-site.col-sm-3.col-xs-6
-                        +thumbnail('images/cms3/components/'+component.toLowerCase()+'/' + val +'.jpg')
-
+                    .component
+                      h4.h4= component
+                      .examples
+                        each val in [1,2,3,4]
+                          .example.col-sm-3.col-xs-6
+                            +thumbnail('images/cms3/components/'+component.toLowerCase()+'/' + val +'.jpg')
+            .container-gap
             .container
               .row
                 h3 For the Geeks

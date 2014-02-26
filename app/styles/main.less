@@ -1,5 +1,7 @@
 @import 'bootstrap/less/bootstrap';
 @import 'font-awesome/less/font-awesome.less';
+@import 'variables.less';
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -18,14 +20,24 @@
   }
 }
 
-.example-site {
-  .thumbnail {
-    width: 120px;
-    height: 80px;
-    overflow: hidden;
+.design-system {
+  .h4 {
+
   }
-  img {
-    .scale-to-fit;
+  .examples {
+    background: #f2f2f2;
+    .clearfix();
+  }
+  .example {
+    .thumbnail {
+      width: 120px;
+      height: 80px;
+      overflow: hidden;
+      margin: 20px auto;
+    }
+    img {
+      .scale-to-fit;
+    }
   }
 }
 
