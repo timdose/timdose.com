@@ -9,24 +9,18 @@
 
         $('h2,h3').attr('data-anim', 'fadeInAndScale');
 
+        var triggerHook = 0.92;
+
         $('*[data-anim="fadeInAndScale"]').each(function () {
             var tween = TweenMax.from(this, 0.5, {
-                opacity: 0.5,
-                scale: 0.92,
+                opacity: 0.25,
+                scale: 0.95,
             });
 
             var triggerElement = $(this);
             var duration = $(this).outerHeight();
 
-            var scene = new ScrollScene({
-                triggerElement: triggerElement,
-                triggerHook: 0.95,
-                duration: duration
-            })
-            .setTween(tween)
-            .addTo(controller);
-
-            scene.addIndicators();
+            setTween(tween, triggerElement, triggerHook, duration);
         });
 
 
@@ -35,22 +29,26 @@
         $('*[data-anim="fadeInAndUpOnEnter"]').each(function () {
             var tween = TweenMax.from(this, 0.5, {
                 opacity: 0,
-                y: '+=10',
+                y: '+=50',
             });
 
             var triggerElement = $(this).find('.h');
-            var duration = triggerElement.outerHeight();
+            var duration = $(this).outerHeight();
 
+            setTween(tween, triggerElement, triggerHook, duration);
+        });
+
+        function setTween( tween, triggerElement, triggerHook, duration ) {
             var scene = new ScrollScene({
                 triggerElement: triggerElement,
-                triggerHook: 0.95,
+                triggerHook: triggerHook,
                 duration: duration
             })
             .setTween(tween)
             .addTo(controller);
 
             scene.addIndicators();
-        });
+        }
         
     });
 
