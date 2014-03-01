@@ -14,7 +14,7 @@
         $('*[data-anim="fadeInAndScale"]').each(function () {
             var tween = TweenMax.from(this, 0.5, {
                 opacity: 0.25,
-                scale: 0.95,
+                scale: 0.9,
             });
 
             var triggerElement = $(this);
