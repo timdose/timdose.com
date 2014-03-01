@@ -35,6 +35,7 @@ html.no-js
         | <a href="http://browsehappy.com/">upgrade your browser</a>
         | to improve your experience.
     header.header
+
       .container
           nav
             ul.nav.nav-pills.pull-right
@@ -57,54 +58,55 @@ html.no-js
         .container.intro
           .row
             .col-lg-12
+              #scroll-trigger
               h2 Yodle CMS3
+              p.lead 
+                | I lead the design and front end development of <a href="http://yodle.com">Yodle's</a>
+                | proprietary CMS, cleverly named CMS3.
               p.lead
-                | CMS3 is a microsite publisher optimized for scale, controlled customizability, and AB Testing. This has occupied the all of my recent time at Yodle (and much more of my life outside of work than I care to admit).
+                | CMS3 is a microsite publisher optimized for scale, controlled customizability, and AB Testing.
           .row.features
-            .col-md-4
-              h4
+            .feature.col-md-4
+              h4.h
                 i.fa.fa-arrows-alt.fa-2x
                 .text Built for Scale
               ul
                 li Powers over 11,000 clients in hundreds of industries.
-                li Mass updates allow nimble fixes and new features even at scale. No one is left in the dust&excl;
+                li Mass updates allow nimble fixes and new features even at scale. Everybody gets the good stuff!
                 li Clearly defined methods of customization mean the state of any site is always clear and queryable.
-            .col-md-4
-              h4
+            .feature.col-md-4
+              h4.h
                 i.fa.fa-gears.fa-2x
                 .text Built for (Controlled) Customization
               ul
                 li Modular design system along 4 dimensions: layout, style, font, and color. Each dimension completely interchangeable.
                 li Hundreds of possible combinations for a site's look and feel.
                 li Clients can customize logo, photos, and content.
-            .col-md-4
-              h4
+            .feature.col-md-4
+              h4.h
                 i.fa.fa-flask.fa-2x
                 .text Built for Testing
               ul
-                li
-                  | Lightweight AB testing via
-                  | <a href="http://optimizely.com">Optimizely</a>.
+                li Lightweight AB testing via <a href="http://optimizely.com">Optimizely</a>.
                 li Sites can easily be republished with a new feature or theme for more robust AB testing.
                 li Optimizations can be easily rolled out after successful tests.
                   li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points without the actual traffic.
-        .between
-        .container.example-sites
-          .row
-            h3 CMS3 Example Sites
-            .example-sites
-              each val in [1,2,3,4]
-                .example-site.col-md-3.col-sm-6
-                  img(data-src='holder.js/240x320')
-                  .title
-                    a(href='#') Example.com
+        //- .between
+        //- .container.example-sites
+        //-   .row
+        //-     h3 CMS3 Example Sites
+        //-     .example-sites
+        //-       each val in [1,2,3,4]
+        //-         .example-site.col-md-3.col-sm-6
+        //-           img(data-src='holder.js/240x320')
+        //-           .title
+        //-             a(href='#') Example.com
         .between
         .container.design-system
           .row
             h3 CMS3 Modular Design System
             each component in ['Layout', 'Style', 'Font', 'Color']
-              .col-md-6
-                .component
+              .component.col-md-6
                   h4.h4= component
                   .examples
                     each val in [1,2,3,4]
@@ -134,9 +136,15 @@ html.no-js
             a(href='tel:+19175755359') 917-575-5359
           p
             a(href='mailto:tim@timdose.com') tim@timdose.com
+
+    #util
+      
     // build:js(app) scripts/vendor.js
     // bower:js
     script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.js')
+    script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
+    script(src='bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='bower_components/holderjs/holder.js')
     // endbower
@@ -153,16 +161,16 @@ html.no-js
     script(src='scripts/main.js')
     // endbuild
     // build:js(app) scripts/plugins.js
-    script(src='bower_components/bootstrap/js/affix.js')
-    script(src='bower_components/bootstrap/js/alert.js')
-    script(src='bower_components/bootstrap/js/dropdown.js')
-    script(src='bower_components/bootstrap/js/tooltip.js')
-    script(src='bower_components/bootstrap/js/modal.js')
-    script(src='bower_components/bootstrap/js/transition.js')
-    script(src='bower_components/bootstrap/js/button.js')
-    script(src='bower_components/bootstrap/js/popover.js')
-    script(src='bower_components/bootstrap/js/carousel.js')
-    script(src='bower_components/bootstrap/js/scrollspy.js')
-    script(src='bower_components/bootstrap/js/collapse.js')
-    script(src='bower_components/bootstrap/js/tab.js')
+    //- script(src='bower_components/bootstrap/js/affix.js')
+    //- script(src='bower_components/bootstrap/js/alert.js')
+    //- script(src='bower_components/bootstrap/js/dropdown.js')
+    //- script(src='bower_components/bootstrap/js/tooltip.js')
+    //- script(src='bower_components/bootstrap/js/modal.js')
+    //- script(src='bower_components/bootstrap/js/transition.js')
+    //- script(src='bower_components/bootstrap/js/button.js')
+    //- script(src='bower_components/bootstrap/js/popover.js')
+    //- script(src='bower_components/bootstrap/js/carousel.js')
+    //- script(src='bower_components/bootstrap/js/scrollspy.js')
+    //- script(src='bower_components/bootstrap/js/collapse.js')
+    //- script(src='bower_components/bootstrap/js/tab.js')
     // endbuild
