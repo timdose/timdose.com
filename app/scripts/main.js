@@ -1,5 +1,11 @@
 'use strict';
 
+// Hack to prevent console error with ScrollMagic debug disabled
+// Clean up: Exclude in build process with Grunt
+if ( ScrollScene.prototype.addIndicators === undefined ) {
+    ScrollScene.prototype.addIndicators = function () {};
+}
+
 (function ($) {
     var controller;
 
