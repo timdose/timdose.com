@@ -12,7 +12,7 @@
         var triggerHook = 0.92;
 
         $('*[data-anim="fadeInAndScale"]').each(function () {
-            var tween = TweenMax.from(this, 0.5, {
+            var tween = TweenMax.from(this, 1, {
                 opacity: 0.25,
                 scale: 0.9,
             });
@@ -27,7 +27,7 @@
         $('.features .feature').attr('data-anim', 'fadeInAndUpOnEnter');
 
         $('*[data-anim="fadeInAndUpOnEnter"]').each(function () {
-            var tween = TweenMax.from(this, 0.5, {
+            var tween = TweenMax.from(this, 1, {
                 opacity: 0,
                 y: '+=50',
             });
@@ -36,6 +36,19 @@
             var duration = $(this).outerHeight();
 
             setTween(tween, triggerElement, triggerHook, duration);
+        });
+
+        $('.between').each(function () {
+            var tween = TweenMax.to(this, 1, {
+                backgroundPosition: '0 -50%',
+                ease: Linear.easeNone,
+            });
+
+            var triggerElement = $(this);
+            var duration = 2000;
+            
+            setTween( tween, triggerElement, 'onCenter', duration );
+
         });
 
         function setTween( tween, triggerElement, triggerHook, duration ) {

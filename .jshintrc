@@ -18,5 +18,5 @@
     "trailing": true,
     "smarttabs": true,
     "jquery": true,
-    "predef": ["ScrollMagic", "TweenMax", "ScrollScene"]
+    "predef": ["ScrollMagic", "TweenMax", "ScrollScene", "Linear" ]
 }
