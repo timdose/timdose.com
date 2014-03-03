@@ -1,6 +1,7 @@
 @import 'bootstrap/less/bootstrap';
 @import 'font-awesome/less/font-awesome.less';
 @import 'variables.less';
+@import 'mixins.less';
 
 
 .browsehappy {
@@ -12,6 +13,28 @@
 
 .scale-to-fit {
   width: 100%;
+}
+
+.header {
+  padding-top: 15px;
+  background: url(../images/bg/nyc-bw.jpg) no-repeat center top;
+  width: 100%;
+  .background-size-cover();
+  @media ( min-width: @screen-md-min ){
+    height: 700px;
+    .jumbotron {
+      background: rgba(255,255,255,0.75);
+      box-shadow: 0 0 15px rgba(0,0,0,0.25);
+      margin-top: 45px;
+      height: 500px;
+
+      h1 {
+        color: @headings-color;
+      }
+    }
+  }
+
+
 }
 
 .main-content {
