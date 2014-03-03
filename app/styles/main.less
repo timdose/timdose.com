@@ -17,20 +17,27 @@
 
 .header {
   padding-top: 15px;
-  background: url(../images/bg/nyc-bw.jpg) no-repeat center top;
+  background: url(../images/bg/nyc-bw.jpg) no-repeat center top fixed;
   width: 100%;
   .background-size-cover();
   @media ( min-width: @screen-md-min ){
-    height: 700px;
+    height: 450px;
     .jumbotron {
       background: rgba(255,255,255,0.75);
       box-shadow: 0 0 15px rgba(0,0,0,0.25);
       margin-top: 45px;
-      height: 500px;
+      height: 350px;
 
       h1 {
         color: @headings-color;
       }
+    }
+  }
+
+  @media ( min-width: @screen-lg-min ) {
+    height: 700px;
+    .jumbotron {
+      height: 500px;
     }
   }
 
