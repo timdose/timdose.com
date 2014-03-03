@@ -112,7 +112,7 @@ html.no-js
                 ul.list.well
                   each technology in technologies
                     li.item
-                      a(href='#')
+                      a(href='#{technology.link}', target="_blank")
                         img.logo(src='images/technology/logos/#{technology.icon}')
             .renderer-process.col-md-12
               h4 How a Page Is Created in CMS3
