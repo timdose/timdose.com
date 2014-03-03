@@ -58,13 +58,14 @@ html.no-js
         .container.intro
           .row
             .col-lg-12
-              #scroll-trigger
-              h2 Yodle CMS3
-              p.lead 
+              p.lead
                 | I lead the design and front end development of <a href="http://yodle.com">Yodle's</a>
                 | CMS3 project.
-              p.lead
-                | CMS3 is a proprietary microsite publisher optimized for scale, controlled customizability, and AB Testing.
+              
+              h2 Yodle CMS3
+              
+              p.lead.well
+                | CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
           .row.features
             .feature.col-md-4
               h4.h
@@ -116,13 +117,13 @@ html.no-js
         .container.technology
           .row
             h3 For the Geeks
-            .col-md-12
+            .col-md-10.col-md-offset-1
               h4 Technologies Used in CMS3
-              ul.list
-                each technology in ['HTML5', 'CSS3', 'CherryPy', 'Jinja', 'LESS', 'YAML', 'JSON']
+              ul.list.well
+                each technology in technologies
                   li.item
                     a(href='#')
-                      img.logo(src='images/technology/logos/#{technology.toLowerCase()}.png')
+                      img.logo(src='images/technology/logos/#{technology.icon}')
             .col-md-12
               h4 How a Page Is Created in CMS3
               a(href='images/cms3/renderer-process.png')

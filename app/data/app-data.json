@@ -1,0 +1,39 @@
+{
+  "technologies" : [
+    {
+      "name":"HTML5",
+      "icon":"html5.png",
+      "link":"http://www.w3.org/html/wg/drafts/html/CR/"
+    },
+    {
+      "name":"CSS3",
+      "icon":"css3.png",
+      "link":"http://www.w3.org/Style/CSS/Overview.en.html"
+    },
+    {
+      "name":"LESS",
+      "icon":"less.png",
+      "link":"http://lesscss.org"
+    },
+    {
+      "name":"Jinja",
+      "icon":"jinja.png",
+      "link":"http://jinja.pocoo.org/"
+    },
+    {
+      "name":"CherryPy",
+      "icon":"cherrypy.png",
+      "link":"http://cherrypy.org"
+    },
+    {
+      "name":"YAML",
+      "icon":"yaml.png",
+      "link":"http://yaml.org"
+    },
+    {
+      "name":"JSON",
+      "icon":"json.png",
+      "link":"http://json.org"
+    }
+  ]
+}
