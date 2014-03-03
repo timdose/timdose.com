@@ -7,7 +7,8 @@
     "jquery": "~1.10.2",
     "holderjs": "~2.3.1",
     "font-awesome": "~4.0.3",
-    "ScrollMagic": "~1.0.0"
+    "ScrollMagic": "~1.0.0",
+    "lightbox2": "*"
   },
   "devDependencies": {}
 }

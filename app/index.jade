@@ -24,6 +24,7 @@ html.no-js
     // endbuild
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
+    link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
     // endbuild
     script(src='bower_components/modernizr/modernizr.js')
   body
@@ -100,7 +101,7 @@ html.no-js
                   .examples
                     each val in [1,2,3,4]
                       .example.col-sm-3.col-xs-6
-                        +thumbnail('images/cms3/components/'+component.toLowerCase()+'/' + val +'.jpg')
+                        +thumbnail('images/cms3/components/'+component.toLowerCase()+'/' + val +'.jpg')(lightboxGroup!=component)
         .between
         .geeks.container
           .row
@@ -132,6 +133,7 @@ html.no-js
     // build:js(app) scripts/vendor.js
     // bower:js
     script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/lightbox2/js/lightbox.js')
     script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.js')
     //- script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
     script(src='bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js')
