@@ -114,20 +114,21 @@ html.no-js
                       .example.col-sm-3.col-xs-6
                         +thumbnail('images/cms3/components/'+component.toLowerCase()+'/' + val +'.jpg')
         .between
-        .container.technology
+        .geeks.container
           .row
             h3 For the Geeks
-            .col-md-10.col-md-offset-1
+            .technologies
               h4 Technologies Used in CMS3
-              ul.list.well
-                each technology in technologies
-                  li.item
-                    a(href='#')
-                      img.logo(src='images/technology/logos/#{technology.icon}')
-            .col-md-12
+              .col-md-10.col-md-offset-1
+                ul.list.well
+                  each technology in technologies
+                    li.item
+                      a(href='#')
+                        img.logo(src='images/technology/logos/#{technology.icon}')
+            .renderer-process.col-md-12
               h4 How a Page Is Created in CMS3
               a(href='images/cms3/renderer-process.png')
-                img.scale-to-fit(src='images/cms3/renderer-process.png')
+                img.image(src='images/cms3/renderer-process.png')
         .between
     footer.container
       .row

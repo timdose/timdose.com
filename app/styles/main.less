@@ -84,25 +84,34 @@
   }
 }
 
-.technology {
-  .list {
-    text-align: center;
-    padding: 0;
-    background: #f2f2f2;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 45px;
+.geeks {
+  .technologies {
+    .list {
+      text-align: center;
+      padding: 0;
+      background: #f2f2f2;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 45px;
+    }
+
+    .item {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .logo {
+      width: 100%;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
   }
 
-  .item {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  .logo {
-    width: 100%;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  .renderer-process {
+    .image {
+      border: 1px solid @gray-light;
+      .scale-to-fit();
+    }
   }
 }
