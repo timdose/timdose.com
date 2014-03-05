@@ -35,5 +35,15 @@
       "icon":"json.png",
       "link":"http://json.org"
     }
+  ],
+  "exampleSites": [
+    "www.architecturefirmelkhartin.com",
+    "www.architecturefirmnewyorkny.com",
+    "www.charlottencresidentialdesign.com",
+    "www.designarchitectsanfrancisco.com",
+    "www.newarkdesignarchitect.com",
+    "www.newtondesignarchitect.com",
+    "www.newyorkarchitectdesignfirm.com",
+    "www.turnersvilleinsuranceservices.com"
   ]
 }

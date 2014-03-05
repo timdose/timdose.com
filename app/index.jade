@@ -81,16 +81,15 @@ html.no-js
                 li Sites can easily be republished with a new feature or theme for more robust AB testing.
                 li Optimizations can be easily rolled out after successful tests.
                   li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points without the actual traffic.
-        //- .between
-        //- .container.example-sites
-        //-   .row
-        //-     h3 CMS3 Example Sites
-        //-     .example-sites
-        //-       each val in [1,2,3,4]
-        //-         .example-site.col-md-3.col-sm-6
-        //-           img(data-src='holder.js/240x320')
-        //-           .title
-        //-             a(href='#') Example.com
+        .between
+        .example-sites.container
+          .row
+            h3 CMS3 Example Sites
+            each site in exampleSites
+              .site.col-md-3.col-sm-6
+                +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
+                .title
+                  a(href='http://#{site}')=site.replace('www.','')
         .between
         .container.design-system
           .row
@@ -119,14 +118,15 @@ html.no-js
               a(href='images/cms3/renderer-process.png')
                 img.image(src='images/cms3/renderer-process.png')
         .between
-    footer.container
-      .row
-        .contact
-          p Tim Dosé
-          p
-            a(href='tel:+19175755359') 917-575-5359
-          p
-            a(href='mailto:tim@timdose.com') tim@timdose.com
+    footer.footer
+      .container
+        .row
+          .contact.lead
+            p Tim Dosé
+            p
+              a(href='tel:+19175755359') 917-575-5359
+            p
+              a(href='mailto:tim@timdose.com') tim@timdose.com
 
     #util
       
