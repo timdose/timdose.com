@@ -33,21 +33,38 @@ h1,h2,h3,h4,h5,h6 {
 
   h1 {
     color: @headings-color;
+    font-size: 50px;
   }
+
+  p {
+    font-size: 19px;
+  }
+
 
   .hero {
     height: 200px;
     .center-block();
     margin-top: 10%;
     margin-bottom: 10%;
+
+
   }
 
   .jumbotron {
     background: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    text-align: center;
   }
 
   @media ( min-width: @screen-sm-min ) {
+    h1 {
+      font-size: 72px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
     .hero {
       height: 275px; 
     }
@@ -70,7 +87,12 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   @media ( min-width: @screen-lg-min ) {
+    h1 {
+      text-align: left;
+    }
+
     .jumbotron {
+      text-align: left;
       height: 500px;
     }
 
