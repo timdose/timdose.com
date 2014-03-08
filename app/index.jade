@@ -38,10 +38,14 @@ html.no-js
     header.header
       .container
         .jumbotron
-          h1 Tim Dosé
-          ul
-            li Web Design
-            li Web Development
+          .row
+            .col-md-4
+              h1 Tim Dosé
+              ul
+                li Web Design
+                li Web Development
+            .col-md-8
+              img(src='images/illustration/portrait.png').hero
     .main-content
       section.cms3
         .container.intro
@@ -61,7 +65,7 @@ html.no-js
                 i.fa.fa-arrows-alt.fa-2x
                 .text Built for Scale
               ul
-                li Powers over 11,000 clients in hundreds of industries.
+                li Powers over 11,000 websites for clients in hundreds of industries.
                 li Mass updates allow nimble fixes and new features even at scale. Everybody gets the good stuff!
                 li Clearly defined methods of customization mean the state of any site is always clear and queryable.
             .feature.col-md-4
@@ -95,7 +99,7 @@ html.no-js
           .row
             h3 CMS3 Modular Design System
             each component in ['Layout', 'Style', 'Font', 'Color']
-              .component.col-md-6
+              .component.col-md-10.col-md-offset-1
                   h4.h4= component
                   .examples
                     each val in [1,2,3,4]
