@@ -47,10 +47,10 @@ module.exports = function (grunt) {
             },
             jade: {
                 files: [
-                    '<%= yeoman.app %>/{,*/}*.jade', 
+                    '<%= yeoman.app %>/{,*/}*.jade',
                     '<%= yeoman.app %>/views/{,*/}*.jade',
                     '<%= yeoman.app %>/data/**/*.json',
-                    
+
                 ],
                 tasks: ['jade', 'autoprefixer']
             },

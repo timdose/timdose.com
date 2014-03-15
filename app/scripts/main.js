@@ -15,7 +15,7 @@ if ( ScrollScene.prototype.addIndicators === undefined ) {
 
         $('h2,h3').attr('data-anim', 'fadeInAndScale');
 
-        var triggerHook = 0.92;
+        var triggerHook = 0.85;
 
         $('*[data-anim="fadeInAndScale"]').each(function () {
             var tween = TweenMax.from(this, 1, {
@@ -44,9 +44,9 @@ if ( ScrollScene.prototype.addIndicators === undefined ) {
             setTween(tween, triggerElement, triggerHook, duration);
         });
 
-        $('.between').each(function () {
+        $('.between,.header').each(function () {
             var tween = TweenMax.to(this, 1, {
-                backgroundPosition: '0 -50%',
+                backgroundPosition: '0 -100%',
                 ease: Linear.easeNone,
             });
 
