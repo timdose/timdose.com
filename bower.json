@@ -8,7 +8,8 @@
     "holderjs": "~2.3.1",
     "font-awesome": "~4.0.3",
     "ScrollMagic": "~1.0.0",
-    "lightbox2": "*"
+    "lightbox2": "*",
+    "jQuery-One-Page-Nav": "~3.0.0"
   },
   "devDependencies": {}
 }

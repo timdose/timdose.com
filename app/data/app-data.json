@@ -1,4 +1,26 @@
 {
+  "cms3Components": [
+    {
+      "name":"layout",
+      "title":"Layout",
+      "description":"Layouts determine which modules are included on the page, and their size and placement."
+    },
+    {
+      "name":"style",
+      "title":"Style",
+      "description":"Styles use a selected Font and Color Palette to determine the look and feel of the modules and page in the chosen Layout."
+    },
+    {
+      "name":"font",
+      "title":"Font Palette",
+      "description":"Font Palettes determines which heading and body fonts are available for a Style to use, and normalize font heights for consistency."
+    },
+    {
+      "name":"color",
+      "title":"Color Palette",
+      "description":"Color Palettes provide a standardized, curated set of colors which the Style can use to color in the Layout."
+    }
+  ],
   "technologies" : [
     {
       "name":"HTML5",
