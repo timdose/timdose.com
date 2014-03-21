@@ -50,6 +50,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/{,*/}*.jade',
                     '<%= yeoman.app %>/views/{,*/}*.jade',
                     '<%= yeoman.app %>/data/**/*.json',
+                    '<%= yeoman.app %>/data/**/*.yaml',
 
                 ],
                 tasks: ['jade', 'autoprefixer']
@@ -181,7 +182,7 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     pretty: true,
-                    data: grunt.file.readJSON('app/data/app-data.json'),
+                    data: grunt.file.readYAML('app/data/app-data.yaml'),
                 },
                 files: [{
                     expand: true,
