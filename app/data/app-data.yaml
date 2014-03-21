@@ -2,20 +2,113 @@
 cms3Components: 
   - name: layout
     title: Layout
-    description: Layouts determine which modules are included on the page, and their size and placement.
+    description: Layouts determine which mod  items:es are included on the page, and their size and placement.
 
   - name: style
     title: Style
-    description: Styles use a selected Font and Color Palette to determine the look and feel of the modules and page in the chosen Layout.
+    description: Styles use a selected Font and Color Palette to determine the look and feel of the mod  items:es and page in the chosen Layout.
 
   - name: font
     title: Font Palette
-    description: Font Palettes determines which heading and body fonts are available for a Style to use, and normalize font heights for consistency.
+    description: Font Palettes determines which heading and body fonts are available for a Style to use, and norma  -ze font heights for consistency.
 
   - name: color
     title: Color Palette
     description: Color Palettes provide a standardized, curated set of colors which the Style can use to color in the Layout.
 
+skills:
+  groups:
+    - categories:
+      - name: Design & Development Methods
+        items:
+          - Agile Development/UX
+          - Lean UX
+      - name: Research Techniques
+        items:
+          - Usability Testing
+          - User Research
+          - A/B Testing
+      - name: Design Techniques
+        items:
+          - Wireframing
+          - User & Process Flows
+          - Site Maps
+          - Personas
+          - Responsive Design
+          - Rapid Prototyping
+      - name: Development Processes
+        items:
+          - Test-Driven Development
+          - Unit Testing
+    - categories:
+      - name: Markup Languages & Data Formats
+        items:
+          - HTML/HTML5
+          - JSON
+          - YAML
+          - XML
+      - name: Templating Engines
+        items:
+          - Jinja
+          - Jade
+          - Nunjucks
+      - name: Stylesheet Languages & Preprocessors
+        items:
+          - CSS/CSS3
+          - LESS
+          - SASS
+          - Stylus
+      - name: Programming Languages
+        items:
+          - Javascript/Node.js
+          - PHP
+          - Python
+      - name: Database Systems
+        items:
+          - MySQL
+          - PostgreSQL
+      - name: Front End Frameworks
+        items:
+          - jQuery
+          - Ang  items:arJS
+          - Twitter Bootstrap
+          - Modernizr
+      - name: Web Frameworks
+        items:
+          - ExpressJS
+          - Flask
+          - CakePHP
+
+    - categories:
+      - name: Design Software
+        items:
+          - Adobe Creative Suite
+          - OmniGraffle
+      - name: Project Management Software
+        items:
+          - Jira
+          - Trello
+      - name: Source Code Management
+        items:
+          - Git
+          - Mercurial
+          - Subversion
+      - name: Testing &amp; Automation
+        items:
+          - Webdriver
+          - Karma
+          - Protractor
+      - name: 3D Software
+        items:
+          - Maya
+          - 3ds Max
+          - Blender
+          - zBrush
+      - name: Operating Systems
+        items:
+          - Mac
+          - Windows
+          - Linux
 
 technologies: 
   - name: HTML5
@@ -53,6 +146,6 @@ exampleSites:
   - www.architecturefirmnewyorkny.com
   - www.designarchitectsanfrancisco.com
   - www.southburydentalcare.com
-  - www.champlinlandscaping.com
+  - www.champ  -nlandscaping.com
   - www.turnersvilleinsuranceservices.com
   - www.newyorkarchitectdesignfirm.com

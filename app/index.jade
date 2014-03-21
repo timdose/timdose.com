@@ -48,97 +48,14 @@ html.no-js
           .row
             h3 Skills
           .row
-            .col.col-md-3
-              h5 Design &amp; Development Methods
-              ul
-                li Agile Development/UX
-                li Lean UX
-              h5 Research Techniques
-              ul
-                li Usability Testing
-                li User Research
-                li A/B Testing
-              h5 Design Techniques
-              ul
-                li Wireframing
-                li User &amp; Process Flows
-                li Site Maps
-                li Personas
-                li Responsive Design
-                li Rapid Prototyping
-              h5 Development Processes
-              ul
-                li Test-Driven Development
-                li Unit Testing
-            .col.col-md-3
-              h5 Markup Languages & Data Formats
-              ul
-                li HTML/HTML5
-                li JSON
-                li YAML
-                li XML
-              h5 Templating Engines
-              ul
-                li Jinja
-                li Jade
-                li Nunjucks
-              h5 Stylesheet Languages &amp; Preprocessors
-              ul
-                li CSS/CSS3
-                li LESS
-                li SASS
-                li Stylus
-              h5 Programming Languages
-              ul
-                li Javascript/Node.js
-                li PHP
-                li Python
-              h5 Database Systems
-              ul
-                li MySQL
-                li PostgreSQL
-              h5 Front End Frameworks
-              ul
-                li jQuery
-                li AngularJS
-                li Twitter Bootstrap
-                li Modernizr
-              h5 Web Frameworks
-              ul
-                li ExpressJS
-                li Flask
-                li CakePHP
+            each group in skills.groups
+              .col.col-md-3
+                each category in group.categories
+                  h5=category.name
+                  ul
+                    each item in category.items
+                      li=item
 
-            .col.col-md-3
-              h5 Design Software
-              ul
-                li Adobe Creative Suite
-                li OmniGraffle
-              h5 Project Management Software
-              ul
-                li Jira
-                li Trello
-              h5 Source Code Management
-              ul
-                li Git
-                li Mercurial
-                li Subversion
-              h5 Testing &amp; Automation
-              ul
-                li Webdriver
-                li Karma
-                li Protractor
-              h5 3D Software
-              ul
-                li Maya
-                li 3ds Max
-                li Blender
-                li zBrush
-              h5 Operating Systems
-              ul
-                li Mac
-                li Windows
-                li Linux
       .between
       section#cms3
         #intro.container
