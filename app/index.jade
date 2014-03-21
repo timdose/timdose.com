@@ -47,14 +47,21 @@ html.no-js
         #skills.container
           .row
             h3 Skills
-          .row
-            each group in skills.groups
-              .col.col-md-3
-                each category in group.categories
-                  h5=category.name
+          each group in skills
+            .row
+              h4= group.title
+              each category, index in group.categories
+
+                .category.col-md-3.col-sm-6
+                  h5=category.title
                   ul
                     each item in category.items
                       li=item
+                if index % 4 == 3
+                  .clearfix.visible-lg.visible-md
+                if index % 2 == 1
+                  .clearfix.visible-sm
+
 
       .between
       section#cms3

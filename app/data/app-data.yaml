@@ -17,98 +17,100 @@ cms3Components:
     description: Color Palettes provide a standardized, curated set of colors which the Style can use to color in the Layout.
 
 skills:
-  groups:
-    - categories:
-      - name: Design & Development Methods
-        items:
-          - Agile Development/UX
-          - Lean UX
-      - name: Research Techniques
+  design:
+    title: Design
+    categories:
+      - title: Research Techniques
         items:
           - Usability Testing
           - User Research
           - A/B Testing
-      - name: Design Techniques
+          - Personas
+      - title: Design Techniques
         items:
           - Wireframing
           - User & Process Flows
           - Site Maps
-          - Personas
           - Responsive Design
           - Rapid Prototyping
-      - name: Development Processes
+      - title: Design Software
         items:
-          - Test-Driven Development
-          - Unit Testing
-    - categories:
-      - name: Markup Languages & Data Formats
-        items:
-          - HTML/HTML5
-          - JSON
-          - YAML
-          - XML
-      - name: Templating Engines
-        items:
-          - Jinja
-          - Jade
-          - Nunjucks
-      - name: Stylesheet Languages & Preprocessors
-        items:
-          - CSS/CSS3
-          - LESS
-          - SASS
-          - Stylus
-      - name: Programming Languages
-        items:
-          - Javascript/Node.js
-          - PHP
-          - Python
-      - name: Database Systems
-        items:
-          - MySQL
-          - PostgreSQL
-      - name: Front End Frameworks
-        items:
-          - jQuery
-          - Ang  items:arJS
-          - Twitter Bootstrap
-          - Modernizr
-      - name: Web Frameworks
-        items:
-          - ExpressJS
-          - Flask
-          - CakePHP
-
-    - categories:
-      - name: Design Software
-        items:
-          - Adobe Creative Suite
+          - Photoshop
+          - Illustrator
+          - InDesign
+          - Flash
           - OmniGraffle
-      - name: Project Management Software
-        items:
-          - Jira
-          - Trello
-      - name: Source Code Management
-        items:
-          - Git
-          - Mercurial
-          - Subversion
-      - name: Testing &amp; Automation
-        items:
-          - Webdriver
-          - Karma
-          - Protractor
-      - name: 3D Software
+      - title: 3D Software
         items:
           - Maya
           - 3ds Max
           - Blender
           - zBrush
-      - name: Operating Systems
+            
+
+  development:
+    title: Development
+    categories:
+      - title: Design & Development Methods
         items:
-          - Mac
-          - Windows
-          - Linux
+          - Agile Development/UX
+          - Lean UX
+      - title: Project Management Software
+        items:
+          - Jira
+          - Trello
+      - title: Markup Languages & Data Formats
+        items:
+          - HTML/HTML5
+          - JSON
+          - YAML
+          - XML
+      - title: Templating Engines
+        items:
+          - Jinja
+          - Jade
+          - Nunjucks
+      - title: Stylesheet Languages & Preprocessors
+        items:
+          - CSS/CSS3
+          - LESS
+          - SASS
+          - Stylus
+      - title: Programming Languages
+        items:
+          - Javascript/Node.js
+          - PHP
+          - Python
+          - ActionScript 3
+      - title: Database Systems
+        items:
+          - MySQL
+          - PostgreSQL
+      - title: Front End Frameworks
+        items:
+          - jQuery
+          - AngularJS
+          - Twitter Bootstrap
+          - Modernizr
+      - title: Web Frameworks
+        items:
+          - ExpressJS
+          - Flask
+          - CakePHP
+      - title: Source Code Management
+        items:
+          - Git
+          - Mercurial
+          - Subversion
+      - title: Testing & Automation
+        items:
+          - Webdriver
+          - Karma
+          - Protractor
+      - title: Development Techniques
+        items:
+          - Test-Driven Development
+          - Unit Testing 
 
 technologies: 
   - name: HTML5
@@ -146,6 +148,6 @@ exampleSites:
   - www.architecturefirmnewyorkny.com
   - www.designarchitectsanfrancisco.com
   - www.southburydentalcare.com
-  - www.champ  -nlandscaping.com
+  - www.champlinlandscaping.com
   - www.turnersvilleinsuranceservices.com
   - www.newyorkarchitectdesignfirm.com
