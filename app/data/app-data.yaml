@@ -151,3 +151,13 @@ exampleSites:
   - www.champlinlandscaping.com
   - www.turnersvilleinsuranceservices.com
   - www.newyorkarchitectdesignfirm.com
+
+cms3RedesignImages:
+  - thumbnail: images/design/cms3-redesign/home.th.jpg
+    image: images/design/cms3-redesign/home.png
+  - thumbnail: images/design/cms3-redesign/about.th.jpg
+    image: images/design/cms3-redesign/about.png
+  - thumbnail: images/design/cms3-redesign/services.th.jpg
+    image: images/design/cms3-redesign/services.png
+  - thumbnail: images/design/cms3-redesign/contact.th.jpg
+    image: images/design/cms3-redesign/contact.png
