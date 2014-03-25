@@ -2,15 +2,15 @@
 cms3Components: 
   - name: layout
     title: Layout
-    description: Layouts determine which mod  items:es are included on the page, and their size and placement.
+    description: Layouts determine which modules are included on the page, and their size and placement.
 
   - name: style
     title: Style
-    description: Styles use a selected Font and Color Palette to determine the look and feel of the mod  items:es and page in the chosen Layout.
+    description: Styles use a selected Font and Color Palette to determine the look and feel of the modules and page in the chosen Layout.
 
   - name: font
     title: Font Palette
-    description: Font Palettes determines which heading and body fonts are available for a Style to use, and norma  -ze font heights for consistency.
+    description: Font Palettes determines which heading and body fonts are available for a Style to use, and normalize font heights for consistency.
 
   - name: color
     title: Color Palette
@@ -161,3 +161,11 @@ cms3RedesignImages:
     image: images/design/cms3-redesign/services.png
   - thumbnail: images/design/cms3-redesign/contact.th.jpg
     image: images/design/cms3-redesign/contact.png
+
+flows:
+  - thumbnail: images/design/flows/funnel-map.th.jpg
+    image: images/design/flows/funnel-map.jpg
+    description: Map of the various paths a prospect can take on their way to becoming a Yodle customer.
+  - thumbnail: images/design/flows/qualitative-interview-flow.th.jpg
+    image: images/design/flows/qualitative-interview-flow.jpg
+    description: This relatively simple flow for a temporary interview process ended a lot of needless back and forth.

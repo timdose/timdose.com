@@ -122,7 +122,7 @@ html.no-js
               The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
             each site in exampleSites
               .site.col-md-3.col-sm-6
-                +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites").webpage
+                +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
                 .title
                   a(href='http://#{site}')=site.replace('www.','')
         #geeks.container
@@ -161,11 +161,14 @@ html.no-js
               Proposed redesign for Yodle's CMS3 websites.
             each image in cms3RedesignImages
               .col-md-3.col-sm-6
-                +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign").webpage
+                +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
 
         #flows.container
           .row
-            h3 Process and User Flows
+            h3 Various Process and User Flows
+            each image in flows
+              .col-md-3.col-sm-6
+                +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")
     footer.footer
       .container
         .row

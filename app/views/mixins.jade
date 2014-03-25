@@ -1,6 +1,6 @@
-mixin thumbnail(big, small )
+mixin thumbnail(big, small, title)
   - if (small == undefined )
     - small = big.replace('.jpg','.th.jpg').replace('.png', '.th.png');
   .thumbnail
-    a(href='#{big}', data-lightbox!=attributes.lightboxGroup)
+    a(href='#{big}', data-lightbox!=attributes.lightboxGroup, title=title?title:'')
       img(src='#{small}')
