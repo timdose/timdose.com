@@ -1,4 +1,4 @@
-// Generated on 2014-02-22 using generator-lessapp 0.4.6
+
 'use strict';
 
 // # Globbing
@@ -238,11 +238,10 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>',
                 flow: {
-                    steps: {
-                        'js':['concat','uglifyjs'],
+                    steps: {                        'js':['concat','uglifyjs'],
                         'css':['concat','cssmin']
                     },
-                    post: {}                    
+                    post: {}
                 }
             },
             // html: '<%= yeoman.app %>/index.html'
