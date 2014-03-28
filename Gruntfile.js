@@ -53,7 +53,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/data/**/*.yaml',
 
                 ],
-                tasks: ['jade', 'autoprefixer']
+                tasks: ['jade:server', 'autoprefixer']
             },
             styles: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
@@ -179,7 +179,7 @@ module.exports = function (grunt) {
             }
         },
         jade: {
-            dist: {
+            server: {
                 options: {
                     pretty: true,
                     data: grunt.file.readYAML('app/data/app-data.yaml'),
@@ -224,8 +224,8 @@ module.exports = function (grunt) {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+                        '<%= yeoman.dist %>/images/**/*.{gif,jpeg,jpg,png,webp}'
+                        // '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
                     ]
                 }
             }
@@ -236,7 +236,14 @@ module.exports = function (grunt) {
         // additional tasks can operate on them
         useminPrepare: {
             options: {
-                dest: '<%= yeoman.dist %>'
+                dest: '<%= yeoman.dist %>',
+                flow: {
+                    steps: {
+                        'js':['concat','uglifyjs'],
+                        'css':['concat','cssmin']
+                    },
+                    post: {}                    
+                }
             },
             // html: '<%= yeoman.app %>/index.html'
             html: '.tmp/index.html'
@@ -245,9 +252,10 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= yeoman.dist %>']
+                assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
             },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
+            // html: ['<%= yeoman.dist %>/{,*/}*.html'],
+            html: ['.tmp/{,*/}*.html'],
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
 
@@ -257,7 +265,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    src: '**/*.{gif,jpeg,jpg,png}',
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }
@@ -392,7 +400,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
-            'jade',
+            'jade:server',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -433,7 +441,7 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        // 'htmlmin'
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [

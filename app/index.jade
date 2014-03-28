@@ -20,21 +20,19 @@ html.no-js
     // build:css(app) styles/vendor.css
     // bower:css
     //- link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    //- link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
     // endbower
     // endbuild
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
-    link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
     // endbuild
     script(src='bower_components/modernizr/modernizr.js')
   body
     //if lt IE 10
-      p.browsehappy
-        | You are using an
-        strong outdated
-        | browser. Please
-        | <a href="http://browsehappy.com/">upgrade your browser</a>
-        | to improve your experience.
+      <p class="browsehappy">You are using an<strong>outdated</strong>browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience. 
+      </p>
     header.header
       .container
         .jumbotron
@@ -114,7 +112,7 @@ html.no-js
                   .examples
                     each val in [1,2,3,4]
                       .example.col-sm-3.col-xs-6
-                        +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component)
+                        +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
         #example-sites.container
           .row
             h3 CMS3 Example Sites
@@ -195,14 +193,14 @@ html.no-js
       
     // build:js(app) scripts/vendor.js
     // bower:js
-    script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/lightbox2/js/lightbox.js')
     script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.js')
     //- script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
     script(src='bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js')
-    script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
-    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
-    script(src='bower_components/holderjs/holder.js')
+    //- script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
+    //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    //- script(src='bower_components/holderjs/holder.js')
     // endbower
     // endbuild
     //- Google Analytics: change UA-XXXXX-X to be your site's ID.
