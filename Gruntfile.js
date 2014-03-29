@@ -382,12 +382,26 @@ module.exports = function (grunt) {
             test: [
                 'copy:styles'
             ],
-            dist: [
+            dist: [ 
                 'less:dist',
                 'copy:styles',
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        ftpush: {
+            deploy: {
+                auth: {
+                    host: 'timdose.com',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: '<%= yeoman.dist %>',
+                dest: 'public_html/web/',
+                exclusions: ['<%= yeoman.dist %>/**/.DS_Store'],
+                // simple: true
+            }
         }
     });
 
@@ -447,5 +461,9 @@ module.exports = function (grunt) {
         'newer:jshint',
         'test',
         'build'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'ftpush'
     ]);
 };
