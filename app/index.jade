@@ -1,233 +1,137 @@
-include views/mixins.jade
+extends views/layouts/default
 
-doctype html
-//if lt IE 7
-  html.no-js.lt-ie9.lt-ie8.lt-ie7  
-//if IE 7
-  html.no-js.lt-ie9.lt-ie8  
-//if IE 8
-  html.no-js.lt-ie9  
-// [if gt IE 8] <!
-html.no-js
-  // <![endif]
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Tim Dosé
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width')
-    // Place favicon.ico and apple-touch-icon.png in the root directory
-    //- build:css(app) styles/vendor.css
-    // bower:css
-    //- link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
-    //- link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
-    // endbower
-    //- endbuild
-    // build:css styles/main.css
-    link(rel='stylesheet', href='styles/main.css')
-    // endbuild
-    script(src='bower_components/modernizr/modernizr.js')
-  body
-    //if lt IE 10
-      <p class="browsehappy">You are using an<strong>outdated</strong>browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a>
-        to improve your experience. 
-      </p>
-    header.header
-      .container
-        .jumbotron
-          .row
-              h1.heading Tim Dosé
-              p.title UX Designer/Developer
-
-    .main-content
-      section#about
-        #skills.container
-          .row
-            h3 Skills
-          each group in skills
-            .row
-              h4= group.title
-              each category, index in group.categories
-
-                .category.col-md-3.col-sm-6
-                  h5=category.title
-                  ul
-                    each item in category.items
-                      li=item
-                if index % 4 == 3
-                  .clearfix.visible-lg.visible-md
-                if index % 2 == 1
-                  .clearfix.visible-sm
-
-
-      .between
-      section#cms3
-        #intro.container
-          .row
-            .col-lg-12
-              h2 Yodle CMS3
-              
-              p.lead.well
-                | CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
-              p.lead.
-                I lead the <strong>design</strong> and <strong>front end development</strong> for Yodle's CMS3 project.
-              
-          .row.features
-            .feature.col-md-4
-              h4.h
-                i.fa.fa-arrows-alt.fa-2x
-                .text Scalable &amp; Modern Code
-              ul
-                li Powers over 11,000 websites for clients in hundreds of industries.
-                li Mass updates allow nimble fixes and new features even at scale. Everybody gets the good stuff!
-                li Clearly defined methods of customization mean the state of any site is always clear and queryable.
-            .feature.col-md-4
-              h4.h
-                i.fa.fa-gears.fa-2x
-                .text Customizable Design
-              ul
-                li Modular design system along 4 dimensions: layout, style, font, and color. Each dimension completely interchangeable.
-                li Hundreds of possible combinations for a site's look and feel.
-                li Clients can customize logo, photos, and content.
-            .feature.col-md-4
-              h4.h
-                i.fa.fa-flask.fa-2x
-                .text Built for Testing
-              ul
-                li Lightweight AB testing via <a href="http://optimizely.com">Optimizely</a>.
-                li Sites can easily be republished with a new feature or theme for more robust AB testing.
-                li Optimizations can be easily rolled out after successful tests.
-                  li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points despite relatively small traffic.
-        #design-system.container
-          .row
-            h3 CMS3 Modular Design System
-            p.lead.
-              CMS3 sites are created by making a selection from 4 interchangeable
-              dimensions: Layout, Style, Font, and Color Palette. 
-            each component in cms3Components
-              .component.col-md-10.col-md-offset-1
-                  h4.h4= component.title
-                  p.description= component.description
-                  .examples
-                    each val in [1,2,3,4]
-                      .example.col-sm-3.col-xs-6
-                        +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
-        #example-sites.container
-          .row
-            h3 CMS3 Example Sites
-            p.lead.
-              The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
-            each site in exampleSites
-              .site.col-md-3.col-sm-6
-                +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
-                .title
-                  a(href='http://#{site}')=site.replace('www.','')
-        #geeks.container
-          .row
-            h3 For the Geeks            
-            .technologies
-              h4 Technologies Used in CMS3
-              .col-lg-10.col-lg-offset-1
-                ul.list.well
-                  each technology in technologies
-                    li.item
-                      a(href='#{technology.link}', target="_blank")
-                        img.logo(src='images/technology/logos/#{technology.icon}')
-          .row
-            p.lead.
-              CMS3 does some pretty cool stuff.
-            ul.explanation.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
-              li Jinja templates compile to HTML5.
-              li Standardized LESS interfaces compile to CSS3.
-              li CherryPy uses JSON data to pull it all together.
-              li YAML is used to mock out data for speedier development by humans.
-          .row
-            .renderer-process.col-md-12
-              h4 How a Page Is Created in CMS3
-              a(href='images/cms3/renderer-process.png')
-                img.image(src='images/cms3/renderer-process.png')
-      .between
-      section#design
-        #intro.container
-          .row
-            h2 Design
-        #cms3-design.container
-          .row
-            h3 CMS3 Redesign Wireframes
-            p.lead.
-              Proposed redesign for Yodle's CMS3 websites.
-            each image in cms3RedesignImages
-              .col-md-3.col-sm-6
-                +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
-
-        #flows.container
-          .row
-            h3 Various Process and User Flows
-            each image in flows
-              .col-md-3.col-sm-6
-                +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")
-    footer.footer
-      .container
+block body
+  header.header
+    .container
+      .jumbotron
         .row
-          .contact.lead
-            p Tim Dosé
-            p
-              a(href='tel:+19175755359') 917-575-5359
-            p
-              a(href='mailto:tim@timdose.com') tim@timdose.com
-            p
-              a(href="assets/pdf/Tim-Dose-Resume.pdf") Resumé
+            h1.heading Tim Dosé
+            p.title UX Designer/Developer
 
-    //- ul#scroll-nav
-    //-   li.current
-    //-     a(href='#cms3').section CMS3
-    //-     ul.subnav
-    //-       li
-    //-         a(href='#example-sites').subsection Example Sites
-    //-       li
-    //-         a(href='#design-system').subsection Design System
-    //-       li
-    //-         a(href='#geeks').subsection For the Geeks
-    //-   li
-    //-     a(href='#design') Design
+  .main-content
+    section#about
+      #skills.container
+        .row
+          h3 Skills
+        each group in skills
+          .row
+            h4= group.title
+            each category, index in group.categories
 
-      
-    // build:js(app) scripts/vendor.js
-    // bower:js
-    script(src='bower_components/jquery/dist/jquery.js')
-    script(src='bower_components/lightbox2/js/lightbox.js')
-    script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.js')
-    //- script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
-    script(src='bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js')
-    //- script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
-    //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
-    //- script(src='bower_components/holderjs/holder.js')
-    // endbower
-    // endbuild
-    //- Google Analytics: change UA-XXXXX-X to be your site's ID.
-    //- script
-    //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    //-   e.src='//www.google-analytics.com/analytics.js';
-    //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    //-   ga('create','UA-XXXXX-X');ga('send','pageview');
-    // build:js(app) scripts/main.js
-    script(src='scripts/main.js')
-    script(src='scripts/nav.js')
-    // endbuild
-    // build:js(app) scripts/plugins.js
-    //- script(src='bower_components/bootstrap/js/affix.js')
-    //- script(src='bower_components/bootstrap/js/alert.js')
-    //- script(src='bower_components/bootstrap/js/dropdown.js')
-    //- script(src='bower_components/bootstrap/js/tooltip.js')
-    //- script(src='bower_components/bootstrap/js/modal.js')
-    //- script(src='bower_components/bootstrap/js/transition.js')
-    //- script(src='bower_components/bootstrap/js/button.js')
-    //- script(src='bower_components/bootstrap/js/popover.js')
-    //- script(src='bower_components/bootstrap/js/carousel.js')
-    //- script(src='bower_components/bootstrap/js/scrollspy.js')
-    //- script(src='bower_components/bootstrap/js/collapse.js')
-    //- script(src='bower_components/bootstrap/js/tab.js')
-    // endbuild
+              .category.col-md-3.col-sm-6
+                h5=category.title
+                ul
+                  each item in category.items
+                    li=item
+              if index % 4 == 3
+                .clearfix.visible-lg.visible-md
+              if index % 2 == 1
+                .clearfix.visible-sm
+
+
+    .between
+    section#cms3
+      #intro.container
+        .row
+          .col-lg-12
+            h2 Yodle CMS3
+            
+            p.lead.well
+              | CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
+            p.lead.
+              I lead the <strong>design</strong> and <strong>front end development</strong> for Yodle's CMS3 project.
+            
+        .row.features
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-arrows-alt.fa-2x
+              .text Scalable &amp; Modern Code
+            ul
+              li Powers over 11,000 websites for clients in hundreds of industries.
+              li Mass updates allow nimble fixes and new features even at scale. Everybody gets the good stuff!
+              li Clearly defined methods of customization mean the state of any site is always clear and queryable.
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-gears.fa-2x
+              .text Customizable Design
+            ul
+              li Modular design system along 4 dimensions: layout, style, font, and color. Each dimension completely interchangeable.
+              li Hundreds of possible combinations for a site's look and feel.
+              li Clients can customize logo, photos, and content.
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-flask.fa-2x
+              .text Built for Testing
+            ul
+              li Lightweight AB testing via <a href="http://optimizely.com">Optimizely</a>.
+              li Sites can easily be republished with a new feature or theme for more robust AB testing.
+              li Optimizations can be easily rolled out after successful tests.
+                li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points despite relatively small traffic.
+      #design-system.container
+        .row
+          h3 CMS3 Modular Design System
+          p.lead.
+            CMS3 sites are created by making a selection from 4 interchangeable
+            dimensions: Layout, Style, Font, and Color Palette. 
+          each component in cms3Components
+            .component.col-md-10.col-md-offset-1
+                h4.h4= component.title
+                p.description= component.description
+                .examples
+                  each val in [1,2,3,4]
+                    .example.col-sm-3.col-xs-6
+                      +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
+      #example-sites.container
+        .row
+          h3 CMS3 Example Sites
+          p.lead.
+            The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
+          each site in exampleSites
+            .site.col-md-3.col-sm-6
+              +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
+              .title
+                a(href='http://#{site}')=site.replace('www.','')
+      #geeks.container
+        .row
+          h3 For the Geeks            
+          .technologies
+            h4 Technologies Used in CMS3
+            .col-lg-10.col-lg-offset-1
+              ul.list.well
+                each technology in technologies
+                  li.item
+                    a(href='#{technology.link}', target="_blank")
+                      img.logo(src='images/technology/logos/#{technology.icon}')
+        .row
+          p.lead.
+            CMS3 does some pretty cool stuff.
+          ul.explanation.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
+            li Jinja templates compile to HTML5.
+            li Standardized LESS interfaces compile to CSS3.
+            li CherryPy uses JSON data to pull it all together.
+            li YAML is used to mock out data for speedier development by humans.
+        .row
+          .renderer-process.col-md-12
+            h4 How a Page Is Created in CMS3
+            a(href='images/cms3/renderer-process.png')
+              img.image(src='images/cms3/renderer-process.png')
+    .between
+    section#design
+      #intro.container
+        .row
+          h2 Design
+      #cms3-design.container
+        .row
+          h3 CMS3 Redesign Wireframes
+          p.lead.
+            Proposed redesign for Yodle's CMS3 websites.
+          each image in cms3RedesignImages
+            .col-md-3.col-sm-6
+              +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
+
+      #flows.container
+        .row
+          h3 Various Process and User Flows
+          each image in flows
+            .col-md-3.col-sm-6
+              +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")
