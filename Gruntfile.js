@@ -383,7 +383,7 @@ module.exports = function (grunt) {
             test: [
                 'copy:styles'
             ],
-            dist: [ 
+            dist: [
                 'less:dist',
                 'copy:styles',
                 'imagemin',

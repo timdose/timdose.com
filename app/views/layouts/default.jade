@@ -34,8 +34,13 @@ html.no-js
         <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience. 
       </p>
-    
-    block body
+    .container
+
+      .col-md-10
+        block body
+
+      .col-md-2.col-nav
+        include ../nav.jade
 
     block footer
       footer.footer
@@ -50,18 +55,7 @@ html.no-js
               p
                 a(href="assets/pdf/Tim-Dose-Resume.pdf") Resumé
 
-      //- ul#scroll-nav
-      //-   li.current
-      //-     a(href='#cms3').section CMS3
-      //-     ul.subnav
-      //-       li
-      //-         a(href='#example-sites').subsection Example Sites
-      //-       li
-      //-         a(href='#design-system').subsection Design System
-      //-       li
-      //-         a(href='#geeks').subsection For the Geeks
-      //-   li
-      //-     a(href='#design') Design
+
 
     block scripts
       // build:js(app) scripts/vendor.js
@@ -71,7 +65,7 @@ html.no-js
       script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.js')
       //- script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
       script(src='bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js')
-      //- script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
+      script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
       //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
       //- script(src='bower_components/holderjs/holder.js')
       // endbower

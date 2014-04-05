@@ -1,11 +1,13 @@
 #scroll-nav {
-    display: none;
-    left: 20px;
     list-style: none outside none;
     margin: 0;
-    position: fixed;
-    top: 20px;
-    padding: 0;
+
+    @media ( min-width: @screen-md-min ) {
+      position: fixed;
+      top: 20px;
+      padding: 0;
+      margin-left: 0;
+    }
 
     li {
       margin-bottom: 0;

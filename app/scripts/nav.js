@@ -1,9 +1,9 @@
-// 'use strict';
+'use strict';
 
-// ( function($) {
+( function($) {
 
-//     $(document).ready(function() {
-//         $('#scroll-nav').onePageNav();
-//     });
+    $(document).ready(function() {
+        $('#scroll-nav').onePageNav();
+    });
 
-// }(jQuery));
+}(jQuery));

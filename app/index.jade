@@ -2,15 +2,13 @@ extends views/layouts/default
 
 block body
   header.header
-    .container
-      .jumbotron
-        .row
-            h1.heading Tim Dosé
-            p.title UX Designer/Developer
+    .row
+      h1.heading Tim Dosé
+      p.title UX Designer/Developer
 
   .main-content
     section#about
-      #skills.container
+      #skills
         .row
           h3 Skills
         each group in skills
@@ -31,7 +29,7 @@ block body
 
     .between
     section#cms3
-      #intro.container
+      #intro
         .row
           .col-lg-12
             h2 Yodle CMS3
@@ -67,7 +65,7 @@ block body
               li Sites can easily be republished with a new feature or theme for more robust AB testing.
               li Optimizations can be easily rolled out after successful tests.
                 li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points despite relatively small traffic.
-      #design-system.container
+      #design-system
         .row
           h3 CMS3 Modular Design System
           p.lead.
@@ -81,7 +79,7 @@ block body
                   each val in [1,2,3,4]
                     .example.col-sm-3.col-xs-6
                       +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
-      #example-sites.container
+      #example-sites
         .row
           h3 CMS3 Example Sites
           p.lead.
@@ -91,7 +89,7 @@ block body
               +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
               .title
                 a(href='http://#{site}')=site.replace('www.','')
-      #geeks.container
+      #geeks
         .row
           h3 For the Geeks            
           .technologies
@@ -117,10 +115,10 @@ block body
               img.image(src='images/cms3/renderer-process.png')
     .between
     section#design
-      #intro.container
+      #intro
         .row
           h2 Design
-      #cms3-design.container
+      #cms3-design
         .row
           h3 CMS3 Redesign Wireframes
           p.lead.
@@ -129,7 +127,7 @@ block body
             .col-md-3.col-sm-6
               +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
 
-      #flows.container
+      #flows
         .row
           h3 Various Process and User Flows
           each image in flows
