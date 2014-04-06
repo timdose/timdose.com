@@ -92,9 +92,8 @@ block body
         .row
           each site in exampleSites
             .site.col-md-3.col-sm-6
-              +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
-              .title
-                a(href='http://#{site}')=site.replace('www.','')
+              +thumbnail('images/example-sites/'+site+'.jpg', null, site)(lightboxGroup="example-sites")
+
       #geeks
         .row
           .col-xs-12
