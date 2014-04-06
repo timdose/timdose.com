@@ -4,16 +4,19 @@ block body
   header.header
     .row
       h1.heading Tim Dosé
-      p.title UX Designer/Developer
+      .col-xs-12
+        p.title UX Designer/Developer
 
   .main-content
     section#about
       #skills
         .row
-          h3 Skills
+          .col-xs-12
+            h3 Skills
         each group in skills
           .row
-            h4= group.title
+            .col-xs-12
+              h4= group.title
             each category, index in group.categories
 
               .category.col-md-3.col-sm-6
@@ -67,12 +70,13 @@ block body
                 li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points despite relatively small traffic.
       #design-system
         .row
-          h3 CMS3 Modular Design System
-          p.lead.
-            CMS3 sites are created by making a selection from 4 interchangeable
-            dimensions: Layout, Style, Font, and Color Palette. 
+          .col-xs-12
+            h3 CMS3 Modular Design System
+            p.lead.
+              CMS3 sites are created by making a selection from 4 interchangeable
+              dimensions: Layout, Style, Font, and Color Palette. 
           each component in cms3Components
-            .component.col-md-10.col-md-offset-1
+            .component.col-md-10
                 h4.h4= component.title
                 p.description= component.description
                 .examples
@@ -81,9 +85,11 @@ block body
                       +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
       #example-sites
         .row
-          h3 CMS3 Example Sites
-          p.lead.
-            The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
+          .col-xs-12
+            h3 CMS3 Example Sites
+            p.lead.
+              The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
+        .row
           each site in exampleSites
             .site.col-md-3.col-sm-6
               +thumbnail('images/example-sites/'+site+'.jpg')(lightboxGroup="example-sites")
@@ -91,25 +97,28 @@ block body
                 a(href='http://#{site}')=site.replace('www.','')
       #geeks
         .row
-          h3 For the Geeks            
+          .col-xs-12
+            h3 For the Geeks
+        .row
           .technologies
-            h4 Technologies Used in CMS3
-            .col-lg-10.col-lg-offset-1
+            .col-xs-12
+              h4 Technologies Used in CMS3
               ul.list.well
                 each technology in technologies
                   li.item
                     a(href='#{technology.link}', target="_blank")
                       img.logo(src='images/technology/logos/#{technology.icon}')
         .row
-          p.lead.
-            CMS3 does some pretty cool stuff.
-          ul.explanation.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
-            li Jinja templates compile to HTML5.
-            li Standardized LESS interfaces compile to CSS3.
-            li CherryPy uses JSON data to pull it all together.
-            li YAML is used to mock out data for speedier development by humans.
+          .col-xs-12
+            p.lead.
+              CMS3 does some pretty cool stuff.
+            ul.explanation
+              li Jinja templates compile to HTML5.
+              li Standardized LESS interfaces compile to CSS3.
+              li CherryPy uses JSON data to pull it all together.
+              li YAML is used to mock out data for speedier development by humans.
         .row
-          .renderer-process.col-md-12
+          .renderer-process.col-xs-12
             h4 How a Page Is Created in CMS3
             a(href='images/cms3/renderer-process.png')
               img.image(src='images/cms3/renderer-process.png')
@@ -117,19 +126,22 @@ block body
     section#design
       #intro
         .row
-          h2 Design
+          .col-xs-12
+            h2 Design
       #cms3-design
         .row
-          h3 CMS3 Redesign Wireframes
-          p.lead.
-            Proposed redesign for Yodle's CMS3 websites.
+          .col-xs-12
+            h3 CMS3 Redesign Wireframes
+            p.lead.
+              Proposed redesign for Yodle's CMS3 websites.
           each image in cms3RedesignImages
             .col-md-3.col-sm-6
               +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
 
       #flows
         .row
-          h3 Various Process and User Flows
+          .col-xs-12
+            h3 Various Process and User Flows
           each image in flows
             .col-md-3.col-sm-6
               +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")
