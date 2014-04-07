@@ -16,8 +16,6 @@
     a {
       display: block;
       padding: 5px 10px;
-      background: #fff;
-
       border-top: 1px dotted @brand-primary;
 
       &:hover {        
@@ -25,28 +23,25 @@
       }
     }
 
-    .subnav>li:first-child .subsection {
-      border-top: none;
-    }
-
-    a.section {
-      border-bottom: 1px dotted @brand-primary;
-    }
-
-    .current>a {
+    .current > a {
       background: @brand-primary;
       color: #fff;
 
       &:hover {
-
         text-decoration: none;
       }
 
     }
 
     .subnav {
-      margin-left: 15px;
-      padding: 0;
+      border-top: 1px dotted @brand-primary;
+      padding: 0 0 0 15px;
       list-style: none;
+
+      & li:first-child a {
+        border-top: none;
+      }
     }
+
+    
 }
