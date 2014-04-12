@@ -185,7 +185,11 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     pretty: true,
-                    data: grunt.file.readYAML('app/data/app-data.yaml'),
+                    data: {
+                            app: grunt.file.readYAML('app/data/app-data.yaml'),
+                            about: grunt.file.readYAML('app/data/about.yaml'),
+                            projects: grunt.file.readYAML('app/data/projects.yaml'),
+                          }
                 },
                 files: [{
                     expand: true,

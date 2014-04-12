@@ -1,0 +1,91 @@
+
+cms3:
+  roles:
+    - Front End Development Lead
+    - Interaction Design Lead
+    - Visual Design Lead
+  description: >
+    CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
+  problem:
+    - Yodle needs to deliver websites to thousands of clients.
+    - Yodle's previous website system allowed unlimited customization but proved impossible to maintain at scale.
+    - Unlimited customization also prevented any real analytics or testing.
+    - Need to provide limited, controlled customization but retain maintainability.
+    - Need to balance sometimes conflicting metrics of Client Satisfaction and Website Conversion.
+    - Provide customizable websites to improve Client Satisfaction metric.
+    - At the same time, provide aggregated analytics and the ability to conduct tests to increase conversion.
+  results:
+    - A highly scalable system that allows limited customization and the ability to roll out changes at scale.
+    - Client Satisfaction up 17%.
+    - A/B testing to improve Website Conversion is underway.
+  technologies:
+    - name: HTML5
+      icon: html5.png
+      link: http://www.w3.org/html/wg/drafts/html/CR/
+
+    - name: CSS3
+      icon: css3.png
+      link: http://www.w3.org/Style/CSS/Overview.en.html
+
+    - name: LESS
+      icon: less.png
+      link: http://lesscss.org
+
+    - name: Jinja
+      icon: jinja.png
+      link: http://jinja.pocoo.org/
+
+    - name: CherryPy
+      icon: cherrypy.png
+      link: http://cherrypy.org
+
+    - name: YAML
+      icon: yaml.png
+      link: http://yaml.org
+
+    - name: JSON
+      icon: json.png
+      link: http://json.org
+
+  screenshots:
+    - name: charlottencresidentialdesign.com
+      image: www.charlottencresidentialdesign.com.jpg
+      icon: www.charlottencresidentialdesign.com.th.jpg
+    - name: oceansidelegalattorney.com
+      image: www.oceansidelegalattorney.com.jpg
+      icon: www.oceansidelegalattorney.com.th.jpg
+    - name: architecturefirmnewyorkny.com
+      image: www.architecturefirmnewyorkny.com.jpg
+      icon: www.architecturefirmnewyorkny.com.th.jpg
+    - name: designarchitectsanfrancisco.com
+      image: www.designarchitectsanfrancisco.com.jpg
+      icon: www.designarchitectsanfrancisco.com.th.jpg
+    - name: southburydentalcare.com
+      image: www.southburydentalcare.com.jpg
+      icon: www.southburydentalcare.com.th.jpg
+    - name: champlinlandscaping.com
+      image: www.champlinlandscaping.com.jpg
+      icon: www.champlinlandscaping.com.th.jpg
+    - name: turnersvilleinsuranceservices.com
+      image: www.turnersvilleinsuranceservices.com.jpg
+      icon: www.turnersvilleinsuranceservices.com.th.jpg
+    - name: newyorkarchitectdesignfirm.com
+      image: www.newyorkarchitectdesignfirm.com.jpg
+      icon: www.newyorkarchitectdesignfirm.com.th.jpg
+
+yodleDotCom:
+  roles:
+    - Lead Front End Developer
+  description: >
+    Yodle.com's redesign is due to launch on May 1st, 2014. I was asked to lead the Front End Development.
+  bullets:
+    - Runs on an ExpressJS/Node.js server.
+  technologies:
+    - name: NodeJS
+    - name: ExpressJS
+    - name: Nunjucks
+    - name: JSON
+    - name: Grunt
+    - name: Bower
+
+
