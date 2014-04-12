@@ -9,25 +9,25 @@ block body
 
   .main-content
     section#about
+      p.lead!= about.blurb
       #skills
         .row
           .col-xs-12
             h3 Skills
         each group in about.skills
-          .row
-            .col-xs-12
+          div(id='#{group.id}').row
+            .col-xs-12            
               h4= group.title
             each category, index in group.categories
-
-              .category.col-md-3.col-sm-6
-                h5=category.title
-                ul
-                  each item in category.items
-                    li=item
-              if index % 4 == 3
-                .clearfix.visible-lg.visible-md
-              if index % 2 == 1
-                .clearfix.visible-sm
+                .category.col-md-3.col-sm-6
+                  h5=category.title
+                  ul
+                    each item in category.items
+                      li=item
+                if index % 4 == 3
+                  .clearfix.visible-lg.visible-md
+                if index % 2 == 1
+                  .clearfix.visible-sm
 
 
     .between

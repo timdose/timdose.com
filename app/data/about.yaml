@@ -1,6 +1,11 @@
+blurb: >
+  I've been designing and developing websites for over 15 years, 
+  and have been managing Interaction Designers, Visual Designers, and Front End Developers for 3 years.
+
 skills:
   design:
     title: Design
+    id: design-skills
     categories:
       - title: Research Techniques
         items:
@@ -32,6 +37,7 @@ skills:
 
   development:
     title: Development
+    id: dev-skills
     categories:
       - title: Design & Development Methods
         items:
