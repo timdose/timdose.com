@@ -33,7 +33,7 @@ skills:
           - 3ds Max
           - Blender
           - zBrush
-            
+
 
   development:
     title: Development
@@ -56,8 +56,8 @@ skills:
       - title: Templating Engines
         items:
           - Jinja
-          - Jade
           - Nunjucks
+          - Jade
       - title: Stylesheet Languages & Preprocessors
         items:
           - CSS/CSS3
@@ -92,9 +92,11 @@ skills:
           - Subversion
       - title: Testing & Automation
         items:
-          - Webdriver
+          - Mocha
+          - Chai
           - Karma
           - Protractor
+          - Webdriver
       - title: Development Techniques
         items:
           - Test-Driven Development
