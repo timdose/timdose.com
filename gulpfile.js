@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var livereload = require('gulp-livereload');
-var spawn = require('child_process').spawn;
+var nodemon = require('gulp-nodemon');
 
 var paths = {
   frontEnd: [
@@ -11,24 +11,13 @@ var paths = {
             ]
 }
 
-gulp.task('server', function() {
-  console.log('Starting Express server.');
-  var PIPE = {stdio: 'inherit'};
-  var cmd = spawn('node', 'server.js', PIPE);
-
-  cmd.stdout.on('data', function(data) {
-    console.log(data.toString());
-  });
-
-  cmd.stderr.on('data', function(data) {
-    console.log(data.toString());
-  });
-
-  cmd.on('close', function(code) {
-    console.log('express exited with code ' + code );
-  });
-});
-
+gulp.task('develop', function () {
+  nodemon({ script: 'server.js', ext: 'html js', ignore: ['ignored.js'] })
+    // .on('change', ['lint'])
+    .on('restart', function () {
+      console.log('restarted!')
+    })
+})
 
 gulp.task('watch', function() {
   livereload.listen();
@@ -36,4 +25,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('serve', ['server', 'watch']);
+gulp.task('serve', ['develop', 'watch']);
