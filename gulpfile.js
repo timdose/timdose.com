@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var livereload = require('gulp-livereload');
 var nodemon = require('gulp-nodemon');
 
+var lrServer;
+
 var paths = {
   frontEnd: [
               'app/data/**/*.yaml', 
@@ -11,13 +13,17 @@ var paths = {
             ]
 }
 
+
 gulp.task('develop', function () {
   nodemon({ script: 'server.js', ext: 'html js', ignore: ['ignored.js'] })
-    // .on('change', ['lint'])
     .on('restart', function () {
       console.log('restarted!')
+      setTimeout(function() {
+        livereload.changed();
+      }, 2000);
     })
 })
+
 
 gulp.task('watch', function() {
   livereload.listen();
