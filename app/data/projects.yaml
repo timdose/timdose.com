@@ -77,7 +77,7 @@ yodleDotCom:
   roles:
     - Lead Front End Developer
   description: >
-    Yodle.com's redesign is due to launch on May 1st, 2014. I was asked to lead the Front End Development.
+    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
   bullets:
     - Runs on an ExpressJS/Node.js server.
   technologies:
