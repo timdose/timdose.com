@@ -20,6 +20,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', controllers.index );
+app.get('/resume', controllers.resume );
 
 
 var server = app.listen(app.get('port'), function(){

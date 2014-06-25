@@ -1,0 +1,146 @@
+extends include/layouts/default
+
+block body
+  header.header
+    .row
+      h1.heading Tim Dosé
+      .col-xs-12
+        p.title UX Designer/Developer
+
+  .main-content
+    section#about
+      p.lead!= about.blurb
+      #skills
+        .row
+          .col-xs-12
+            h3 Skills
+        each group in about.skills
+          div(id='#{group.id}').row
+            .col-xs-12            
+              h4= group.title
+            each category, index in group.categories
+                .category.col-md-3.col-sm-6
+                  h5=category.title
+                  ul
+                    each item in category.items
+                      li=item
+                if index % 4 == 3
+                  .clearfix.visible-lg.visible-md
+                if index % 2 == 1
+                  .clearfix.visible-sm
+
+
+    .between
+    section#cms3
+      #intro
+        .row
+          .col-lg-12
+            h2 Yodle CMS3
+            
+            p.lead.well
+              | CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
+            p.lead.
+              I lead the <strong>design</strong> and <strong>front end development</strong> for Yodle's CMS3 project.
+            
+        .row.features
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-arrows-alt.fa-2x
+              .text Scalable &amp; Modern Code
+            ul
+              li Powers over 11,000 websites for clients in hundreds of industries.
+              li Mass updates allow nimble fixes and new features even at scale. Everybody gets the good stuff!
+              li Clearly defined methods of customization mean the state of any site is always clear and queryable.
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-gears.fa-2x
+              .text Customizable Design
+            ul
+              li Modular design system along 4 dimensions: layout, style, font, and color. Each dimension completely interchangeable.
+              li Hundreds of possible combinations for a site's look and feel.
+              li Clients can customize logo, photos, and content.
+          .feature.col-md-4
+            h4.h
+              i.fa.fa-flask.fa-2x
+              .text Built for Testing
+            ul
+              li Lightweight AB testing via <a href="http://optimizely.com">Optimizely</a>.
+              li Sites can easily be republished with a new feature or theme for more robust AB testing.
+              li Optimizations can be easily rolled out after successful tests.
+                li Aggregated analytics across all of CMS3 means smaller sites get the benefits of more data points despite relatively small traffic.
+      #design-system
+        .row
+          .col-xs-12
+            h3 CMS3 Modular Design System
+            p.lead.
+              CMS3 sites are created by making a selection from 4 interchangeable
+              dimensions: Layout, Style, Font, and Color Palette. 
+          each component in app.cms3Components
+            .component.col-md-10
+                h4.h4= component.title
+                p.description= component.description
+                .examples
+                  each val in [1,2,3,4]
+                    .example.col-sm-3.col-xs-6
+                      +thumbnail('images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
+      #example-sites
+        .row
+          .col-xs-12
+            h3 CMS3 Example Sites
+            p.lead.
+              The flexibility of the CMS3 design system allows creation of a wide range of looks for a site.
+        .row
+          each site in app.exampleSites
+            .site.col-md-3.col-sm-6
+              +thumbnail('images/example-sites/'+site+'.jpg', null, site)(lightboxGroup="example-sites")
+
+      #geeks
+        .row
+          .col-xs-12
+            h3 For the Geeks
+        .row
+          .technologies
+            .col-xs-12
+              h4 Technologies Used in CMS3
+              ul.list.well
+                each technology in app.technologies
+                  li.item
+                    a(href='#{technology.link}', target="_blank")
+                      img.logo(src='images/technology/logos/#{technology.icon}')
+        .row
+          .col-xs-12
+            p.lead.
+              CMS3 does some pretty cool stuff.
+            ul.explanation
+              li Jinja templates compile to HTML5.
+              li Standardized LESS interfaces compile to CSS3.
+              li CherryPy uses JSON data to pull it all together.
+              li YAML is used to mock out data for speedier development by humans.
+        .row
+          .renderer-process.col-xs-12
+            h4 How a Page Is Created in CMS3
+            a(href='images/cms3/renderer-process.png')
+              img.image(src='images/cms3/renderer-process.png')
+    .between
+    section#design
+      #intro
+        .row
+          .col-xs-12
+            h2 Design
+      #cms3-design
+        .row
+          .col-xs-12
+            h3 CMS3 Redesign Wireframes
+            p.lead.
+              Proposed redesign for Yodle's CMS3 websites.
+          each image in app.cms3RedesignImages
+            .col-md-3.col-sm-6
+              +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
+
+      #flows
+        .row
+          .col-xs-12
+            h3 Various Process and User Flows
+          each image in app.flows
+            .col-md-3.col-sm-6
+              +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")

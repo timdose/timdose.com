@@ -10,3 +10,8 @@ var data = {
 exports.index = function(req, res) {
   res.render('index', data );
 };
+
+exports.resume = function(req, res) {
+  res.render('resume', data );
+};
+
