@@ -41,13 +41,12 @@ script.
     #ContentCenter.content
       #mainContent
         #Portfolios
-          each images, title in {landscape:['syracuse', 'BlackHillsPine'], portrait:['nat-kathrin', 'raven']}
-            // <? foreach( $portfolios as $portfolio_name => $portfolio_images ): ?>
-            h2.portfolioName= title
-            each image in images
+          each info, title in portfolio
+            h2.portfolioName= info.title
+            each image in info.images
               span
-                a(href='/assets/images/art/'+image+'.jpg',rel='shadowbox['+title.replace(' ','_')+']')
-                  img(src='/assets/images/art/'+image+'_th.jpg')
+                a(href='/assets/images/art/'+image.filename+'.jpg',rel='shadowbox['+image.title.replace(' ','_')+']')
+                  img(src='/assets/images/art/'+image.filename+'_th.jpg')
 //-               <? foreach( $portfolio_images as $key => $image ): ?>
 //-               <span>
 //-               <?
