@@ -8,7 +8,11 @@ var app = express();
 module.exports = app; // expose for testing
 
 var logMode = 'default';
-if ( app.get('env') == 'development' ) logMode = 'dev';
+
+if (app.get('env') === 'development') {
+  logMode = 'dev';
+  app.locals.pretty = true;
+}
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/app/views');

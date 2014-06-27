@@ -1,0 +1,317 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: arial,sans-serif;
+	background-color: #222222;
+	color: #444444;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: normal;
+	color: #999999;
+}
+
+h2 {
+	margin: 0;
+	color: #555566;
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #555566;
+	text-align: center;
+}
+
+h4 {
+	color: #555566;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+img {
+	border: 0 none;
+}
+
+p {
+	font: 14px/20px Arial,sans-serif;
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+#Content > p {
+	margin: 0;
+}
+
+#Content > p + p {
+	text-indent: 30px;
+}
+
+#wrapper {
+	width: 850px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+a {
+	color: #555566;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+a:link {
+	color: #555566;
+}
+
+a:visited {
+	color: #555566;
+}
+
+a:hover {
+	color: #666677;
+}
+
+ul {
+	margin: 0;
+}
+
+.menu {
+	list-style-type: none;
+}
+
+.menu li {
+	float: left;
+	margin: 0 10px;
+}
+
+#Header {
+	height: 40px;
+	padding: 0;
+}
+
+#Logo {
+	float: left;
+	margin: 10px 0 0;
+}
+
+#Logo a {
+	color: #555566;
+	font-size: 16px;
+}
+
+#Pages {
+	text-align: right;
+	float: right;
+	padding: 12px 0 0;
+	margin: 0;
+}
+
+#Content {
+	width: 100%;
+	clear: both;
+}
+
+#ContentLeft {
+	position: absolute;
+	width: 120px;
+	left: 0;
+	text-align: center;
+}
+
+.sectionLink {
+	background-color: #191919;
+	margin: 20px auto 10px;
+	padding: 9px 0 0;
+	width: 100px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.sectionLink p {
+	margin: 2px 0 8px;
+}
+
+#ContentCenter {
+	text-align: center;
+	border-radius: 5px 5px 5px 5px;
+	margin: 0 0 0 120px;
+}
+
+#mainContent {
+	min-width: 120px;
+	padding: 20px 50px 50px;
+	text-align: left;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #000000;
+	width: auto;
+}
+
+#ContentCenter .mainContentHome {
+	width: auto;
+}
+
+#Content .contentCenterHome {
+	margin: 0;
+}
+
+#Portfolios {
+	width: 640px;
+}
+
+.portfolioName {
+	font-size: 18px;
+	color: #555566;
+	margin: 20px 0 5px;
+}
+
+#Footer {
+	clear: both;
+}
+
+.contact {
+	padding: 0 0 10px;
+	font-weight: normal;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#identities {
+	max-width: 540px;
+	text-align: center;
+	margin: -20px auto;
+}
+
+#identityTable td {
+	text-align: center;
+	border: medium none;
+	padding: 0;
+}
+
+.identity {
+	width: 260px;
+	background-color: #222222;
+	margin: 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.identity img {
+	margin: 10px 0 8px;
+}
+
+.identity .link {
+	padding-bottom: 10px;
+}
+
+.identity .link a {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#websites {
+	max-width: 680px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#websiteTable td {
+	text-align: center;
+}
+
+.website {
+	width: 320px;
+	height: 400px;
+	background-color: #222222;
+	margin: 5px;
+	padding-bottom: 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.website img {
+	margin: 10px 0 8px;
+}
+
+.website .caption {
+	color: #555566;
+}
+
+.website .link a {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.website .description {
+	text-align: left;
+	font-size: 10px;
+	color: #444455;
+}
+
+#Image {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.links {
+	margin: 20px 0 0;
+	padding: 0 0 10px;
+}
+
+.links p {
+	margin: 0 0 10px;
+	text-align: center;
+}
+
+.links h3 {
+	color: #999999;
+}
+
+td {
+	border: 1px solid #333333;
+	padding: 7px 10px;
+}
+
+td.rate span {
+	display: block;
+	font-size: 9px;
+	color: #555566;
+	margin: 3px 0;
+}
+
+table.portrait-rates {
+	border: 1px solid #333333;
+	border-collapse: collapse;
+	margin: 15px 0 20px;
+}
+
+th.type {
+	background: none repeat scroll 0 0 #222222;
+	color: #222222;
+}
+
+th {
+	background: none repeat scroll 0 0 #333333;
+	padding: 3px 10px;
+}
+
+.resume {
+	text-align: left;
+	color: #777777;
+	margin: 0;
+}
+
+.bio {
+	color: #777777;
+}
+
