@@ -42,5 +42,9 @@
   },
   "engines": {
     "node": ">=0.8.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
 }
