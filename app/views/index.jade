@@ -6,7 +6,7 @@ doctype html
 <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" media="screen">
 
 
-<link rel="stylesheet" type="text/css" href="/assets/styles/shadowbox.css">
+<link rel="stylesheet" type="text/css" href="/bower_components/shadowbox/shadowbox.css">
 <script type="text/javascript" src="/bower_components/shadowbox/shadowbox.js"></script>
 
 script.
@@ -41,12 +41,14 @@ script.
     #ContentCenter.content
       #mainContent
         #Portfolios
-          each info, title in portfolio
-            h2.portfolioName= info.title
-            each image in info.images
+          each section, sectionTitle in portfolio
+            h2.portfolioName= section.title
+            each image in section.images
               span
-                a(href='/assets/images/art/'+image.filename+'.jpg',rel='shadowbox['+image.title.replace(' ','_')+']')
+                - var title = image.title + ' - ' + image.medium
+                a(href='/assets/images/art/'+image.filename+'.jpg', title=title, rel='shadowbox['+sectionTitle+']')
                   img(src='/assets/images/art/'+image.filename+'_th.jpg')
+
 //-               <? foreach( $portfolio_images as $key => $image ): ?>
 //-               <span>
 //-               <?
