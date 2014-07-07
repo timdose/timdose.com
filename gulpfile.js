@@ -6,17 +6,19 @@ var lrServer;
 
 var paths = {
   frontEnd: [
-              'app/data/**/*.yaml', 
-              'app/views/**/*.jade',
-              'app/controllers/**/*.js',
-              'public/**/*.js',
-              'public/**/*.less'
-            ]
+    'app/views/**/*.jade',
+    'app/controllers/**/*.js',
+    'public/**/*.js',
+    'public/**/*.less'
+  ],
+  server: [
+    'app/data/**/*.yaml'
+  ]
 }
 
 
 gulp.task('develop', function () {
-  nodemon({ script: 'server.js', ext: 'html js', ignore: ['ignored.js'] })
+  nodemon({ script: 'server.js', ext: 'html js yaml yml', ignore: ['ignored.js'] })
     .on('restart', function () {
       console.log('restarted!')
       setTimeout(function() {
