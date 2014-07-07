@@ -1,68 +1,45 @@
-doctype html
-
-<html>
-<head>
-<title>Art by Tim Dose</title>
-<link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" media="screen">
+extends include/layouts/art-layout
 
 
-<link rel="stylesheet" type="text/css" href="/bower_components/shadowbox/shadowbox.css">
-<script type="text/javascript" src="/bower_components/shadowbox/shadowbox.js"></script>
-
-script.
-  Shadowbox.init( { players:['img', 'swf'], displayCounter: false } );
-
-
-
-// <? include('../templates/analytics.php') ?>
-
-</head>
-
-<body>
-
-#wrapper
-  #header
-    #logo
-      a(href="/") timdose.com
-    #pages [NAV]
-      //- <? include( 'pages.php' ) ?>
-  
-  #content
-    #content-left.content
-      #section-links
-        each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
-          .section-link
-            a(href=section.page)
-              img(src='/assets/images/art/'+section.image)
-            p: a(href=section.page)=section.title
-              //- <a href="<?= $section['page'] ?>"><img src="../images/<?= $section['image'] ?>_th.jpg" alt="<?=$section['title'];?>"></a>
-              //- <p><a href="<?= $section['page'] ?>"><?= $section['title'] ?></a></p>
-
-    #content-center.content
-      #main-content
-        #portfolios
-          each section, sectionTitle in portfolio.sections
-            .portfolio
-              h2.portfolio-name= section.title
-              each image in section.images
-                span.image
-                  - var title = image.title + ' - ' + image.medium
-                  a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
-                    img(src='/assets/images/art/'+image.filename)
-
-                //- <? foreach( $portfolio_images as $key => $image ): ?>
-                //- <? if( $image['extension'] == '.swf' ): ?>
-                //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>];width=900" title="<?=$title?>">
-                //-     <? else: ?>
-                //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>]" title="<?= $title?>">
-                //-     <? endif; ?>
-                //-         <img src="../images/<?= $image['filename']; ?>_th.jpg" alt="<?=$title?>" />
-                //-       </a>
-                //- <? endforeach; ?>
-
+block body
+  #wrapper
+    #header
+      #logo
+        a(href="/") timdose.com
+      #pages [NAV]
+        //- <? include( 'pages.php' ) ?>
     
+    #content
+      #content-left.content
+        #section-links
+          each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
+            .section-link
+              a(href=section.page)
+                img(src='/assets/images/art/'+section.image)
+              p: a(href=section.page)=section.title
+                //- <a href="<?= $section['page'] ?>"><img src="../images/<?= $section['image'] ?>_th.jpg" alt="<?=$section['title'];?>"></a>
+                //- <p><a href="<?= $section['page'] ?>"><?= $section['title'] ?></a></p>
 
-//-   <? include( '../templates/footer.php' ); ?>
+      #content-center.content
+        #main-content
+          #portfolios
+            each section, sectionTitle in portfolio.sections
+              .portfolio
+                h2.portfolio-name= section.title
+                each image in section.images
+                  span.image
+                    - var title = image.title + ' - ' + image.medium
+                    a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
+                      img(src='/assets/images/art/'+image.filename)
 
-</body>
-</html>
+                  //- <? foreach( $portfolio_images as $key => $image ): ?>
+                  //- <? if( $image['extension'] == '.swf' ): ?>
+                  //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>];width=900" title="<?=$title?>">
+                  //-     <? else: ?>
+                  //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>]" title="<?= $title?>">
+                  //-     <? endif; ?>
+                  //-         <img src="../images/<?= $image['filename']; ?>_th.jpg" alt="<?=$title?>" />
+                  //-       </a>
+                  //- <? endforeach; ?>
+
+      
