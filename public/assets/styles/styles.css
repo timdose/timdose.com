@@ -51,11 +51,11 @@ p {
 	padding: 0;
 }
 
-#Content > p {
+#content > p {
 	margin: 0;
 }
 
-#Content > p + p {
+#content > p + p {
 	text-indent: 30px;
 }
 
@@ -98,41 +98,41 @@ ul {
 	margin: 0 10px;
 }
 
-#Header {
+#header {
 	height: 40px;
 	padding: 0;
 }
 
-#Logo {
+#logo {
 	float: left;
 	margin: 10px 0 0;
 }
 
-#Logo a {
+#logo a {
 	color: #555566;
 	font-size: 16px;
 }
 
-#Pages {
+#pages {
 	text-align: right;
 	float: right;
 	padding: 12px 0 0;
 	margin: 0;
 }
 
-#Content {
+#content {
 	width: 100%;
 	clear: both;
 }
 
-#ContentLeft {
+#content-left {
 	position: absolute;
 	width: 120px;
 	left: 0;
 	text-align: center;
 }
 
-.sectionLink {
+.section-link {
 	background-color: #191919;
 	margin: 20px auto 10px;
 	padding: 9px 0 0;
@@ -140,17 +140,17 @@ ul {
 	border-radius: 5px 5px 5px 5px;
 }
 
-.sectionLink p {
+.section-link p {
 	margin: 2px 0 8px;
 }
 
-#ContentCenter {
+#content-center {
 	text-align: center;
 	border-radius: 5px 5px 5px 5px;
 	margin: 0 0 0 120px;
 }
 
-#mainContent {
+#main-content {
 	min-width: 120px;
 	padding: 20px 50px 50px;
 	text-align: left;
@@ -159,25 +159,25 @@ ul {
 	width: auto;
 }
 
-#ContentCenter .mainContentHome {
+#content-center .main-content-home {
 	width: auto;
 }
 
-#Content .contentCenterHome {
+#content .content-center-home {
 	margin: 0;
 }
 
-#Portfolios {
+#portfolios {
 	width: 640px;
 }
 
-.portfolioName {
+.portfolio-name {
 	font-size: 18px;
 	color: #555566;
 	margin: 20px 0 5px;
 }
 
-#Footer {
+#footer {
 	clear: both;
 }
 
@@ -226,7 +226,7 @@ ul {
 	margin: 0 auto;
 }
 
-#websiteTable td {
+#website-table td {
 	text-align: center;
 }
 
