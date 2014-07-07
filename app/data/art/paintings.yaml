@@ -1,210 +1,212 @@
-portraits:
-  title: portraits
-  images:
-    -
-      filename: nat-kathrin
-      title: Nat and Kathrin
-      medium: oil on canvas
-      size: 10x15
-    -
-      filename: raven
-      title: Raven
-      medium: oil on canvas
-      size: 11x14
-    -
-      filename: Jolynn
-      title: Jolynn
-      medium: oil on canvas
-      size: 14x18
-    -
-      filename: donna
-      title: Donna
-      medium: oil on canvas
-      size: 16x20
-    -
-      filename: 20080113_SP
-      title: Self Portrait
-      medium: oil on canvas
-      size: 6x8
-    -
-      filename: susanna_B02
-      title: Susanna
-      medium: oil on canvas
-      size: 24x30
-    -
-      filename: alice
-      title: Alice
-      medium: oil on canvas
-      size: 22x30
-    -
-      filename: mercedes
-      title: Mercedes
-      medium: oil on canvas
-      size: 16x20
+title: paintings
+sections:
+  portraits:
+    title: portraits
+    images:
+      -
+        filename: nat-kathrin.jpg
+        title: Nat and Kathrin
+        medium: oil on canvas
+        size: 10x15
+      -
+        filename: raven.jpg
+        title: Raven
+        medium: oil on canvas
+        size: 11x14
+      -
+        filename: Jolynn.jpg
+        title: Jolynn
+        medium: oil on canvas
+        size: 14x18
+      -
+        filename: donna.jpg
+        title: Donna
+        medium: oil on canvas
+        size: 16x20
+      -
+        filename: 20080113_SP.jpg
+        title: Self Portrait
+        medium: oil on canvas
+        size: 6x8
+      -
+        filename: susanna_B02.jpg
+        title: Susanna
+        medium: oil on canvas
+        size: 24x30
+      -
+        filename: alice.jpg
+        title: Alice
+        medium: oil on canvas
+        size: 22x30
+      -
+        filename: mercedes.jpg
+        title: Mercedes
+        medium: oil on canvas
+        size: 16x20
 
-figure:
-  title: figures
-  images:
-    -
-      filename: tre
-      title: Tre
-      medium: oil on canvas
-      size: 16x20
-    -
-      filename: cat
-      title: Cat
-      medium: oil on canvas
-      size: 16x20
-    -
-      filename: esteban_laticia
-      title: Esteban and Laticia
-      medium: oil on canvas
-      size: 10x15
-    -
-      filename: stephanie
-      title: Stephanie
-      medium: oil on canvas
-      size: 10x15
-    -
-      filename: cassandra
-      title: Cassandra
-      medium: oil on canvas
-      size: 16x20
-    -
-      filename: standing_with_easel
-      title: Figure Study
-      medium: oil on canvas
-      size: 20x30
-    -
-      filename: anna_A01
-      title: Anna
-      medium: oil on canvas
-      size: 24x36
-    -
-      filename: tyrone_B01
-      title: Tyrone
-      medium: oil on canvas
-      size: 20x30
+  figure:
+    title: figures
+    images:
+      -
+        filename: tre.jpg
+        title: Tre
+        medium: oil on canvas
+        size: 16x20
+      -
+        filename: cat.jpg
+        title: Cat
+        medium: oil on canvas
+        size: 16x20
+      -
+        filename: esteban_laticia.jpg
+        title: Esteban and Laticia
+        medium: oil on canvas
+        size: 10x15
+      -
+        filename: stephanie.jpg
+        title: Stephanie
+        medium: oil on canvas
+        size: 10x15
+      -
+        filename: cassandra.jpg
+        title: Cassandra
+        medium: oil on canvas
+        size: 16x20
+      -
+        filename: standing_with_easel.jpg
+        title: Figure Study
+        medium: oil on canvas
+        size: 20x30
+      -
+        filename: anna_A01.jpg
+        title: Anna
+        medium: oil on canvas
+        size: 24x36
+      -
+        filename: tyrone_B01.jpg
+        title: Tyrone
+        medium: oil on canvas
+        size: 20x30
 
-landscape:
-  title: landscape
-  images:
-    -
-      filename: syracuse
-      title: Syracuse
-      medium: acrylic on board
-      size: 14.5x2
-    -
-      filename: BlackHillsPine
-      title: Black Hills Pine
-      medium: oil on canvas
-      size: 8x10
-    -
-      filename: SunnysideSubway
-      title: Sunnyside Tracks
-      medium: oil on canvas
-      size: 8x10
-    -
-      filename: SunnysideGardens
-      title: Sunnyside Gardens Spring
-      medium: oil on canvas
-      size: 8x10
-    -
-      filename: shawangunk_meadow
-      title: Shawangunk Meadow
-      medium: oil on canvas
-      size: 8x6
-    -
-      filename: barn_with_sky_top
-      title: Sky Top from Huguenot Street
-      medium: oil on canvas
-      size: 8x6
-    -
-      filename: red_hook
-      title: Red Hook 2007
-      medium: oil on canvas
-      size: 9x12
-    -
-      filename: maine06
-      title: Coastal Maine
-      medium: oil on canvas
-      size: 14cm x 22cm
-
-
-stillLife:
-  title: still life
-  images:
-    -
-      filename: roses
-      title: Roses
-      medium: oil on canvas
-      size: 6x8
-    -
-      filename: candles
-      title: Candles
-      medium: oil on canvas
-      size: 6x8
-    -
-      filename: calla-lily
-      title: Calla Lily
-      medium: oil on canvas
-      size: 6x8
-    -
-      filename: Brown-Pitcher-4
-      title: Brown Pitcher IV
-      medium: oil on canvas
-      size: 6x8
-    -
-      filename: pink_vase_A01
-      title: Still Life with Pink Vase
-      medium: oil on canvas
-      size: 
-    -
-      filename: still_life_watermelon
-      title: Still Life with Watermelon
-      medium: oil on canvas
-      size: 24x20
-    -
-      filename: 20070205
-      title: Brown Pitcher II
-      medium: oil on canvas
-      size: 8x6
-    -
-      filename: 20070304_pitcher
-      title: Brown Pitcher III
-      medium: oil on canvas
-      size: 8x6
+  landscape:
+    title: landscape
+    images:
+      -
+        filename: syracuse.jpg
+        title: Syracuse
+        medium: acrylic on board
+        size: 14.5x2
+      -
+        filename: BlackHillsPine.jpg
+        title: Black Hills Pine
+        medium: oil on canvas
+        size: 8x10
+      -
+        filename: SunnysideSubway.jpg
+        title: Sunnyside Tracks
+        medium: oil on canvas
+        size: 8x10
+      -
+        filename: SunnysideGardens.jpg
+        title: Sunnyside Gardens Spring
+        medium: oil on canvas
+        size: 8x10
+      -
+        filename: shawangunk_meadow.jpg
+        title: Shawangunk Meadow
+        medium: oil on canvas
+        size: 8x6
+      -
+        filename: barn_with_sky_top.jpg
+        title: Sky Top from Huguenot Street
+        medium: oil on canvas
+        size: 8x6
+      -
+        filename: red_hook.jpg
+        title: Red Hook 2007
+        medium: oil on canvas
+        size: 9x12
+      -
+        filename: maine06.jpg
+        title: Coastal Maine
+        medium: oil on canvas
+        size: 14cm x 22cm
 
 
-music:
-  title: music
-  images:
-    -
-      filename: john
-      title: John
-      medium: oil on canvas
-      size: 20x30
-    -
-      filename: bitter-end-guitarist-sketch
-      title: Bitter End Guitarist
-      medium: oil on paper
-      size: 9x12
-    -
-      filename: FabFaux20091212
-      title: Fab Faux Montclair NJ
-      medium: digital painting
-    -
-      filename: BitterEnd-20090826
-      title: Bitter End Band
-      medium: digital painting
+  stillLife:
+    title: still life
+    images:
+      -
+        filename: roses.jpg
+        title: Roses
+        medium: oil on canvas
+        size: 6x8
+      -
+        filename: candles.jpg
+        title: Candles
+        medium: oil on canvas
+        size: 6x8
+      -
+        filename: calla-lily.jpg
+        title: Calla Lily
+        medium: oil on canvas
+        size: 6x8
+      -
+        filename: Brown-Pitcher-4.jpg
+        title: Brown Pitcher IV
+        medium: oil on canvas
+        size: 6x8
+      -
+        filename: pink_vase_A01.jpg
+        title: Still Life with Pink Vase
+        medium: oil on canvas
+        size: 
+      -
+        filename: still_life_watermelon.jpg
+        title: Still Life with Watermelon
+        medium: oil on canvas
+        size: 24x20
+      -
+        filename: 20070205.jpg
+        title: Brown Pitcher II
+        medium: oil on canvas
+        size: 8x6
+      -
+        filename: 20070304_pitcher.jpg
+        title: Brown Pitcher III
+        medium: oil on canvas
+        size: 8x6
 
-    -
-      filename: music003
-      title: James
-      medium: digital painting
-    -
-      filename: music002
-      title: Bitter End Trio
-      medium: digital painting
+
+  music:
+    title: music
+    images:
+      -
+        filename: john.jpg
+        title: John
+        medium: oil on canvas
+        size: 20x30
+      -
+        filename: bitter-end-guitarist-sketch.jpg
+        title: Bitter End Guitarist
+        medium: oil on paper
+        size: 9x12
+      -
+        filename: FabFaux20091212.jpg
+        title: Fab Faux Montclair NJ
+        medium: digital painting
+      -
+        filename: BitterEnd-20090826.jpg
+        title: Bitter End Band
+        medium: digital painting
+
+      -
+        filename: music003.jpg
+        title: James
+        medium: digital painting
+      -
+        filename: music002.jpg
+        title: Bitter End Trio
+        medium: digital painting
 
 

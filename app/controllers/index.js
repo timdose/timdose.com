@@ -12,7 +12,7 @@ var data = {
 }
 
 exports.index = function(req, res) {
-  res.render('index', {portfolio:data.art.drawings} );
+  res.render('index', {portfolio:data.art.paintings} );
 };
 
 exports.resume = function(req, res) {

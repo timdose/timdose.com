@@ -1,317 +1,327 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 14px;
-	font-family: arial,sans-serif;
-	background-color: #222222;
-	color: #444444;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: arial,sans-serif;
+  background-color: #222222;
+  color: #444444;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
 h1 {
-	margin: 0 0 15px;
-	padding: 0;
-	font-size: 20px;
-	line-height: 28px;
-	font-weight: normal;
-	color: #999999;
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #999999;
 }
 
 h2 {
-	margin: 0;
-	color: #555566;
-	font-size: 16px;
+  margin: 0;
+  color: #555566;
+  font-size: 16px;
 }
 
 h3 {
-	font-size: 18px;
-	color: #555566;
-	text-align: center;
+  font-size: 18px;
+  color: #555566;
+  text-align: center;
 }
 
 h4 {
-	color: #555566;
-	text-align: left;
-	margin-top: 25px;
-	margin-bottom: 5px;
+  color: #555566;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 img {
-	border: 0 none;
+  border: 0 none;
 }
 
 p {
-	font: 14px/20px Arial,sans-serif;
-	margin: 0 0 16px;
-	padding: 0;
+  font: 14px/20px Arial,sans-serif;
+  margin: 0 0 16px;
+  padding: 0;
 }
 
 #content > p {
-	margin: 0;
+  margin: 0;
 }
 
 #content > p + p {
-	text-indent: 30px;
+  text-indent: 30px;
 }
 
 #wrapper {
-	width: 850px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
+  width: 850px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 a {
-	color: #555566;
-	text-decoration: none;
-	font-weight: bold;
-	font-family: 'Source Sans Pro',sans-serif;
+  color: #555566;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
 a:link {
-	color: #555566;
+  color: #555566;
 }
 
 a:visited {
-	color: #555566;
+  color: #555566;
 }
 
 a:hover {
-	color: #666677;
+  color: #666677;
 }
 
 ul {
-	margin: 0;
+  margin: 0;
 }
 
 .menu {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .menu li {
-	float: left;
-	margin: 0 10px;
+  float: left;
+  margin: 0 10px;
 }
 
 #header {
-	height: 40px;
-	padding: 0;
+  height: 40px;
+  padding: 0;
 }
 
 #logo {
-	float: left;
-	margin: 10px 0 0;
+  float: left;
+  margin: 10px 0 0;
 }
 
 #logo a {
-	color: #555566;
-	font-size: 16px;
+  color: #555566;
+  font-size: 16px;
 }
 
 #pages {
-	text-align: right;
-	float: right;
-	padding: 12px 0 0;
-	margin: 0;
+  text-align: right;
+  float: right;
+  padding: 12px 0 0;
+  margin: 0;
 }
 
 #content {
-	width: 100%;
-	clear: both;
+  width: 100%;
+  clear: both;
 }
 
 #content-left {
-	position: absolute;
-	width: 120px;
-	left: 0;
-	text-align: center;
+  position: absolute;
+  width: 120px;
+  left: 0;
+  text-align: center;
 }
 
 .section-link {
-	background-color: #191919;
-	margin: 20px auto 10px;
-	padding: 9px 0 0;
-	width: 100px;
-	border-radius: 5px 5px 5px 5px;
+  background-color: #191919;
+  margin: 20px auto 10px;
+  padding: 9px 0 0;
+  width: 100px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .section-link p {
-	margin: 2px 0 8px;
+  margin: 2px 0 8px;
 }
 
 #content-center {
-	text-align: center;
-	border-radius: 5px 5px 5px 5px;
-	margin: 0 0 0 120px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 0 0 120px;
 }
 
 #main-content {
-	min-width: 120px;
-	padding: 20px 50px 50px;
-	text-align: left;
-	border-radius: 5px 5px 5px 5px;
-	background-color: #000000;
-	width: auto;
+  min-width: 120px;
+  padding: 20px 50px 50px;
+  text-align: left;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #000000;
+  width: auto;
 }
 
 #content-center .main-content-home {
-	width: auto;
+  width: auto;
 }
 
 #content .content-center-home {
-	margin: 0;
+  margin: 0;
 }
 
 #portfolios {
-	width: 640px;
+  width: 640px;
+}
+
+.portfolio .image {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.portfolio img {
+  height: 100px;
 }
 
 .portfolio-name {
-	font-size: 18px;
-	color: #555566;
-	margin: 20px 0 5px;
+  font-size: 18px;
+  color: #555566;
+  margin: 20px 0 5px;
 }
 
 #footer {
-	clear: both;
+  clear: both;
 }
 
 .contact {
-	padding: 0 0 10px;
-	font-weight: normal;
-	margin: 10px auto;
-	text-align: center;
+  padding: 0 0 10px;
+  font-weight: normal;
+  margin: 10px auto;
+  text-align: center;
 }
 
 #identities {
-	max-width: 540px;
-	text-align: center;
-	margin: -20px auto;
+  max-width: 540px;
+  text-align: center;
+  margin: -20px auto;
 }
 
 #identityTable td {
-	text-align: center;
-	border: medium none;
-	padding: 0;
+  text-align: center;
+  border: medium none;
+  padding: 0;
 }
 
 .identity {
-	width: 260px;
-	background-color: #222222;
-	margin: 5px;
-	border-radius: 5px 5px 5px 5px;
+  width: 260px;
+  background-color: #222222;
+  margin: 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .identity img {
-	margin: 10px 0 8px;
+  margin: 10px 0 8px;
 }
 
 .identity .link {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .identity .link a {
-	font-size: 14px;
-	font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #websites {
-	max-width: 680px;
-	text-align: center;
-	margin: 0 auto;
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #website-table td {
-	text-align: center;
+  text-align: center;
 }
 
 .website {
-	width: 320px;
-	height: 400px;
-	background-color: #222222;
-	margin: 5px;
-	padding-bottom: 10px;
-	border-radius: 5px 5px 5px 5px;
+  width: 320px;
+  height: 400px;
+  background-color: #222222;
+  margin: 5px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .website img {
-	margin: 10px 0 8px;
+  margin: 10px 0 8px;
 }
 
 .website .caption {
-	color: #555566;
+  color: #555566;
 }
 
 .website .link a {
-	font-size: 14px;
-	font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .website .description {
-	text-align: left;
-	font-size: 10px;
-	color: #444455;
+  text-align: left;
+  font-size: 10px;
+  color: #444455;
 }
 
 #Image {
-	text-align: center;
-	margin: 10px 0;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .links {
-	margin: 20px 0 0;
-	padding: 0 0 10px;
+  margin: 20px 0 0;
+  padding: 0 0 10px;
 }
 
 .links p {
-	margin: 0 0 10px;
-	text-align: center;
+  margin: 0 0 10px;
+  text-align: center;
 }
 
 .links h3 {
-	color: #999999;
+  color: #999999;
 }
 
 td {
-	border: 1px solid #333333;
-	padding: 7px 10px;
+  border: 1px solid #333333;
+  padding: 7px 10px;
 }
 
 td.rate span {
-	display: block;
-	font-size: 9px;
-	color: #555566;
-	margin: 3px 0;
+  display: block;
+  font-size: 9px;
+  color: #555566;
+  margin: 3px 0;
 }
 
 table.portrait-rates {
-	border: 1px solid #333333;
-	border-collapse: collapse;
-	margin: 15px 0 20px;
+  border: 1px solid #333333;
+  border-collapse: collapse;
+  margin: 15px 0 20px;
 }
 
 th.type {
-	background: none repeat scroll 0 0 #222222;
-	color: #222222;
+  background: none repeat scroll 0 0 #222222;
+  color: #222222;
 }
 
 th {
-	background: none repeat scroll 0 0 #333333;
-	padding: 3px 10px;
+  background: none repeat scroll 0 0 #333333;
+  padding: 3px 10px;
 }
 
 .resume {
-	text-align: left;
-	color: #777777;
-	margin: 0;
+  text-align: left;
+  color: #777777;
+  margin: 0;
 }
 
 .bio {
-	color: #777777;
+  color: #777777;
 }
 

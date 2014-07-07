@@ -21,54 +21,45 @@ script.
 <body>
 
 #wrapper
-  #Header
-    #Logo
+  #header
+    #logo
       a(href="/") timdose.com
-    #Pages [NAV]
+    #pages [NAV]
       //- <? include( 'pages.php' ) ?>
   
-  #Content
-    #ContentLeft.content
-      #sectionLinks
+  #content
+    #content-left.content
+      #section-links
         each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
-          .sectionLink
+          .section-link
             a(href=section.page)
-              img(src='/assets/images/art/'+section.image+'_th.jpg')
+              img(src='/assets/images/art/'+section.image)
             p: a(href=section.page)=section.title
               //- <a href="<?= $section['page'] ?>"><img src="../images/<?= $section['image'] ?>_th.jpg" alt="<?=$section['title'];?>"></a>
               //- <p><a href="<?= $section['page'] ?>"><?= $section['title'] ?></a></p>
 
-    #ContentCenter.content
-      #mainContent
-        #Portfolios
-          each section, sectionTitle in portfolio
-            h2.portfolioName= section.title
-            each image in section.images
-              span
-                - var title = image.title + ' - ' + image.medium
-                a(href='/assets/images/art/'+image.filename+'.jpg', title=title, rel='shadowbox['+sectionTitle+']')
-                  img(src='/assets/images/art/'+image.filename+'_th.jpg')
+    #content-center.content
+      #main-content
+        #portfolios
+          each section, sectionTitle in portfolio.sections
+            .portfolio
+              h2.portfolio-name= section.title
+              each image in section.images
+                span.image
+                  - var title = image.title + ' - ' + image.medium
+                  a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
+                    img(src='/assets/images/art/'+image.filename)
 
-//-               <? foreach( $portfolio_images as $key => $image ): ?>
-//-               <span>
-//-               <?
-//-                 $title = '';
-//-                 if ( $image['title'] != '' ) $title .= $image['title'];
-//-                 if ( $image['medium'] != '' ) $title .= $image['medium'];
-//-                 if ( $image['dimensions'] != '' ) $title .= $image['dimensions'];
-//-               ?>
-//-               <? if( $image['extension'] == '.swf' ): ?>
-//-                     <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>];width=900" title="<?=$title?>">
-//-                   <? else: ?>
-//-                     <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>]" title="<?= $title?>">
-//-                   <? endif; ?>
-//-                       <img src="../images/<?= $image['filename']; ?>_th.jpg" alt="<?=$title?>" />
-//-                     </a>
+                //- <? foreach( $portfolio_images as $key => $image ): ?>
+                //- <? if( $image['extension'] == '.swf' ): ?>
+                //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>];width=900" title="<?=$title?>">
+                //-     <? else: ?>
+                //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>]" title="<?= $title?>">
+                //-     <? endif; ?>
+                //-         <img src="../images/<?= $image['filename']; ?>_th.jpg" alt="<?=$title?>" />
+                //-       </a>
+                //- <? endforeach; ?>
 
-//-               </span>
-//-               <? endforeach; ?>
-
-//-           <? endforeach; ?>
     
 
 //-   <? include( '../templates/footer.php' ); ?>

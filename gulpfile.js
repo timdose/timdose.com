@@ -9,7 +9,8 @@ var paths = {
     'app/views/**/*.jade',
     'app/controllers/**/*.js',
     'public/**/*.js',
-    'public/**/*.less'
+    'public/**/*.less',
+    'public/assets/styles/**/*.css'
   ],
   server: [
     'app/data/**/*.yaml'

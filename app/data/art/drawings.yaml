@@ -1,54 +1,56 @@
-figure:
-  title: figure
-  images:
-    -
-      filename: peter
-      title: Peter
-      medium: Charcoal on Paper
-      size: 18x24
-    -
-      filename: raven_drawing
-      title: Raven
-      medium: Graphite on Paper
-      size: 18x24
-    -
-      filename: allie02
-      title: Alley
-      medium: Graphite on Paper 
-    -
-      filename: chelsea03
-      title: Reclining Figure
-      medium: Graphite on Paper
-    -
-      filename: figure20070919
-      title: Seated Figure
-      medium: Graphite on Paper
-    -
-      filename: anton_standing
-      title: Anton
-      medium: Graphite on Paper
-    -
-      filename: aksana_standing
-      title: Aksana
-      medium: Red Chalk on Paper
-    -
-      filename: figure-20090701
-      title: Standing Figure with Hat
-      medium: Graphite on Paper
-    -
-      filename: figure-20090708-2
-      title: Standing Figure
-      medium: Graphite on Paper
+title: drawings
+sections:
+  figure:
+    title: figure
+    images:
+      -
+        filename: peter.jpg
+        title: Peter
+        medium: Charcoal on Paper
+        size: 18x24
+      -
+        filename: raven_drawing.jpg
+        title: Raven
+        medium: Graphite on Paper
+        size: 18x24
+      -
+        filename: allie02.jpg
+        title: Alley
+        medium: Graphite on Paper 
+      -
+        filename: chelsea03.jpg
+        title: Reclining Figure
+        medium: Graphite on Paper
+      -
+        filename: figure20070919.jpg
+        title: Seated Figure
+        medium: Graphite on Paper
+      -
+        filename: anton_standing.jpg
+        title: Anton
+        medium: Graphite on Paper
+      -
+        filename: aksana_standing.jpg
+        title: Aksana
+        medium: Red Chalk on Paper
+      -
+        filename: figure-20090701.jpg
+        title: Standing Figure with Hat
+        medium: Graphite on Paper
+      -
+        filename: figure-20090708-2.jpg
+        title: Standing Figure
+        medium: Graphite on Paper
 
 
-music:
-  title: music
-  images:
-    -
-      filename: PIC
-      title: P.I.C.
-      medium: Graphite
-    -
-      filename: thump-twang
-      title: Thump Twang
-      medium: Graphite
+  music:
+    title: music
+    images:
+      -
+        filename: PIC.jpg
+        title: P.I.C.
+        medium: Graphite
+      -
+        filename: thump-twang.jpg
+        title: Thump Twang
+        medium: Graphite
