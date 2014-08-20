@@ -21,6 +21,7 @@ app.set('view engine', 'jade');
 app.use(logger(logMode));
 app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
+app.use(handle404);
 
 
 app.get('/', controllers.index );
@@ -28,6 +29,31 @@ app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
 app.get('/resume', controllers.resume );
 
+
+
+//-------------------------------------
+// 404 Functionality
+//-------------------------------------
+
+// This function must be referenced as the **LAST** middleware in app.configure block above
+function handle404(req, res, next) {
+  res.status(404);
+
+  // respond with html page
+  if (req.accepts('html')) {
+    res.render('404', { url: req.url });
+    return;
+  }
+
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: 'Not found' });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type('txt').send('Not found');
+}
 
 var server = app.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

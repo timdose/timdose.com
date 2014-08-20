@@ -19,7 +19,10 @@ exports.index = function(req, res) {
 
 exports.art = function(req, res) {
   var portfolio = data.art[req.params.section];
-  res.render('index', {portfolio:portfolio} );
+
+  if (portfolio !== undefined ) {
+    res.render('index', {portfolio:portfolio} );
+  }
 };
 
 
