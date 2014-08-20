@@ -11,11 +11,12 @@ block body
     #content
       #content-left.content
         #section-links
-          each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
+          //- each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
+          each section in genre.sections
             .section-link
-              a(href=section.page)
-                img(src='/assets/images/art/'+section.image)
-              p: a(href=section.page)=section.title
+              a(href='/art/' + genre.name + '/' + section.name)
+                img(src='/assets/images/art/'+section.thumbnail)
+              p: a(href='/art/' + genre.name + '/' + section.name)=section.title
 
       #content-center.content
         #main-content

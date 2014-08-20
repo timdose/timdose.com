@@ -1,5 +1,6 @@
 var yaml = require('js-yaml');
 var fs = require('fs');
+var _ = require('lodash/dist/lodash.underscore');
 
 var data = { 
   app: yaml.safeLoad(fs.readFileSync('app/data/app-data.yaml', 'utf8')),
@@ -19,9 +20,12 @@ exports.index = function(req, res) {
 
 exports.art = function(req, res) {
   var portfolio = data.art[req.params.section];
+  var genre = _(data.art.config.genres).findWhere({name:req.params.genre});
+  console.log('GENRE:::');
+  console.log(JSON.stringify(genre));
 
   if (portfolio !== undefined ) {
-    res.render('index', {portfolio:portfolio} );
+    res.render('index', {portfolio:portfolio, genre:genre} );
   }
 };
 

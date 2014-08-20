@@ -4,8 +4,10 @@ genres:
     sections:
       - name: paintings
         title: Paintings
+        thumbnail: nat-kathrin_th.jpg
       - name: drawings
         title: Drawings
+        thumbnail: peter_th.jpg
   - name: illustration
     title: Illustration
     sections:

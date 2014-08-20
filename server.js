@@ -21,7 +21,6 @@ app.set('view engine', 'jade');
 app.use(logger(logMode));
 app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
-app.use(handle404);
 
 
 app.get('/', controllers.index );
