@@ -27,6 +27,9 @@ exports.art = function(req, res) {
   if (portfolio !== undefined ) {
     res.render('index', {portfolio:portfolio, genre:genre} );
   }
+
+  res.status(404);
+  res.send('ack, 404!');
 };
 
 
