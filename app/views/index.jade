@@ -7,7 +7,6 @@ block body
       #logo
         a(href="/") timdose.com
       #pages [NAV]
-        //- <? include( 'pages.php' ) ?>
     
     #content
       #content-left.content
@@ -17,8 +16,6 @@ block body
               a(href=section.page)
                 img(src='/assets/images/art/'+section.image)
               p: a(href=section.page)=section.title
-                //- <a href="<?= $section['page'] ?>"><img src="../images/<?= $section['image'] ?>_th.jpg" alt="<?=$section['title'];?>"></a>
-                //- <p><a href="<?= $section['page'] ?>"><?= $section['title'] ?></a></p>
 
       #content-center.content
         #main-content
@@ -31,15 +28,5 @@ block body
                     - var title = image.title + ' - ' + image.medium
                     a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
                       img(src='/assets/images/art/'+image.filename)
-
-                  //- <? foreach( $portfolio_images as $key => $image ): ?>
-                  //- <? if( $image['extension'] == '.swf' ): ?>
-                  //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>];width=900" title="<?=$title?>">
-                  //-     <? else: ?>
-                  //-       <a href="../images/<?= $image['filename']; ?><?= $image['extension']; ?>" onClick="_gaq.push(['_trackEvent', 'Images','ViewViaClick','<?= $image['filename']; ?>']);" rel="shadowbox[<?= str_replace( ' ', '_', $portfolio_name );?>]" title="<?= $title?>">
-                  //-     <? endif; ?>
-                  //-         <img src="../images/<?= $image['filename']; ?>_th.jpg" alt="<?=$title?>" />
-                  //-       </a>
-                  //- <? endforeach; ?>
 
       

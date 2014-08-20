@@ -1,0 +1,15 @@
+genres:
+  - name: fine-art
+    title: Fine Art
+    sections:
+      - name: paintings
+        title: Paintings
+      - name: drawings
+        title: Drawings
+  - name: illustration
+    title: Illustration
+    sections:
+      - name: cartoon
+        title: Cartoon
+      - name: fantasy
+        title: Fantasy
