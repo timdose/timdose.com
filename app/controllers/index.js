@@ -33,7 +33,11 @@ exports.art = function(req, res) {
 };
 
 
-exports.resume = function(req, res) {
+exports.ux = function(req, res) {
   res.render('resume', data );
 };
+
+exports.cms3 = function(req, res) {
+  res.render('cms3', data );
+}
 

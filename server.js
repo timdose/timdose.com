@@ -26,7 +26,8 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', controllers.index );
 app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
-app.get('/resume', controllers.resume );
+app.get('/ux', controllers.ux );
+app.get('/ux/projects/cms3', controllers.cms3 );
 
 
 

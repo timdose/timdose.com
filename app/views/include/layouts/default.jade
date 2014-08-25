@@ -25,9 +25,9 @@ html.no-js
     block styles
       //- endbuild
       // build:css styles/main.css
-      link(rel='stylesheet', href='styles/main.css')
+      link(rel='stylesheet', href='/styles/main.css')
       // endbuild
-    script(src='bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/modernizr/modernizr.js')
   body
     //if lt IE 10
       <p class="browsehappy">You are using an<strong>outdated</strong>browser. Please
@@ -53,16 +53,16 @@ html.no-js
               p
                 a(href='mailto:tim@timdose.com') tim@timdose.com
               p
-                a(href="assets/pdf/Tim-Dose-Resume.pdf") Resumé
+                a(href="/assets/pdf/Tim-Dose-Resume.pdf") Resumé
 
 
 
     block scripts
       // build:js(app) scripts/vendor.js
       // bower:js
-      script(src='bower_components/jquery/dist/jquery.js')
-      script(src='bower_components/lightbox2/js/lightbox.js')
-      script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
+      script(src='/bower_components/jquery/src/jquery.js')
+      script(src='/bower_components/lightbox2/js/lightbox.js')
+      script(src='/bower_components/jQuery-One-Page-Nav/jquery.nav.js')
       //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
       //- script(src='bower_components/holderjs/holder.js')
       // endbower
@@ -76,8 +76,8 @@ html.no-js
       //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       //-   ga('create','UA-XXXXX-X');ga('send','pageview');
       // build:js(app) scripts/main.js
-      script(src='scripts/main.js')
-      script(src='scripts/nav.js')
+      script(src='/scripts/main.js')
+      script(src='/scripts/nav.js')
       // endbuild
       // build:js(app) scripts/plugins.js
       //- script(src='bower_components/bootstrap/js/affix.js')
