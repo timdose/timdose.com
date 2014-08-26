@@ -45,3 +45,7 @@ exports.cms3 = function(req, res) {
   res.render('cms3', data );
 }
 
+exports.yodleCom = function(req, res) {
+  res.render('yodle-com', data );
+}
+

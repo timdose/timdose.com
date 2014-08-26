@@ -28,6 +28,7 @@ app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
 app.get('/ux', controllers.ux );
 app.get('/ux/about', controllers.uxAbout );
+app.get('/ux/projects/yodle-com', controllers.yodleCom );
 app.get('/ux/projects/cms3', controllers.cms3 );
 
 
