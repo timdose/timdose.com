@@ -37,6 +37,10 @@ exports.ux = function(req, res) {
   res.render('ux-home', data );
 };
 
+exports.uxAbout = function(req, res) {
+  res.render('ux-about', data );
+};
+
 exports.cms3 = function(req, res) {
   res.render('cms3', data );
 }
