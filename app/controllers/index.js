@@ -34,7 +34,7 @@ exports.art = function(req, res) {
 
 
 exports.ux = function(req, res) {
-  res.render('resume', data );
+  res.render('ux-home', data );
 };
 
 exports.cms3 = function(req, res) {

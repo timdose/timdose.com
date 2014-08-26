@@ -1,15 +1,17 @@
 extends include/layouts/default
 
-block body
+block header
   header.header
     .row
-      h1.heading Tim Dosé
-      .col-xs-12
+      .col-xs-8
+        h1.heading Tim Dosé
         p.title UX Designer/Developer
+        p.lead!= about.blurb
+
+block body
 
   .main-content
     section#about
-      p.lead!= about.blurb
       #skills
         .row
           .col-xs-12

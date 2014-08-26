@@ -34,13 +34,21 @@ html.no-js
         <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience. 
       </p>
+
+    include ../topnav
+            
     .container
+      .row
+        .col-md-12
+          block header
+    
+    .container
+      .row
+        .col-md-10.col-main
+          block body
 
-      .col-md-10
-        block body
-
-      .col-md-2.col-nav
-        include ../nav.jade
+        .col-md-2.col-nav
+          include ../nav.jade
 
     block footer
       footer.footer
@@ -60,7 +68,7 @@ html.no-js
     block scripts
       // build:js(app) scripts/vendor.js
       // bower:js
-      script(src='/bower_components/jquery/src/jquery.js')
+      script(src='/bower_components/jquery/dist/jquery.js')
       script(src='/bower_components/lightbox2/js/lightbox.js')
       script(src='/bower_components/jQuery-One-Page-Nav/jquery.nav.js')
       //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
@@ -80,16 +88,16 @@ html.no-js
       script(src='/scripts/nav.js')
       // endbuild
       // build:js(app) scripts/plugins.js
-      //- script(src='bower_components/bootstrap/js/affix.js')
-      //- script(src='bower_components/bootstrap/js/alert.js')
-      //- script(src='bower_components/bootstrap/js/dropdown.js')
-      //- script(src='bower_components/bootstrap/js/tooltip.js')
-      //- script(src='bower_components/bootstrap/js/modal.js')
-      //- script(src='bower_components/bootstrap/js/transition.js')
-      //- script(src='bower_components/bootstrap/js/button.js')
-      //- script(src='bower_components/bootstrap/js/popover.js')
-      //- script(src='bower_components/bootstrap/js/carousel.js')
-      //- script(src='bower_components/bootstrap/js/scrollspy.js')
-      //- script(src='bower_components/bootstrap/js/collapse.js')
-      //- script(src='bower_components/bootstrap/js/tab.js')
+      script(src='bower_components/bootstrap/js/affix.js')
+      script(src='bower_components/bootstrap/js/alert.js')
+      script(src='bower_components/bootstrap/js/dropdown.js')
+      script(src='bower_components/bootstrap/js/tooltip.js')
+      script(src='bower_components/bootstrap/js/modal.js')
+      script(src='bower_components/bootstrap/js/transition.js')
+      script(src='bower_components/bootstrap/js/button.js')
+      script(src='bower_components/bootstrap/js/popover.js')
+      script(src='bower_components/bootstrap/js/carousel.js')
+      script(src='bower_components/bootstrap/js/scrollspy.js')
+      script(src='bower_components/bootstrap/js/collapse.js')
+      script(src='bower_components/bootstrap/js/tab.js')
       // endbuild
