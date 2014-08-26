@@ -41,11 +41,15 @@ exports.uxAbout = function(req, res) {
   res.render('ux-about', data );
 };
 
-exports.cms3 = function(req, res) {
+exports.yodleCMS3 = function(req, res) {
   res.render('cms3', data );
 }
 
 exports.yodleCom = function(req, res) {
   res.render('yodle-com', data );
+}
+
+exports.yodleSelfSignup = function(req, res) {
+  res.render('yodle-self-signup', data );
 }
 
