@@ -3,10 +3,12 @@ extends include/layouts/default
 block header
   header.header
     .row
-      .col-xs-8
+      .col-sm-8
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         p.lead!= about.blurb
+      .col-sm-4
+        img(src="/images/illustration/portrait.png")
 
 block body
 
@@ -17,29 +19,23 @@ block body
           h2 Projects
       .row
         .col-xs-12
-          ul.big-n-fancy
-            li: a(href='/ux/projects/yodle-com') Yodle.com
-            li: a(href='/ux/projects/cms3') Yodle CMS3
+          .project-collection
+            each project in projects
+              .project
+                  a(href='/ux/projects/' + project.name)
+                    span.title=project.title
+                    span.blurb=project.blurb
 
-    section#design
-      #intro
-        .row
-          .col-xs-12
-            h2 Design
-      #cms3-design
-        .row
-          .col-xs-12
-            h3 CMS3 Redesign Wireframes
-            p.lead.
-              Proposed redesign for Yodle's CMS3 websites.
-          each image in app.cms3RedesignImages
-            .col-md-3.col-sm-6
-              +thumbnail(image.image, image.thumbnail)(lightboxGroup="cms3-redesign")
-
-      #flows
-        .row
-          .col-xs-12
-            h3 Various Process and User Flows
-          each image in app.flows
-            .col-md-3.col-sm-6
-              +thumbnail(image.image, image.thumbnail, image.description)(lightboxGroup="flows")
+    .between
+    section#about
+      .row
+        .col-xs-12
+          h2 About
+      .row
+        .col-sm-3
+          img(src="/images/illustration/portrait.png")
+        .col-sm-9
+          p.
+            Lorem ipsum Laboris nulla non dolor nostrud exercitation ea est est velit in incididunt consectetur dolor enim magna incididunt enim labore et quis non nostrud eiusmod culpa incididunt veniam id exercitation cillum nulla dolor aliqua sed dolore dolor irure in dolore dolor nulla et occaecat laboris dolor in aliqua veniam sint dolore dolore id proident sit incididunt labore qui consequat aliquip cupidatat enim incididunt culpa dolor dolore proident laborum enim voluptate commodo ad commodo Duis elit.
+          .more
+            a(href='#') Read More >

@@ -1,9 +1,22 @@
+- name: yodle-cms3-redesign
+  title: Yodle CMS3 Redesign
+  blurb: "Goal: Further increase Client Satisfaction"
 
-cms3:
+- name: yodle-self-signup
+  title: Yodle Self Signup
+  blurb: "Goal: Reduce acquisition cost"
+
+- name: yodle-marketing-funnel
+  title: Yodle Marketing Funnel
+  blurb: Clarified high-level landscape
+
+- name: yodle-cms3
+  title: Yodle CMS3
   roles:
     - Front End Development Lead
     - Interaction Design Lead
     - Visual Design Lead
+  blurb: Raised Client Satisfaction 17%
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem:
@@ -73,7 +86,9 @@ cms3:
       image: www.newyorkarchitectdesignfirm.com.jpg
       icon: www.newyorkarchitectdesignfirm.com.th.jpg
 
-yodleDotCom:
+- name: yodle-com
+  title: Yodle.com
+  blurb: Raised conversion 30%
   roles:
     - Lead Front End Developer
   description: >
