@@ -14,6 +14,9 @@ if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
 
+// global function to process markdown and return html
+app.locals.md = require("node-markdown").Markdown;
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'jade');
