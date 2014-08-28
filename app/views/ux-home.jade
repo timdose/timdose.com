@@ -7,7 +7,7 @@ block header
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         .lead!= md(about.blurb)
-      .col-sm-4
+      .col-sm-4.hidden-xs
         img(src="/images/illustration/portrait.png")
 
 block body
@@ -15,12 +15,12 @@ block body
   .main-content
     section#projects    
       .row
-        .col-xs-12
+        .col-sm-12
           h2 Projects
       .row
-        .col-xs-12
-          .project-collection
-            each project in projects
+        .project-collection
+          each project in projects
+            .col-sm-4
               .project
                   a(href='/ux/projects/' + project.name)
                     span.title=project.title
