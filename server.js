@@ -34,6 +34,7 @@ app.get('/ux/about', controllers.uxAbout );
 app.get('/ux/projects/yodle-com', controllers.yodleCom );
 app.get('/ux/projects/yodle-self-signup', controllers.yodleSelfSignup );
 app.get('/ux/projects/yodle-cms3', controllers.yodleCMS3 );
+app.get('/ux/resume', controllers.resume );
 
 
 

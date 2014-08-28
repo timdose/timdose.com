@@ -1,6 +1,12 @@
+//-------------------------------------
+// Module Dependencies
+//-------------------------------------
 var yaml = require('js-yaml');
 var fs = require('fs');
 var _ = require('lodash/dist/lodash.underscore');
+var path = require('path');
+var mime = require('mime');
+
 
 var data = { 
   app: yaml.safeLoad(fs.readFileSync('app/data/app-data.yaml', 'utf8')),
@@ -51,5 +57,18 @@ exports.yodleCom = function(req, res) {
 
 exports.yodleSelfSignup = function(req, res) {
   res.render('yodle-self-signup', data );
+}
+
+exports.resume = function(req, res) {
+  var file = __dirname + '/../../public/assets/pdf/Tim-Dose-Resume.pdf';
+
+  var filename = path.basename(file);
+  var mimetype = mime.lookup(file);
+
+  res.setHeader('Content-disposition', 'attachment; filename=' + filename);
+  res.setHeader('Content-type', mimetype);
+
+  var filestream = fs.createReadStream(file);
+  filestream.pipe(res);
 }
 
