@@ -21,10 +21,9 @@ block body
         .project-collection
           each project in projects
             .col-sm-4
-              .project
-                  a(href='/ux/projects/' + project.name)
-                    span.title=project.title
-                    span.blurb=project.blurb
+              a.project(href='/ux/projects/' + project.name)
+                span.title=project.title
+                span.blurb=project.blurb
 
     .between
     section#about
