@@ -1,14 +1,20 @@
-- name: yodle-cms3-redesign
-  title: Yodle CMS3 Redesign
-  blurb: "Goal: Further increase Client Satisfaction"
+- name: yodle-com
+  title: Yodle.com
+  blurb: Raised conversion 30%
+  roles:
+    - Lead Front End Developer
+  description: >
+    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
+  bullets:
+    - Runs on an ExpressJS/Node.js server.
+  technologies:
+    - name: NodeJS
+    - name: ExpressJS
+    - name: Nunjucks
+    - name: JSON
+    - name: Grunt
+    - name: Bower
 
-- name: yodle-self-signup
-  title: Yodle Self Signup
-  blurb: "Goal: Reduce acquisition cost"
-
-- name: yodle-marketing-funnel
-  title: Yodle Marketing Funnel
-  blurb: Clarified high-level landscape
 
 - name: yodle-cms3
   title: Yodle CMS3
@@ -16,7 +22,7 @@
     - Front End Development Lead
     - Interaction Design Lead
     - Visual Design Lead
-  blurb: Raised Client Satisfaction 17%
+  blurb: Raised Client Satisfaction 17%.
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem:
@@ -86,21 +92,24 @@
       image: www.newyorkarchitectdesignfirm.com.jpg
       icon: www.newyorkarchitectdesignfirm.com.th.jpg
 
-- name: yodle-com
-  title: Yodle.com
-  blurb: Raised conversion 30%
-  roles:
-    - Lead Front End Developer
-  description: >
-    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
-  bullets:
-    - Runs on an ExpressJS/Node.js server.
-  technologies:
-    - name: NodeJS
-    - name: ExpressJS
-    - name: Nunjucks
-    - name: JSON
-    - name: Grunt
-    - name: Bower
+
+- name: yodle-marketing-funnel
+  title: Yodle Marketing Funnel
+  blurb: Clarified high-level landscape.
+
+
+- name: yodle-cms3-redesign
+  title: Yodle CMS3 Redesign
+  blurb: "Goal: Increase Client Satisfaction even more."
+
+
+- name: yodle-self-signup
+  title: Yodle Self Signup
+  blurb: "Goal: Reduce acquisition cost."
+
+
+
+
+
 
 

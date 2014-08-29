@@ -3,18 +3,18 @@ extends include/layouts/default
 block header
   header.header
     .row
-      .col-sm-8
+      .col-sm-4.portrait.col-sm-push-8
+        img(src='/images/illustration/portrait.png')
+      .col-sm-8.col-sm-pull-4
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         .lead!= md(about.blurb)
-      .col-sm-4.hidden-xs
-        img(src="/images/illustration/portrait.png")
 
 block body
 
   .main-content
     section#projects    
-      .row
+      .row.heading
         .col-sm-12
           h2 Projects
       .row
@@ -27,13 +27,23 @@ block body
 
     .between
     section#about
-      .row
+      .row.heading
         .col-xs-12
           h2 About
       .row
-        .col-sm-3
+        .col-sm-3.portrait
           img(src="/images/illustration/portrait.png")
         .col-sm-9
           p!= md(about.intro)
           .more
-            a(href='/ux/about') Read More >
+            a(href='/ux/about') Read More 
+              span.fa.fa-angle-right
+
+    .between
+    section#resume
+      .row.heading
+        .col-xs-12
+          h2 Resume
+      .row
+        .col-sm-12
+          a.active.btn.btn-lg.btn-primary(href="/ux/resume") Download my resume
