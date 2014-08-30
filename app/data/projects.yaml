@@ -76,8 +76,10 @@ cms3:
 yodleDotCom:
   roles:
     - Lead Front End Developer
+    - Lead Interaction Designer
   description: >
-    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
+    Yodle.com's redesign launched on May 7th. I was asked to lead the front end development, and
+    took over interaction design after the site's launch.
   bullets:
     - Runs on an ExpressJS/Node.js server.
   technologies:
