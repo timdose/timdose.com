@@ -1,0 +1,49 @@
+extends include/layouts/default
+
+block header
+  header.header
+    .row
+      .col-sm-4.portrait.col-sm-push-8
+        img(src='/images/illustration/portrait.png')
+      .col-sm-8.col-sm-pull-4
+        h1.heading Tim Dosé
+        p.title UX Designer/Developer
+        .lead!= md(about.blurb)
+
+block body
+
+  .main-content
+    section#projects    
+      .row.heading
+        .col-sm-12
+          h2 Projects
+      .row
+        .project-collection
+          each project in projects
+            .col-sm-4
+              a.project(href='/ux/projects/' + project.name)
+                span.title=project.title
+                span.blurb=project.blurb
+
+    .between
+    section#about
+      .row.heading
+        .col-xs-12
+          h2 About
+      .row
+        .col-sm-3.portrait
+          img(src="/images/illustration/portrait.png")
+        .col-sm-9
+          p!= md(about.intro)
+          .more
+            a(href='/ux/about') Read More 
+              span.fa.fa-angle-right
+
+    .between
+    section#resume
+      .row.heading
+        .col-xs-12
+          h2 Resume
+      .row
+        .col-sm-12
+          a.active.btn.btn-lg.btn-primary(href="/ux/resume") Download my resume

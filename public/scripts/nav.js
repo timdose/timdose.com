@@ -2,8 +2,14 @@
 
 ( function($) {
 
-    $(document).ready(function() {
-        $('#scroll-nav').onePageNav();
-    });
+  $(document).ready(function() {
+    createNav();
+
+    $('#scroll-nav').onePageNav();
+  });
+
+  function createNav() {
+    
+  }
 
 }(jQuery));

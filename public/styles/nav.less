@@ -1,12 +1,18 @@
+.col-nav {
+  padding-top: 27px;
+}
+
+.navbar {
+  font-family: 'Source Sans Pro'
+}
+
 #scroll-nav {
     list-style: none outside none;
     margin: 0;
 
     @media ( min-width: @screen-md-min ) {
-      position: fixed;
-      top: 20px;
-      padding: 0;
-      margin-left: 0;
+      padding: 20px 0 0;
+      margin-left: 10px;
     }
 
     li {
@@ -14,12 +20,14 @@
     }
 
     a {
+      outline: none;
       display: block;
       padding: 5px 10px;
       border-top: 1px dotted @brand-primary;
+      text-decoration: none;
 
       &:hover {        
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
 
@@ -28,7 +36,7 @@
       color: #fff;
 
       &:hover {
-        text-decoration: none;
+        text-decoration: underline;
       }
 
     }

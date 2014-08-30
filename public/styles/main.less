@@ -17,6 +17,19 @@
   width: 100%;
 }
 
+
+.portrait {
+  text-align: center;
+  img { 
+    width: 50%; 
+    @media ( min-width: @screen-sm-min ) { width: 100%; }
+  }
+
+}
+
+
+
+
 h1,h2,h3,h4,h5,h6 {
   text-align: left;
   margin-bottom: 15px;
@@ -40,44 +53,47 @@ h5 {
   border-bottom: 1px solid @divider-color;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .thumbnail {
   height: 150px;
   overflow: hidden;
 }
 
+
+.btn-primary:hover { background: @btn-primary-hover-bg; }
+.btn-primary:active { background: @btn-primary-hover-bg; }
+
+
 .header {
-  margin-bottom: 15px;
-
-  .heading {
-    color: @headings-color;
-    font-size: 50px;
-    margin-bottom: 0;
-    line-height: 1em;
-    padding-left: 10px;
-  }
-
-  .title {
-    font-size: 30px;
-    line-height: 1em;
-  }
-
-
-  @media ( min-width: @screen-sm-min ) {
     .heading {
-      font-size: 72px;
+      color: @headings-color;
+      font-size: 50px;
+      margin-bottom: 0;
+      line-height: 1em;
     }
-  }
 
-  @media ( min-width: @screen-md-min ){
-    .heading {
-      font-size: 100px;
-      padding-left: 0;
+    .title {
+      font-size: 20px;
+      line-height: 1em;
+      @media ( min-width: @screen-sm-min ) { font-size: 30px; }      
     }
-  }
 
 
-  
+    @media ( min-width: @screen-sm-min ) {
+      .heading {
+        font-size: 72px;
+      }
+    }
 
+    @media ( min-width: @screen-md-min ){
+      .heading {
+        font-size: 100px;
+        padding-left: 0;
+      }
+    }
 }
 
 .main-content {  
@@ -89,8 +105,9 @@ h5 {
 }
 
 .between {
-  height: 120px;
+  height: 40px;
   width: 100%;
+  .hidden-xs;
 }
 
 #skills {
@@ -151,50 +168,80 @@ section .container {
   }
 }
 
-#geeks {
-  .explanation {
-    margin-bottom: 45px;
-  }
 
-  .technologies {
-    .list {
-      text-align: center;
-      padding: 0;
-      background: #f2f2f2;
-      padding-top: 30px;
-      padding-bottom: 30px;
+
+#geeks {
+    .explanation {
       margin-bottom: 45px;
     }
 
-    .item {
-      display: inline-block;
-      margin: 0 10px;
+    .technologies {
+      .list {
+        text-align: center;
+        padding: 0;
+        background: #f2f2f2;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 45px;
+      }
+
+      .item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .logo {
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
     }
 
-    .logo {
-      width: 100%;
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
+    .renderer-process {
+      .image {
+        border: 1px solid @gray-dark;
+        .scale-to-fit();
+      }
     }
-  }
-
-  .renderer-process {
-    .image {
-      border: 1px solid @gray-light;
-      .scale-to-fit();
-    }
-  }
 }
 
-.footer {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 30px;
-  background: @brand-primary;
-  color: #fff;
 
-  a, a:hover {
+
+.project-collection {
+  .project {
+    display: block;
+    background: @gray;
     color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    @media ( min-width: @screen-sm-min ) { height: 150px; }
+    
+    .title {
+      display: block;
+      font-family: 'Source Sans Pro';
+      font-size: 20px;
+    }
+
+    a {
+      color: #fff;
+    }
   }
+
+}
+
+
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    background: @brand-primary;
+    color: #fff;
+
+    a, a:hover {
+      color: #fff;
+    }
 }

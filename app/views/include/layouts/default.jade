@@ -25,22 +25,30 @@ html.no-js
     block styles
       //- endbuild
       // build:css styles/main.css
-      link(rel='stylesheet', href='styles/main.css')
+      link(rel='stylesheet', href='/styles/main.css')
       // endbuild
-    script(src='bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/modernizr/modernizr.js')
   body
     //if lt IE 10
       <p class="browsehappy">You are using an<strong>outdated</strong>browser. Please
         <a href="http://browsehappy.com/">upgrade your browser</a>
         to improve your experience. 
       </p>
+
+    include ../topnav
+            
     .container
+      .row
+        .col-md-12
+          block header
+    
+    .container
+      .row
+        .col-md-10.col-main
+          block body
 
-      .col-md-10
-        block body
-
-      .col-md-2.col-nav
-        include ../nav.jade
+        .col-md-2.col-nav
+          include ../nav.jade
 
     block footer
       footer.footer
@@ -52,17 +60,15 @@ html.no-js
                 a(href='tel:+19175755359') 917-575-5359
               p
                 a(href='mailto:tim@timdose.com') tim@timdose.com
-              p
-                a(href="assets/pdf/Tim-Dose-Resume.pdf") Resumé
 
 
 
     block scripts
       // build:js(app) scripts/vendor.js
       // bower:js
-      script(src='bower_components/jquery/dist/jquery.js')
-      script(src='bower_components/lightbox2/js/lightbox.js')
-      script(src='bower_components/jQuery-One-Page-Nav/jquery.nav.js')
+      script(src='/bower_components/jquery/dist/jquery.js')
+      script(src='/bower_components/lightbox2/js/lightbox.js')
+      script(src='/bower_components/jQuery-One-Page-Nav/jquery.nav.js')
       //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
       //- script(src='bower_components/holderjs/holder.js')
       // endbower
@@ -76,20 +82,20 @@ html.no-js
       //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       //-   ga('create','UA-XXXXX-X');ga('send','pageview');
       // build:js(app) scripts/main.js
-      script(src='scripts/main.js')
-      script(src='scripts/nav.js')
+      script(src='/scripts/main.js')
+      script(src='/scripts/nav.js')
       // endbuild
       // build:js(app) scripts/plugins.js
-      //- script(src='bower_components/bootstrap/js/affix.js')
-      //- script(src='bower_components/bootstrap/js/alert.js')
-      //- script(src='bower_components/bootstrap/js/dropdown.js')
-      //- script(src='bower_components/bootstrap/js/tooltip.js')
-      //- script(src='bower_components/bootstrap/js/modal.js')
-      //- script(src='bower_components/bootstrap/js/transition.js')
-      //- script(src='bower_components/bootstrap/js/button.js')
-      //- script(src='bower_components/bootstrap/js/popover.js')
-      //- script(src='bower_components/bootstrap/js/carousel.js')
-      //- script(src='bower_components/bootstrap/js/scrollspy.js')
-      //- script(src='bower_components/bootstrap/js/collapse.js')
-      //- script(src='bower_components/bootstrap/js/tab.js')
+      script(src='/bower_components/bootstrap/js/affix.js')
+      script(src='/bower_components/bootstrap/js/alert.js')
+      script(src='/bower_components/bootstrap/js/dropdown.js')
+      script(src='/bower_components/bootstrap/js/tooltip.js')
+      script(src='/bower_components/bootstrap/js/modal.js')
+      script(src='/bower_components/bootstrap/js/transition.js')
+      script(src='/bower_components/bootstrap/js/button.js')
+      script(src='/bower_components/bootstrap/js/popover.js')
+      script(src='/bower_components/bootstrap/js/carousel.js')
+      script(src='/bower_components/bootstrap/js/scrollspy.js')
+      script(src='/bower_components/bootstrap/js/collapse.js')
+      script(src='/bower_components/bootstrap/js/tab.js')
       // endbuild
