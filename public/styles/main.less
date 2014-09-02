@@ -19,7 +19,8 @@
 
 
 .portrait {
-  text-align: center;
+  padding-left: 30px;
+  padding-right: 60px;
   img { 
     width: 50%; 
     @media ( min-width: @screen-sm-min ) { width: 100%; }
@@ -53,8 +54,9 @@ h5 {
   border-bottom: 1px solid @divider-color;
 }
 
-strong {
-  font-weight: 600;
+.lead strong {
+  font-family: 'Source Sans Pro';
+  font-weight: 500;
 }
 
 .thumbnail {
@@ -78,9 +80,12 @@ strong {
     .title {
       font-size: 20px;
       line-height: 1em;
-      @media ( min-width: @screen-sm-min ) { font-size: 30px; }      
+      @media ( min-width: @screen-sm-min ) { font-size: 36px; }
     }
 
+    .lead {
+      @media ( min-width: @screen-sm-min ) { font-size: 32px; }
+    }
 
     @media ( min-width: @screen-sm-min ) {
       .heading {

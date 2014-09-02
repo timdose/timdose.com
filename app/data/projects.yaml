@@ -1,6 +1,7 @@
 - name: yodle-com
   title: Yodle.com
   blurb: Raised conversion 30%
+  thumbnail: yodle-com-home.jpg
   roles:
     - Lead Front End Developer
   description: >
