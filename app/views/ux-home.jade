@@ -7,7 +7,7 @@ block header
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         .lead!= md(about.blurb)
-      .col-sm-4.hidden-xs
+      .col-sm-4.hidden-xs.portrait
         img(src='/images/illustration/portrait.png')
 
 block body
@@ -31,8 +31,8 @@ block body
         .col-xs-12
           h2 About
       .row
-        .col-sm-3.portrait
-          img(src="/images/illustration/portrait.png")
+        .col-sm-3.headshot
+          img(src="/images/photos/headshot.jpg")
         .col-sm-9
           p!= md(about.intro)
           .more
@@ -45,5 +45,5 @@ block body
         .col-xs-12
           h2 Resume
       .row
-        .col-sm-12
+        .col-sm-3
           a.active.btn.btn-lg.btn-primary(href="/ux/resume") Download my resume
