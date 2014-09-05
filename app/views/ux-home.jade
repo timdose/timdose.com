@@ -3,15 +3,14 @@ extends include/layouts/default
 block header
   header.header
     .row
-      .col-sm-4.portrait.col-sm-push-8
-        img(src='/images/illustration/portrait.png')
-      .col-sm-8.col-sm-pull-4
+      .col-sm-8
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         .lead!= md(about.blurb)
+      .col-sm-4.hidden-xs
+        img(src='/images/illustration/portrait.png')
 
 block body
-
   .main-content
     section#projects    
       .row.heading
