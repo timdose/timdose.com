@@ -1,10 +1,12 @@
 - name: yodle-com
   title: Yodle.com
   blurb: Raised conversion 30%
+  thumbnail: yodle-com-home.jpg
   roles:
     - Lead Front End Developer
   description: >
-    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
+    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development, 
+    and took over interaction design after the site's launch.
   bullets:
     - Runs on an ExpressJS/Node.js server.
   technologies:
@@ -106,10 +108,4 @@
 - name: yodle-self-signup
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
-
-
-
-
-
-
 

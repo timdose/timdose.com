@@ -1,4 +1,4 @@
-extends include/layouts/default
+extends include/layouts/default-ux
 
 block header
   header.header
@@ -21,6 +21,7 @@ block body
           each project in projects
             .col-sm-4
               a.project(href='/ux/projects/' + project.name)
+                //- img(src='/images/projects/yodle-com/yodle-com-home.jpg')
                 span.title=project.title
                 span.blurb=project.blurb
 
