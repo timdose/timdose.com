@@ -52,7 +52,7 @@ block body
               .examples
                 each val in [1,2,3,4]
                   .example.col-sm-3.col-xs-6
-                    +thumbnail('/images/cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
+                    +thumbnail('/images/projects/yodle-cms3/components/'+component.name+'/' + val +'.jpg')(lightboxGroup!=component.name)
     #example-sites
       .row
         .col-xs-12
@@ -62,7 +62,7 @@ block body
       .row
         each site in app.exampleSites
           .site.col-md-3.col-sm-6
-            +thumbnail('/images/example-sites/'+site+'.jpg', null, site)(lightboxGroup="example-sites")
+            +thumbnail('/images/projects/yodle-cms3/example-sites/'+site+'.jpg', null, site)(lightboxGroup="example-sites")
 
     #geeks
       .row
@@ -90,4 +90,4 @@ block body
         .renderer-process.col-xs-12
           h4 How a Page Is Created in CMS3
           a(href='/images/cms3/renderer-process.png')
-            img.image(src='/images/cms3/renderer-process.png')
+            img.image(src='/images/projects/yodle-cms3/renderer-process.png')
