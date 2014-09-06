@@ -1,7 +1,7 @@
 - name: yodle-com
   title: Yodle.com
   blurb: Raised conversion 30%.
-  thumbnail: yodle-com-home.jpg
+  thumbnail: thumbnail.jpg
   roles:
     - Lead Front End Developer
   description: >
@@ -25,6 +25,7 @@
     - Interaction Design Lead
     - Visual Design Lead
   blurb: Raised Client Satisfaction 17%.
+  thumbnail: yodle-com-home.jpg
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem:
@@ -98,14 +99,17 @@
 - name: yodle-marketing-funnel
   title: Yodle Marketing Funnel
   blurb: Clarified high-level landscape.
+  thumbnail: thumbnail.jpg
 
 
 - name: yodle-cms3-redesign
   title: Yodle CMS3 Redesign
   blurb: "Goal: Increase Client Satisfaction."
+  thumbnail: yodle-com-home.jpg
 
 
 - name: yodle-self-signup
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
+  thumbnail: yodle-com-home.jpg
 
