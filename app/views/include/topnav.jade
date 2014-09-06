@@ -16,9 +16,8 @@ nav.navbar.navbar-default(role="navigation")
               | Projects
               span.caret
             ul.dropdown-menu(role='menu')
-              li: a(href='/ux/projects/yodle-com') Yodle.com
-              li: a(href='/ux/projects/yodle-self-signup') Yodle Self Signup
-              li: a(href='/ux/projects/yodle-cms3') Yodle CMS3
+              each project in projects
+                li: a(href='/ux/projects/' + project.name )!= project.title
           li: a(href='/ux/resume') Resume 
             i.fa.fa-download
 

@@ -96,10 +96,12 @@
       icon: www.newyorkarchitectdesignfirm.com.th.jpg
 
 
-- name: yodle-marketing-funnel
-  title: Yodle Marketing Funnel
-  blurb: Clarified high-level landscape.
+
+- name: yodle-self-signup
+  title: Yodle Self Signup
+  blurb: "Goal: Reduce acquisition cost."
   thumbnail: thumbnail.jpg
+
 
 
 - name: yodle-cms3-redesign
@@ -108,8 +110,8 @@
   thumbnail: thumbnail.jpg
 
 
-- name: yodle-self-signup
-  title: Yodle Self Signup
-  blurb: "Goal: Reduce acquisition cost."
-  thumbnail: thumbnail.jpg
 
+- name: yodle-marketing-funnel
+  title: Yodle Marketing Funnel
+  blurb: Clarified high-level landscape.
+  thumbnail: thumbnail.jpg
