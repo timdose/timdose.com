@@ -21,8 +21,10 @@ block body
           each project in projects
             .col-sm-4
               a.project(href='/ux/projects/' + project.name)
-                //- img(src='/images/projects/yodle-com/yodle-com-home.jpg')
-                span.title=project.title
+                .thumb-wrapper
+                  img.thumb(src='/images/projects/yodle-com/yodle-com-home.jpg')
+                  .screen
+                strong.title=project.title
                 span.blurb=project.blurb
 
     .between

@@ -1,6 +1,6 @@
 - name: yodle-com
   title: Yodle.com
-  blurb: Raised conversion 30%
+  blurb: Raised conversion 30%.
   thumbnail: yodle-com-home.jpg
   roles:
     - Lead Front End Developer
@@ -102,7 +102,7 @@
 
 - name: yodle-cms3-redesign
   title: Yodle CMS3 Redesign
-  blurb: "Goal: Increase Client Satisfaction even more."
+  blurb: "Goal: Increase Client Satisfaction."
 
 
 - name: yodle-self-signup
