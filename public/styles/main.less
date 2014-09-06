@@ -226,7 +226,7 @@ section .container {
     padding: 7px;
     overflow: hidden;
     color: @text-color;
-    @media ( min-width: @screen-sm-min ) { height: 235px; }
+    @media ( min-width: @screen-sm-min ) { height: 240px; }
     
     &:hover { 
       text-decoration: none;
@@ -243,6 +243,7 @@ section .container {
       position: relative;
       height: 150px;
       margin-bottom: 5px;
+      border: 1px solid #ccc;
     }
 
     .thumb {
@@ -255,15 +256,15 @@ section .container {
       top: 0;
       left: 0;
       height: 500px;
-      background: rgba(0,0,0,.25);
+      background: rgba(255,255,255,0);
     }
 
     &:hover .screen {
-      background: rgba(0,0,0,0);
+      background: rgba(255,255,255,.25);
     }
 
     &:active .screen {
-      background: rgba(0,0,0,.5);
+      background: rgba(0,0,0,.1);
     }
 
     .title {
@@ -271,6 +272,8 @@ section .container {
       font-family: 'Source Sans Pro';
       font-size: 25px;
       line-height: 1em;
+      margin-bottom: 7px;
+      margin-top: 11px;
     }
 
     a {
