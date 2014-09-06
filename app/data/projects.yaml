@@ -1,12 +1,31 @@
 - name: yodle-com
-  title: Yodle.com
+  title: Yodle.com UX
   blurb: Raised conversion 30%.
+  thumbnail: thumbnail.jpg
+  roles:
+    - Lead Interaction Designer
+  description: >
+    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development, 
+    and took over interaction design/user experience after the site's launch.
+  bullets:
+    - Runs on an ExpressJS/Node.js server.
+  technologies:
+    - name: NodeJS
+    - name: ExpressJS
+    - name: Nunjucks
+    - name: JSON
+    - name: Grunt
+    - name: Bower
+
+- name: yodle-com-dev
+  title: Yodle.com Development
+  blurb: Faster all around.
   thumbnail: thumbnail.jpg
   roles:
     - Lead Front End Developer
   description: >
     Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development, 
-    and took over interaction design after the site's launch.
+    and took over interaction design/user experience after the site's launch.
   bullets:
     - Runs on an ExpressJS/Node.js server.
   technologies:
