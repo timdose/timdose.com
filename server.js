@@ -29,6 +29,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', controllers.index );
 app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
+
 app.get('/ux', controllers.ux );
 app.get('/ux/about', controllers.uxAbout );
 app.get('/ux/projects/:project', controllers.uxProject );
