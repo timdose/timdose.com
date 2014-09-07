@@ -1,27 +1,33 @@
 extends include/layouts/default-ux
 
 block body
-  section#yodle-com
-    #intro
-      .row
-        .col-lg-12
-          h2= project.title
-          p.lead!= project.description
+  section.project-page
+    .row
+      .col-lg-12
+        h2= project.title
+        p.lead!= project.description
 
-          if project.problem
-            h3 Problem
-            .problem!= md(project.problem)
-          
-          if project.results
-            h3 Results
-            .results!= md(project.results)
+        if project.problem
+          h3 Problem
+          .problem!= md(project.problem)
+        
+        if project.results
+          h3 Results
+          .results!= md(project.results)
 
-          if project.tools
-            h4 Tools
-            ul.tools
-              each tool in project.tools
-                li.tool
-                  strong!= tool.name
-                  span.function!= ' (' + tool.function + ')'
+        if project.progress
+          h3 Results
+          .results!= md(project.progress)
 
-
+        if project.tools
+          h4 Tools
+          ul.tools
+            each tool in project.tools
+              li.tool
+                strong!= tool.name
+                span.function!= ' (' + tool.function + ')'
+    .row
+      .col-sm-6
+        if project.hero
+          .hero-wrapper
+            img.hero(src='/images/projects/' + project.name + '/' + project.hero)
