@@ -52,6 +52,7 @@ exports.yodleCMS3 = function(req, res) {
 }
 
 exports.yodleCom = function(req, res) {
+  data.project = _(data.projects).findWhere({name:'yodle-com'});
   res.render('yodle-com', data );
 }
 

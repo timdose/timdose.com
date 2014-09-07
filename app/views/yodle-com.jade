@@ -1,15 +1,24 @@
-extends include/layouts/default
+extends include/layouts/default-ux
 
 block body
   section#yodle-com
     #intro
       .row
         .col-lg-12
-          h2 Yodle.com
+          h2= project.title
+          p.lead!= project.description
+
+          h3 Problem
+          .problem!= md(project.problem)
           
-          p.lead.well
-            | blah
-          p.lead.
-            I led the <strong>design</strong> and <strong>interaction design</strong> for Yodle.com.
-          
+          h3 Results
+          .results!= md(project.results)
+
+          h4 Tools
+          ul.tools
+            each tool in project.tools
+              li.tool
+                strong!= tool.name
+                span.function!= ' (' + tool.function + ')'
+
 

@@ -5,17 +5,32 @@
   roles:
     - Lead Interaction Designer
   description: >
-    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development, 
-    and took over interaction design/user experience after the site's launch.
-  bullets:
-    - Runs on an ExpressJS/Node.js server.
-  technologies:
-    - name: NodeJS
-    - name: ExpressJS
-    - name: Nunjucks
-    - name: JSON
-    - name: Grunt
-    - name: Bower
+    After Yodle.com's relaunch, I took over interaction design and general user experience for Yodle.com, Yodle's primary corporate site.
+  problem: >
+    - Attempts to increase conversion were failing.
+
+    - Yodle.com's users were very poorly understood.
+
+    - Very few mechanisms were in place to get insight into user sentiment and behavior.
+  results: >
+    - **Recordings of user sessions** hint at comprehension problems: **users seemed to be getting lost**.
+
+    - **Remote user tests confirm comprehension problems** and reveal that **previous calls to action on site were unclear** and only speaking to certain types of visitors.
+
+    - **A/B tests** with clearer calls to action result in a **30% increase in conversion** on Yodle.com.
+  tools:
+    - name: Google Analytics
+      function: Analytics
+    - name: Google Website Surveys
+      function: On-site surveys
+    - name: Mouseflow
+      function: Mouse tracking + user session recordings
+    - name: UserTesting.com 
+      function: Remote User Testing
+    - name: Optimizely
+      function: A/B Testing
+
+
 
 - name: yodle-com-dev
   title: Yodle.com Development
@@ -24,17 +39,39 @@
   roles:
     - Lead Front End Developer
   description: >
-    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development, 
-    and took over interaction design/user experience after the site's launch.
-  bullets:
-    - Runs on an ExpressJS/Node.js server.
-  technologies:
+    Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
+  problem: >
+    - Previous iteration of Yodle.com was built on an obscure and overly complex PHP CMS. This resulted in long dev times and obscenely long page load times.
+    - There was no version control. Could only roll back changes with support from IT, and sometimes backups hadn't happened at the right times leading to losses.
+    - Coding was done directly on the production server&mdash;no deployment process.
+    - No testing; bug fixes occasionally broke existing functionality, which sometimes wouldn't be discovered for weeks.
+  results:
+    - Development of new site complete in 3 weeks (back on schedule after earlier phases ran late).
+    - Code stored in Git and deployed to staging site via post-receive hook in Git server. Deployment to production via Jenkins.
+    - Pre-commit hooks and pre-push hooks run automated unit and end-to-end tests
+  tools:
     - name: NodeJS
+      function: Platform
     - name: ExpressJS
+      function: Web framework
     - name: Nunjucks
-    - name: JSON
+      function: Templating engine
+    - name: Git
+      function: Version control
+    - name: Jenkins
+      function: Continuous integration
+    - name: YAML
+      function: Human-friendly data format
     - name: Grunt
-    - name: Bower
+      function: Task runner
+    - name: Mocha
+      function: Test runner
+    - name: Chai
+      function: Assertion framework
+    - name: Selenium/Webdriver
+      function: Testing browser automation
+    - name: Lo-Dash
+      function: Javascript utilities
 
 
 - name: yodle-cms3
