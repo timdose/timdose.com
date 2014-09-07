@@ -48,12 +48,13 @@ exports.uxAbout = function(req, res) {
 };
 
 exports.yodleCMS3 = function(req, res) {
-  res.render('cms3', data );
+  data.project = _(data.projects).findWhere({name:'yodle-cms3'});
+  res.render('ux-project', data );
 }
 
 exports.yodleCom = function(req, res) {
   data.project = _(data.projects).findWhere({name:'yodle-com'});
-  res.render('yodle-com', data );
+  res.render('ux-project', data );
 }
 
 exports.yodleSelfSignup = function(req, res) {
