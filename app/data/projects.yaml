@@ -42,10 +42,13 @@
     Yodle.com's redesign launched on May 7th. I was asked to lead the Front End Development.
   problem: >
     - Previous iteration of Yodle.com was built on an obscure and overly complex PHP CMS. This resulted in long dev times and obscenely long page load times.
+
     - There was no version control. Could only roll back changes with support from IT, and sometimes backups hadn't happened at the right times leading to losses.
+
     - Coding was done directly on the production server&mdash;no deployment process.
+
     - No testing; bug fixes occasionally broke existing functionality, which sometimes wouldn't be discovered for weeks.
-  results:
+  results: >
     - Development of new site complete in 3 weeks (back on schedule after earlier phases ran late).
     - Code stored in Git and deployed to staging site via post-receive hook in Git server. Deployment to production via Jenkins.
     - Pre-commit hooks and pre-push hooks run automated unit and end-to-end tests
@@ -84,46 +87,64 @@
   thumbnail: thumbnail.jpg
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
-  problem:
+  problem: >
     - Yodle needs to deliver websites to thousands of clients.
+
     - Yodle's previous website system allowed unlimited customization but proved impossible to maintain at scale.
+
+    - Setup time for websites was unnecessarily long, leading to increased setup costs.
+
+    - Changes in business and legal requirements resulted in several costly manual changes to thousands of websites.
+
     - Unlimited customization also prevented any real analytics or testing.
+
     - Need to provide limited, controlled customization but retain maintainability.
-    - Need to balance sometimes conflicting metrics of Client Satisfaction and Website Conversion.
+
+    - Need to balance often-conflicting metrics of Client Satisfaction and Website Conversion.
+
     - Provide customizable websites to improve Client Satisfaction metric.
+
     - At the same time, provide aggregated analytics and the ability to conduct tests to increase conversion.
-  results:
+  results: >
     - A highly scalable system that allows limited customization and the ability to roll out changes at scale.
-    - Client Satisfaction up 17%.
-    - A/B testing to improve Website Conversion is underway.
-  technologies:
-    - name: HTML5
-      icon: html5.png
-      link: http://www.w3.org/html/wg/drafts/html/CR/
 
-    - name: CSS3
-      icon: css3.png
-      link: http://www.w3.org/Style/CSS/Overview.en.html
+    - Currently powering over 12,000 client websites.
 
-    - name: LESS
-      icon: less.png
-      link: http://lesscss.org
+    - Mass modifications have been easily rolled to thousands of sites.
 
-    - name: Jinja
-      icon: jinja.png
-      link: http://jinja.pocoo.org/
+    - Setup time improved over 60%.
+
+    - Client Satisfaction up 17% due to improved design and onboarding process.
+
+    - A/B testing has resulted in 7% increase in aggregated conversion.
+  tools:
+    - name: Python
+      function: Platform
 
     - name: CherryPy
       icon: cherrypy.png
       link: http://cherrypy.org
+      function: Web framework
+
+    - name: Jinja
+      icon: jinja.png
+      link: http://jinja.pocoo.org/
+      function: Templating engine
+
+    - name: Mercurial
+      function: Version control
+
+    - name: LESS
+      icon: less.png
+      link: http://lesscss.org
+      function: CSS preprocessor
+
 
     - name: YAML
       icon: yaml.png
       link: http://yaml.org
+      function: Human-friendly data format
 
-    - name: JSON
-      icon: json.png
-      link: http://json.org
 
   screenshots:
     - name: charlottencresidentialdesign.com
