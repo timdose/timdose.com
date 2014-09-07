@@ -178,6 +178,16 @@
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
   thumbnail: thumbnail.jpg
+  description: >
+    Yodle Self Signup
+  problem: >
+    - Yodle gets new clients almost exclusively through long sales demos, leading to a high acquisition cost.
+
+    - Previous attempts at Self-Signup had been costly to develop and resulted in overly-complex user experiences.
+  results: >
+    - Pioneered Lean UX processes to more efficiently discover correct direction before committing dev resources.
+
+    - Current iteration of design is getting through user testing with good comprehension and usability.
 
 
 

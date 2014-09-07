@@ -8,15 +8,20 @@ block body
           h2= project.title
           p.lead!= project.description
 
-          h3 Problem
-          .problem!= md(project.problem)
+          if project.problem
+            h3 Problem
+            .problem!= md(project.problem)
           
-          h3 Results
-          .results!= md(project.results)
+          if project.results
+            h3 Results
+            .results!= md(project.results)
 
-          h4 Tools
-          ul.tools
-            each tool in project.tools
-              li.tool
-                strong!= tool.name
-                span.function!= ' (' + tool.function + ')'
+          if project.tools
+            h4 Tools
+            ul.tools
+              each tool in project.tools
+                li.tool
+                  strong!= tool.name
+                  span.function!= ' (' + tool.function + ')'
+
+

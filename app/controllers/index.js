@@ -57,6 +57,11 @@ exports.yodleCom = function(req, res) {
   res.render('ux-project', data );
 }
 
+exports.uxProject = function(req, res) {
+  data.project = _(data.projects).findWhere({name:req.params.project});
+  res.render('ux-project', data );
+}
+
 exports.yodleSelfSignup = function(req, res) {
   res.render('yodle-self-signup', data );
 }
