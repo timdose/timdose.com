@@ -26,8 +26,13 @@ block body
               li.tool
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
-    .row
-      .col-sm-6
-        if project.hero
-          .hero-wrapper
-            img.hero(src='/images/projects/' + project.name + '/' + project.hero)
+                
+    if project.images
+      .row.images
+        .col-sm-12
+          h3 Images
+        each image in project.images
+          .col-sm-4
+            .thumb-wrapper
+              a(href='/images/projects/' + project.name + '/' + image.name)
+                img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
