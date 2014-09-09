@@ -9,15 +9,15 @@ block body
 
         if project.problem
           h3 Problem
-          .problem!= md(project.problem)
+          .problem.content!= md(project.problem)
         
         if project.results
           h3 Results
-          .results!= md(project.results)
+          .results.content!= md(project.results)
 
         if project.progress
           h3 Results
-          .results!= md(project.progress)
+          .results.content!= md(project.progress)
 
         if project.tools
           h4 Tools
@@ -26,7 +26,7 @@ block body
               li.tool
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
-                
+
     if project.images
       .row.images
         .col-sm-12

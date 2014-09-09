@@ -36,7 +36,7 @@ block body
         .col-sm-3.headshot
           img(src="/images/photos/headshot.jpg")
         .col-sm-9
-          p!= md(about.intro)
+          .content!= md(about.intro)
           a.active.btn.btn-lg.btn-primary(href="/ux/resume") Download my resume
           //- .more
           //-   a(href='/ux/about') Read More 
