@@ -52,8 +52,12 @@
     - No testing; bug fixes occasionally broke existing functionality, which sometimes wouldn't be discovered for weeks.
   results: >
     - Development of new site complete in 3 weeks (back on schedule after earlier phases ran late).
+
+    - Page load times improved 50-100%.
+
     - Code stored in Git and deployed to staging site via post-receive hook in Git server. Deployment to production via Jenkins.
-    - Pre-commit hooks and pre-push hooks run automated unit and end-to-end tests
+
+    - Pre-commit hooks and pre-push hooks run automated unit and end-to-end tests to ensure major functionality is always intact.
   tools:
     - name: NodeJS
       function: Platform
