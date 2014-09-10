@@ -1,5 +1,20 @@
 extends include/layouts/default-ux
 
+mixin imageContent( project, image, widthClass )
+  div(class=widthClass)
+    .thumb-wrapper
+      a(href='/images/projects/' + project.name + '/' + image.name)
+        img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+
+mixin image( project, image )
+  if ( image.width == undefined )
+    +imageContent(project, image, 'col-sm-4' )
+  else
+    +imageContent(project, image, 'col-sm-' + image.width )
+    
+
+  
+
 block body
   section.project-page
     .row
@@ -31,10 +46,7 @@ block body
       .between
       .row.images
         each image in project.images
-          .col-sm-4
-            .thumb-wrapper
-              a(href='/images/projects/' + project.name + '/' + image.name)
-                img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+          +image(project, image)
 
     if project.imageSets
       .between
@@ -43,7 +55,4 @@ block body
           .col-sm-12
             h3= set.title
           each image in set.images
-            .col-sm-4
-              .thumb-wrapper
-                a(href='/images/projects/' + project.name + '/' + image.name)
-                  img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+            +image(project, image)

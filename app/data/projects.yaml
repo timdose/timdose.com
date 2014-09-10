@@ -175,6 +175,11 @@
           thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg        
         - name: example-sites/www.newyorkarchitectdesignfirm.com.jpg
           thumbnail: example-sites/www.newyorkarchitectdesignfirm.com.th.jpg
+    - title: How a Page Is Rendered
+      images:
+        - name: renderer-process.png
+          thumbnail: renderer-process.png
+          width: 12
 
 
 - name: yodle-self-signup
