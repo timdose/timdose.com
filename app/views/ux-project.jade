@@ -28,11 +28,22 @@ block body
                 span.function!= ' (' + tool.function + ')'
 
     if project.images
+      .between
       .row.images
-        .col-sm-12
-          h3 Images
         each image in project.images
           .col-sm-4
             .thumb-wrapper
               a(href='/images/projects/' + project.name + '/' + image.name)
                 img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+
+    if project.imageSets
+      .between
+      .row.images
+        each set in project.imageSets
+          .col-sm-12
+            h3= set.title
+          each image in set.images
+            .col-sm-4
+              .thumb-wrapper
+                a(href='/images/projects/' + project.name + '/' + image.name)
+                  img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
