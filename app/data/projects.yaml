@@ -162,9 +162,7 @@
         - name: example-sites/www.charlottencresidentialdesign.com.jpg
           thumbnail: example-sites/www.charlottencresidentialdesign.com.th.jpg        
         - name: example-sites/www.oceansidelegalattorney.com.jpg
-          thumbnail: example-sites/www.oceansidelegalattorney.com.th.jpg        
-        - name: example-sites/www.architecturefirmnewyorkny.com.jpg
-          thumbnail: example-sites/www.architecturefirmnewyorkny.com.th.jpg        
+          thumbnail: example-sites/www.oceansidelegalattorney.com.th.jpg              
         - name: example-sites/www.designarchitectsanfrancisco.com.jpg
           thumbnail: example-sites/www.designarchitectsanfrancisco.com.th.jpg        
         - name: example-sites/www.southburydentalcare.com.jpg
@@ -173,8 +171,6 @@
           thumbnail: example-sites/www.champlinlandscaping.com.th.jpg
         - name: example-sites/www.turnersvilleinsuranceservices.com.jpg
           thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg        
-        - name: example-sites/www.newyorkarchitectdesignfirm.com.jpg
-          thumbnail: example-sites/www.newyorkarchitectdesignfirm.com.th.jpg
     - title: How a Page Is Rendered
       images:
         - name: renderer-process.png
