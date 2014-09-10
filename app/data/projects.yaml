@@ -152,11 +152,11 @@
     - title: Early Wireframes
       images: 
         - name: early-wireframes/layout-01.png
-          thumbnail: early-wireframes/layout-01.png 
+          thumbnail: early-wireframes/layout-01.th.jpg
         - name: early-wireframes/layout-03.png
-          thumbnail: early-wireframes/layout-03.png 
+          thumbnail: early-wireframes/layout-03.th.jpg 
         - name: early-wireframes/layout-04.png
-          thumbnail: early-wireframes/layout-04.png
+          thumbnail: early-wireframes/layout-04.th.jpg
     - title: Example Sites
       images:        
         - name: example-sites/www.charlottencresidentialdesign.com.jpg
