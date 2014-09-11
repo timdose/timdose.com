@@ -95,35 +95,32 @@
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem: >
-    - Yodle needs to deliver websites to thousands of clients.
+    - Yodle needs to deliver websites to **thousands of clients**.
 
-    - Yodle's previous website system allowed unlimited customization but proved impossible to maintain at scale.
+    - Yodle's previous website system allowed lots of customization but proved **impossible to maintain at scale**.
 
-    - Setup time for websites was unnecessarily long, leading to increased setup costs.
+    - Unlimited customization also meant **no real analytics or testing**.
 
-    - Changes in business and legal requirements resulted in several costly manual changes to thousands of websites.
+    - No analytics and testing meant **no real way to improve conversion**.
 
-    - Unlimited customization also prevented any real analytics or testing.
+    - Website setup time was unnecessarily long, leading to **high setup costs**.
 
-    - Need to provide limited, controlled customization but retain maintainability.
+    - Changes in business and legal requirements resulted in several **costly manual changes to thousands of websites**.
 
-    - Need to balance often-conflicting metrics of Client Satisfaction and Website Conversion.
+    - Outdated design and cumbersome response time meant **low Customer Satisfaction**.
 
-    - Provide customizable websites to improve Client Satisfaction metric.
-
-    - At the same time, provide aggregated analytics and the ability to conduct tests to increase conversion.
   results: >
-    - A highly scalable system that allows limited customization and the ability to roll out changes at scale.
+    - **A highly scalable system** that allows limited customization and the **ability to roll out changes at scale**.
 
-    - Currently powering over 12,000 client websites.
+    - **Mass modifications to thousands of sites** have been quickly and easily rolled out on several occasions.
 
-    - Mass modifications have been easily rolled to thousands of sites.
+    - Currently **powering over 12,000 client websites**.
 
-    - Setup time improved over 60%.
+    - **Setup time improved over 60%**.
 
-    - Client Satisfaction up 17% due to improved design and onboarding process.
+    - **Client Satisfaction up 17%** due to improved design, onboarding process, and speed of changes.
 
-    - A/B testing has resulted in 7% increase in aggregated conversion.
+    - A/B testing has resulted in **7% increase in aggregated conversion**; more tests underway.
   tools:
     - name: Python
       function: Platform
