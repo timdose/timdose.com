@@ -58,5 +58,7 @@ block body
         each set in project.imageSets
           .col-sm-12
             h3= set.title
+            if set.lead
+              p.lead!= set.lead
           each image in set.images
             +image(project, image)

@@ -197,6 +197,7 @@
     - Current iteration of design is getting through user testing with good comprehension and usability.
   imageSets:
     - title: First Iteration
+      lead: "Please note: not my visual design."
       images:
         - name: v1-test-site.jpg
           thumbnail: v1-test-site.jpg
