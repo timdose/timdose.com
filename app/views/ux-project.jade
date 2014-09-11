@@ -18,7 +18,7 @@ mixin image( project, image )
 block body
   section.project-page
     .row
-      .col-sm-9
+      .col-sm-8
         h2= project.title
         p.lead!= project.description
 
@@ -41,7 +41,7 @@ block body
               li.tool
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
-      .col-sm-3
+      .col-sm-4
         if project.thumbnail
           .thumb-wrapper
             img.thumb(src='/images/projects/' + project.name + '/' + project.thumbnail)
