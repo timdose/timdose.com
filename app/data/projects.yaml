@@ -183,9 +183,9 @@
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
   status: In progress
-  thumbnail: thumbnail.jpg
+  thumbnail: v3-wireframe.th.jpg
   description: >
-    This is a project that's currently underway with the goal of allowing prospects to sign up online with
+    Goal: Dramatically lower Acquisition Cost by allowing prospects to sign up online with
     minimal or no involvement from the Sales team.
   problem: >
     - Yodle gets new clients almost exclusively through long sales demos, leading to a high acquisition cost.
@@ -195,6 +195,21 @@
     - Pioneered Lean UX processes to more efficiently discover correct direction before committing dev resources.
 
     - Current iteration of design is getting through user testing with good comprehension and usability.
+  imageSets:
+    - title: First Iteration
+      images:
+        - name: v1-test-site.jpg
+          thumbnail: v1-test-site.jpg
+    - title: Second Iteration
+      images:
+        - name: v2-wireframe.png
+          thumbnail: v2-wireframe.png
+        - name: v2-test-site.png
+          thumbnail: v2-test-site.png
+    - title: Third Iteration
+      images:
+        - name: v3-wireframe.png
+          thumbnail: v3-wireframe.th.jpg
 
 
 
