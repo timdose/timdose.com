@@ -9,15 +9,15 @@ nav.navbar.navbar-default(role="navigation")
           a.navbar-brand(href='/') TimDose.com
       .collapse.navbar-collapse(style='height: 0.55px;')
         ul.nav.navbar-nav
-          li.active: a(href='/ux') Home
+          li(data-active='home'): a(data-activate='home',href='/ux') Home
           //- li: a(href='/ux/about') About
-          li.dropdown
+          li(data-active='work').work.dropdown
             a.dropdown-toggle(href='#', data-toggle='dropdown')
-              | Projects
+              | Work
               span.caret
             ul.dropdown-menu(role='menu')
               each project in projects
-                li: a(href='/ux/projects/' + project.name )!= project.title
+                li: a(data-activate='work', href='/ux/projects/' + project.name )!= project.title
           li: a(href='/ux/resume') Resume 
             i.fa.fa-download
 
