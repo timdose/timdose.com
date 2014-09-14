@@ -219,7 +219,6 @@
   blurb: "Goal: Increase Client Satisfaction."
   status: In progress
   thumbnail: thumbnail.jpg
-  hero: visual-design.jpg
   description: >
     Goal: improve Client Satisfaction and Retention even further than the original designs.
   problem: >
@@ -237,8 +236,7 @@
   images:
     - name: early-wireframe.png
       thumbnail: early-wireframe.th.jpg
-      title: Early Wireframe
-    
+      title: Early Wireframe    
     - name: visual-design.jpg
       thumbnail: thumbnail.jpg
       title: Visual Design
@@ -247,4 +245,11 @@
 - name: yodle-marketing-funnel
   title: Yodle Marketing Funnel
   blurb: Clarified high-level landscape.
-  thumbnail: thumbnail.jpg
+  status: Complete
+  thumbnail: funnel-map.th.jpg
+  description: >
+    A map of the various paths a prospect can take to signing up for Yodle.
+  
+  images:
+    - name: funnel-map.jpg
+      thumbnail: funnel-map.th.jpg
