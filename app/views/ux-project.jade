@@ -18,7 +18,10 @@ mixin image( project, image )
 block body
   section.project-page
     .row
-      .col-sm-8
+      .col-sm-4.col-sm-push-8.rail
+        if project.thumbnail
+          img.hero(src='/images/projects/' + project.name + '/' + project.thumbnail)
+      .col-sm-8.col-sm-pull-4
         h2= project.title
         p.lead!= project.description
 
@@ -41,9 +44,7 @@ block body
               li.tool
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
-      .col-sm-4.rail
-        if project.thumbnail
-          img.hero(src='/images/projects/' + project.name + '/' + project.thumbnail)
+
 
     if project.images
       .between
