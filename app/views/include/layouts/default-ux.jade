@@ -22,11 +22,10 @@ html.no-js
     //- link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
     //- link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
     // endbower
+    link(rel='stylesheet', href='/styles/main.css')
     block styles
-      //- endbuild
-      // build:css styles/main.css
-      link(rel='stylesheet', href='/styles/main.css')
-      // endbuild
+      //- custom styles
+
     script(src='/bower_components/modernizr/modernizr.js')
   body
     //if lt IE 10
@@ -60,7 +59,6 @@ html.no-js
 
 
 
-    block scripts
       // build:js(app) scripts/vendor.js
       // bower:js
       script(src='/bower_components/jquery/dist/jquery.js')
@@ -96,3 +94,6 @@ html.no-js
       script(src='/bower_components/bootstrap/js/collapse.js')
       script(src='/bower_components/bootstrap/js/tab.js')
       // endbuild
+    block scripts
+      //- Custom scripts
+      
