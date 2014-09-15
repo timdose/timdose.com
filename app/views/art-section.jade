@@ -1,0 +1,33 @@
+extends include/layouts/art-layout
+
+
+block body
+  #wrapper
+    #header
+      #logo
+        a(href="/") timdose.com
+      #pages [NAV]
+    
+    #content
+      #content-left.content
+        #section-links
+          //- each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
+          each section in genre.sections
+            .section-link
+              a(href='/art/' + genre.name + '/' + section.name)
+                img(src='/assets/images/art/'+section.thumbnail)
+              p: a(href='/art/' + genre.name + '/' + section.name)=section.title
+
+      #content-center.content
+        #main-content
+          #portfolios
+            each section, sectionTitle in portfolio.sections
+              .portfolio
+                h2.portfolio-name= section.title
+                each image in section.images
+                  span.image
+                    - var title = image.title + ' - ' + image.medium
+                    a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
+                      img(src='/assets/images/art/'+image.filename)
+
+      

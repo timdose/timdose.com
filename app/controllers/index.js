@@ -31,7 +31,7 @@ exports.art = function(req, res) {
   console.log(JSON.stringify(genre));
 
   if (portfolio !== undefined && genre !== undefined) {
-    res.render('index', {portfolio:portfolio, genre:genre} );
+    res.render('art-section', {genre:genre, portfolio:portfolio} );
   }
 
   res.status(404);
