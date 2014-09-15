@@ -20,7 +20,7 @@ var data = {
 }
 
 exports.index = function(req, res) {
-  res.render('index', {portfolio:data.art.paintings} );
+  res.render('index');
 };
 
 

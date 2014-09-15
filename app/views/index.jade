@@ -1,33 +1,81 @@
-extends include/layouts/art-layout
+
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Tim Dosé
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    //- build:css(app) styles/vendor.css
+    // bower:css
+    //- link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    //- link(rel='stylesheet', href='bower_components/lightbox2/css/lightbox.css')
+    // endbower
+    link(rel='stylesheet', href='/styles/main.css')
+    block styles
+      //- custom styles
+
+    script(src='/bower_components/modernizr/modernizr.js')
+  body.home-page
+    .container-fluid
+      //- .row
+      //-   .col-sm-12
+      //-     h1.text-center TimDose.com
+      .row
+        .col-sm-6
+          .role.ux.text-center
+            a(href='/ux') UX
+        .col-sm-6
+          .role.fine-art.text-center
+            a(href='/art/fine-art/paintings/') Art
 
 
-block body
-  #wrapper
-    #header
-      #logo
-        a(href="/") timdose.com
-      #pages [NAV]
-    
-    #content
-      #content-left.content
-        #section-links
-          //- each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
-          each section in genre.sections
-            .section-link
-              a(href='/art/' + genre.name + '/' + section.name)
-                img(src='/assets/images/art/'+section.thumbnail)
-              p: a(href='/art/' + genre.name + '/' + section.name)=section.title
 
-      #content-center.content
-        #main-content
-          #portfolios
-            each section, sectionTitle in portfolio.sections
-              .portfolio
-                h2.portfolio-name= section.title
-                each image in section.images
-                  span.image
-                    - var title = image.title + ' - ' + image.medium
-                    a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
-                      img(src='/assets/images/art/'+image.filename)
-
+      // build:js(app) scripts/vendor.js
+      // bower:js
+      script(src='/bower_components/jquery/dist/jquery.js')
+      script(src='/bower_components/lightbox2/js/lightbox.js')
+      script(src='/bower_components/jQuery-One-Page-Nav/jquery.nav.js')
+      //- script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+      //- script(src='bower_components/holderjs/holder.js')
+      // endbower
+      // endbuild
+      //- Google Analytics: change UA-XXXXX-X to be your site's ID.
+      //- script
+      //-   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      //-   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      //-   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      //-   e.src='//www.google-analytics.com/analytics.js';
+      //-   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      //-   ga('create','UA-XXXXX-X');ga('send','pageview');
+      // build:js(app) scripts/main.js
+      script(src='/scripts/main.js')
+      script(src='/scripts/nav.js')
+      // endbuild
+      // build:js(app) scripts/plugins.js
+      script(src='/bower_components/bootstrap/js/affix.js')
+      script(src='/bower_components/bootstrap/js/alert.js')
+      script(src='/bower_components/bootstrap/js/dropdown.js')
+      script(src='/bower_components/bootstrap/js/tooltip.js')
+      script(src='/bower_components/bootstrap/js/modal.js')
+      script(src='/bower_components/bootstrap/js/transition.js')
+      script(src='/bower_components/bootstrap/js/button.js')
+      script(src='/bower_components/bootstrap/js/popover.js')
+      script(src='/bower_components/bootstrap/js/carousel.js')
+      script(src='/bower_components/bootstrap/js/scrollspy.js')
+      script(src='/bower_components/bootstrap/js/collapse.js')
+      script(src='/bower_components/bootstrap/js/tab.js')
+      // endbuild
+    block scripts
+      //- Custom scripts
       
