@@ -20,7 +20,8 @@ block body
     .row
       .col-sm-4.col-sm-push-8.rail
         if project.thumbnail
-          img.hero(src='/images/projects/' + project.name + '/' + project.thumbnail)
+          a(href='/images/projects/' + project.name + '/' + project.image)
+            img.hero(src='/images/projects/' + project.name + '/' + project.thumbnail)
       .col-sm-8.col-sm-pull-4
         h2= project.title
         p.lead!= project.description

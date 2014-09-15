@@ -2,6 +2,7 @@
   title: Yodle.com UX
   blurb: Raised conversion 30%.
   status: In progress
+  image: thumbnail.jpg
   thumbnail: thumbnail.jpg
   roles:
     - Lead Interaction Designer
@@ -37,6 +38,7 @@
   title: Yodle.com Development
   blurb: Faster all around.
   status: Complete
+  image: code-sample.png
   thumbnail: code-sample.th.jpg
   roles:
     - Lead Front End Developer
@@ -91,7 +93,8 @@
     - Visual Design Lead
   status: Complete
   blurb: Raised Client Satisfaction 17%.
-  thumbnail: thumbnail.jpg
+  image: example-sites/www.newarkdesignarchitect.com.jpg
+  thumbnail: example-sites/www.newarkdesignarchitect.com.th.jpg
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem: >
@@ -183,6 +186,7 @@
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
   status: In progress
+  image: v3-wireframe.jpg
   thumbnail: v3-wireframe.th.jpg
   description: >
     Goal: Dramatically lower Acquisition Cost by allowing prospects to sign up online with
@@ -218,6 +222,7 @@
   title: Yodle CMS3 Redesign
   blurb: "Goal: Increase Client Satisfaction."
   status: In progress
+  image: visual-design.jpg
   thumbnail: thumbnail.jpg
   description: >
     Goal: improve Client Satisfaction and Retention even further than the original designs.
@@ -246,10 +251,7 @@
   title: Yodle Marketing Funnel
   blurb: Clarified high-level landscape.
   status: Complete
+  image: funnel-map.jpg
   thumbnail: funnel-map.th.jpg
   description: >
     A map of the various paths a prospect can take to signing up for Yodle.
-  
-  images:
-    - name: funnel-map.jpg
-      thumbnail: funnel-map.th.jpg
