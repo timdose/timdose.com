@@ -19,12 +19,19 @@
 @headings-font-family: 'Source Sans Pro', sans-serif;
 @font-size-base: 16px;
 
-@font-size-h1:            floor(@font-size-base * 5);
-@font-size-h2:            floor(@font-size-base * 4);
-@font-size-h3:            ceil(@font-size-base * 2.5);
-@font-size-h4:            ceil(@font-size-base * 1.8);
-@font-size-h5:            ceil(@font-size-base * 1.25);
-@font-size-h6:            ceil(@font-size-base * 1);
+@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+
+@font-size-lg-h1:            floor(@font-size-base * 5);
+@font-size-lg-h2:            floor(@font-size-base * 4);
+@font-size-lg-h3:            ceil(@font-size-base * 2.5);
+@font-size-lg-h4:            ceil(@font-size-base * 1.8);
+@font-size-lg-h5:            ceil(@font-size-base * 1.25);
+@font-size-lg-h6:            ceil(@font-size-base * 1);
 
 @btn-primary-hover-bg: lighten(@btn-primary-bg, 5%);
 @btn-primary-active-bg: darken(@btn-primary-bg, 10%);
