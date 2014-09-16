@@ -5,41 +5,49 @@ sections:
     images:
       -
         filename: nat-kathrin.jpg
+        thumbnail: nat-kathrin_th.jpg
         title: Nat and Kathrin
         medium: oil on canvas
         size: 10x15
       -
         filename: raven.jpg
+        thumbnail: raven_th.jpg
         title: Raven
         medium: oil on canvas
         size: 11x14
       -
         filename: Jolynn.jpg
+        thumbnail: Jolynn_th.jpg
         title: Jolynn
         medium: oil on canvas
         size: 14x18
       -
         filename: donna.jpg
+        thumbnail: donna_th.jpg
         title: Donna
         medium: oil on canvas
         size: 16x20
       -
         filename: 20080113_SP.jpg
+        thumbnail: 20080113_SP_th.jpg
         title: Self Portrait
         medium: oil on canvas
         size: 6x8
       -
         filename: susanna_B02.jpg
+        thumbnail: susanna_B02_th.jpg
         title: Susanna
         medium: oil on canvas
         size: 24x30
       -
         filename: alice.jpg
+        thumbnail: alice_th.jpg
         title: Alice
         medium: oil on canvas
         size: 22x30
       -
         filename: mercedes.jpg
+        thumbnail: mercedes_th.jpg
         title: Mercedes
         medium: oil on canvas
         size: 16x20
@@ -49,41 +57,49 @@ sections:
     images:
       -
         filename: tre.jpg
+        thumbnail: tre_th.jpg
         title: Tre
         medium: oil on canvas
         size: 16x20
       -
         filename: cat.jpg
+        thumbnail: cat_th.jpg
         title: Cat
         medium: oil on canvas
         size: 16x20
       -
         filename: esteban_laticia.jpg
+        thumbnail: esteban_laticia_th.jpg
         title: Esteban and Laticia
         medium: oil on canvas
         size: 10x15
       -
         filename: stephanie.jpg
+        thumbnail: stephanie_th.jpg
         title: Stephanie
         medium: oil on canvas
         size: 10x15
       -
         filename: cassandra.jpg
+        thumbnail: cassandra_th.jpg
         title: Cassandra
         medium: oil on canvas
         size: 16x20
       -
         filename: standing_with_easel.jpg
+        thumbnail: standing_with_easel_th.jpg
         title: Figure Study
         medium: oil on canvas
         size: 20x30
       -
         filename: anna_A01.jpg
+        thumbnail: anna_A01_th.jpg
         title: Anna
         medium: oil on canvas
         size: 24x36
       -
         filename: tyrone_B01.jpg
+        thumbnail: tyrone_B01_th.jpg
         title: Tyrone
         medium: oil on canvas
         size: 20x30
@@ -93,41 +109,49 @@ sections:
     images:
       -
         filename: syracuse.jpg
+        thumbnail: syracuse_th.jpg
         title: Syracuse
         medium: acrylic on board
         size: 14.5x2
       -
         filename: BlackHillsPine.jpg
+        thumbnail: BlackHillsPine_th.jpg
         title: Black Hills Pine
         medium: oil on canvas
         size: 8x10
       -
         filename: SunnysideSubway.jpg
+        thumbnail: SunnysideSubway_th.jpg
         title: Sunnyside Tracks
         medium: oil on canvas
         size: 8x10
       -
         filename: SunnysideGardens.jpg
+        thumbnail: SunnysideGardens_th.jpg
         title: Sunnyside Gardens Spring
         medium: oil on canvas
         size: 8x10
       -
         filename: shawangunk_meadow.jpg
+        thumbnail: shawangunk_meadow_th.jpg
         title: Shawangunk Meadow
         medium: oil on canvas
         size: 8x6
       -
         filename: barn_with_sky_top.jpg
+        thumbnail: barn_with_sky_top_th.jpg
         title: Sky Top from Huguenot Street
         medium: oil on canvas
         size: 8x6
       -
         filename: red_hook.jpg
+        thumbnail: red_hook_th.jpg
         title: Red Hook 2007
         medium: oil on canvas
         size: 9x12
       -
         filename: maine06.jpg
+        thumbnail: maine06_th.jpg
         title: Coastal Maine
         medium: oil on canvas
         size: 14cm x 22cm
@@ -138,41 +162,49 @@ sections:
     images:
       -
         filename: roses.jpg
+        thumbnail: roses_th.jpg
         title: Roses
         medium: oil on canvas
         size: 6x8
       -
         filename: candles.jpg
+        thumbnail: candles_th.jpg
         title: Candles
         medium: oil on canvas
         size: 6x8
       -
         filename: calla-lily.jpg
+        thumbnail: calla-lily_th.jpg
         title: Calla Lily
         medium: oil on canvas
         size: 6x8
       -
         filename: Brown-Pitcher-4.jpg
+        thumbnail: Brown-Pitcher-4_th.jpg
         title: Brown Pitcher IV
         medium: oil on canvas
         size: 6x8
       -
         filename: pink_vase_A01.jpg
+        thumbnail: pink_vase_A01_th.jpg
         title: Still Life with Pink Vase
         medium: oil on canvas
         size: 
       -
         filename: still_life_watermelon.jpg
+        thumbnail: still_life_watermelon_th.jpg
         title: Still Life with Watermelon
         medium: oil on canvas
         size: 24x20
       -
         filename: 20070205.jpg
+        thumbnail: 20070205_th.jpg
         title: Brown Pitcher II
         medium: oil on canvas
         size: 8x6
       -
         filename: 20070304_pitcher.jpg
+        thumbnail: 20070304_pitcher_th.jpg
         title: Brown Pitcher III
         medium: oil on canvas
         size: 8x6
@@ -183,29 +215,35 @@ sections:
     images:
       -
         filename: john.jpg
+        thumbnail: john_th.jpg
         title: John
         medium: oil on canvas
         size: 20x30
       -
         filename: bitter-end-guitarist-sketch.jpg
+        thumbnail: bitter-end-guitarist-sketch_th.jpg
         title: Bitter End Guitarist
         medium: oil on paper
         size: 9x12
       -
         filename: FabFaux20091212.jpg
+        thumbnail: FabFaux20091212_th.jpg
         title: Fab Faux Montclair NJ
         medium: digital painting
       -
         filename: BitterEnd-20090826.jpg
+        thumbnail: BitterEnd-20090826_th.jpg
         title: Bitter End Band
         medium: digital painting
 
       -
         filename: music003.jpg
+        thumbnail: music003_th.jpg
         title: James
         medium: digital painting
       -
         filename: music002.jpg
+        thumbnail: music002_th.jpg
         title: Bitter End Trio
         medium: digital painting
 
