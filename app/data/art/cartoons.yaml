@@ -31,23 +31,60 @@ sections:
         filename: hobbit.jpg
         thumbnail: hobbit_th.jpg
 
-# [animals]
-# snake_birthday
-# snake_bike
-# snake_driving
-# snake
-# fish_sombrero
-# clarence
-# badass
-# crab
 
-# [noises]
-# squeak
-# honk
-# toot
-# pop
+  animals:
+    title: animals
+    images:
+      - 
+        filename: snake_birthday.jpg
+        thumbnail: snake_birthday_th.jpg
+      - 
+        filename: snake_bike.jpg
+        thumbnail: snake_bike_th.jpg
+      - 
+        filename: snake_driving.jpg
+        thumbnail: snake_driving_th.jpg
+      - 
+        filename: snake.jpg
+        thumbnail: snake_th.jpg
+      - 
+        filename: fish_sombrero.jpg
+        thumbnail: fish_sombrero_th.jpg
+      - 
+        filename: clarence.jpg
+        thumbnail: clarence_th.jpg
+      - 
+        filename: badass.jpg
+        thumbnail: badass_th.jpg
+      - 
+        filename: crab.jpg
+        thumbnail: crab_th.jpg
 
-# [cards]
-# birthday_cake
-# birthday_snake
-# mothers_day
+  noises:
+    title: noises
+    images:
+      - 
+        filename: squeak.jpg
+        thumbnail: squeak_th.jpg
+      - 
+        filename: honk.jpg
+        thumbnail: honk_th.jpg
+      - 
+        filename: toot.jpg
+        thumbnail: toot_th.jpg
+      - 
+        filename: pop.jpg
+        thumbnail: pop_th.jpg
+
+  cards:
+    title: cards
+    images:
+      - 
+        filename: birthday_cake.jpg
+        thumbnail: birthday_cake_th.jpg
+      - 
+        filename: birthday_snake.jpg
+        thumbnail: birthday_snake_th.jpg
+      - 
+        filename: mothers_day.jpg
+        thumbnail: mothers_day_th.jpg
