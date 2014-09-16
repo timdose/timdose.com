@@ -1,0 +1,53 @@
+title: cartoons
+sections:
+  cartoons:
+    title: cartoons
+    images:
+      - 
+        filename: wizards.jpg
+        thumbnail: wizards_th.jpg
+      - 
+        filename: pirate.jpg
+        thumbnail: pirate_th.jpg
+      - 
+        filename: cookies.jpg
+        thumbnail: cookies_th.jpg
+      - 
+        filename: mouthful.jpg
+        thumbnail: mouthful_th.jpg
+      - 
+        filename: decameron2.jpg
+        thumbnail: decameron2_th.jpg
+      - 
+        filename: shopping_cart.jpg
+        thumbnail: shopping_cart_th.jpg
+      - 
+        filename: airplane.jpg
+        thumbnail: airplane_th.jpg
+      - 
+        filename: unconventional_card.jpg
+        thumbnail: unconventional_card_th.jpg
+      - 
+        filename: hobbit.jpg
+        thumbnail: hobbit_th.jpg
+
+# [animals]
+# snake_birthday
+# snake_bike
+# snake_driving
+# snake
+# fish_sombrero
+# clarence
+# badass
+# crab
+
+# [noises]
+# squeak
+# honk
+# toot
+# pop
+
+# [cards]
+# birthday_cake
+# birthday_snake
+# mothers_day

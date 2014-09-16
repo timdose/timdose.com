@@ -16,6 +16,7 @@ var data = {
     config: yaml.safeLoad(fs.readFileSync('app/data/art/config.yaml', 'utf8')),
     paintings: yaml.safeLoad(fs.readFileSync('app/data/art/paintings.yaml', 'utf8')),
     drawings: yaml.safeLoad(fs.readFileSync('app/data/art/drawings.yaml', 'utf8')),
+    cartoons: yaml.safeLoad(fs.readFileSync('app/data/art/cartoons.yaml', 'utf8')),
   }
 }
 
