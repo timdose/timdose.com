@@ -5,40 +5,49 @@ sections:
     images:
       -
         filename: peter.jpg
+        thumbnail: peter_th.jpg
         title: Peter
         medium: Charcoal on Paper
         size: 18x24
       -
         filename: raven_drawing.jpg
+        thumbnail: raven_drawing_th.jpg
         title: Raven
         medium: Graphite on Paper
         size: 18x24
       -
         filename: allie02.jpg
+        thumbnail: allie02_th.jpg
         title: Alley
         medium: Graphite on Paper 
       -
         filename: chelsea03.jpg
+        thumbnail: chelsea03_th.jpg
         title: Reclining Figure
         medium: Graphite on Paper
       -
         filename: figure20070919.jpg
+        thumbnail: figure20070919_th.jpg
         title: Seated Figure
         medium: Graphite on Paper
       -
         filename: anton_standing.jpg
+        thumbnail: anton_standing_th.jpg
         title: Anton
         medium: Graphite on Paper
       -
         filename: aksana_standing.jpg
+        thumbnail: aksana_standing_th.jpg
         title: Aksana
         medium: Red Chalk on Paper
       -
         filename: figure-20090701.jpg
+        thumbnail: figure-20090701_th.jpg
         title: Standing Figure with Hat
         medium: Graphite on Paper
       -
         filename: figure-20090708-2.jpg
+        thumbnail: figure-20090708-2_th.jpg
         title: Standing Figure
         medium: Graphite on Paper
 
@@ -48,9 +57,11 @@ sections:
     images:
       -
         filename: PIC.jpg
+        thumbnail: PIC_th.jpg
         title: P.I.C.
         medium: Graphite
       -
         filename: thump-twang.jpg
+        thumbnail: thump-twang_th.jpg
         title: Thump Twang
         medium: Graphite
