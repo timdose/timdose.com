@@ -320,3 +320,12 @@ th {
   color: #777777;
 }
 
+
+.topnav {
+  list-style: none;
+}
+
+.topnav .nav-item {
+  float: right;
+  margin-left: 10px;
+}

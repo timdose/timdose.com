@@ -8,13 +8,13 @@ genres:
       - name: drawings
         title: Drawings
         thumbnail: peter_th.jpg
-      - name: cartoons
-        title: Cartoons
-        thumbnail: wizards_th.jpg
+      
   - name: illustration
     title: Illustration
     sections:
-      - name: cartoon
-        title: Cartoon
+      - name: cartoons
+        title: Cartoons
+        thumbnail: wizards_th.jpg
       - name: fantasy
         title: Fantasy
+        thumbnail: TheChallenge_th.jpg

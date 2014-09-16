@@ -6,12 +6,12 @@ block body
     #header
       #logo
         a(href="/") timdose.com
-      #pages [NAV]
+      #pages
+        include include/art-nav
     
     #content
       #content-left.content
         #section-links
-          //- each section in [{page:'paintings', image:'nat-kathrin', title: 'paintings'}, {page:'drawings', image:'syracuse', title: 'drawings'}]
           each section in genre.sections
             .section-link
               a(href='/art/' + genre.name + '/' + section.name)
