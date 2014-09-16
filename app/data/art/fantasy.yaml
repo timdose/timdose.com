@@ -1,0 +1,48 @@
+title: fantasy
+sections:
+  color:
+    title: color
+    images:
+      - 
+        filename: TheChallenge.jpg
+        thumbnail: TheChallenge_th.jpg
+      - 
+        filename: delirium.jpg
+        thumbnail: delirium_th.jpg
+      - 
+        filename: mary-blue-lights.jpg
+        thumbnail: mary-blue-lights_th.jpg
+      - 
+        filename: dr-who.jpg
+        thumbnail: dr-who_th.jpg
+      - 
+        filename: landscape01.jpg
+        thumbnail: landscape01_th.jpg
+      - 
+        filename: Housegrabber.jpg
+        thumbnail: Housegrabber_th.jpg
+      - 
+        filename: snakeskin_color.jpg
+        thumbnail: snakeskin_color_th.jpg
+      - 
+        filename: death_B04.jpg
+        thumbnail: death_B04_th.jpg
+
+  blackAndWhite:
+    title: black and white
+    images:
+      -
+        filename: clawbutler.jpg
+        thumbnail: clawbutler_th.jpg
+      -
+        filename: puffin_guy.jpg
+        thumbnail: puffin_guy_th.jpg
+      -
+        filename: bridge.jpg
+        thumbnail: bridge_th.jpg
+      -
+        filename: snakey_sketch.jpg
+        thumbnail: snakey_sketch_th.jpg
+      -
+        filename: wizard.jpg
+        thumbnail: wizard_th.jpg
