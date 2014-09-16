@@ -349,7 +349,7 @@ section .container {
 
     &.top {
       clip: rect(0, auto, 240px, 0);
-      color: black;
+      color: #000;
       @media ( min-width: @screen-sm-min ) { 
         clip: rect(0, 200px, auto, 0);
       }
@@ -357,7 +357,7 @@ section .container {
 
     &.btm {
       clip: rect(240px, auto, auto, 0);
-      color: white;
+      color: #fff;
       @media ( min-width: @screen-sm-min ) { 
         clip: rect(0, auto, auto, 500px);
       }
@@ -374,6 +374,9 @@ section .container {
 
   .ux {
     background: #fff;
+    a {
+      color: #000;
+    }
   }
 
   .fine-art {
@@ -394,7 +397,8 @@ section .container {
     line-height: 240px;
 
     @media ( min-width: @screen-sm-min ) { 
-      margin-top: 100px;
+      height: 440px;
+      line-height: 440px;
     }
   }
 }
