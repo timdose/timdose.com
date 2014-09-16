@@ -317,8 +317,40 @@ section .container {
   overflow: hidden;
   font-size: 50px;
 
+  .title {
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    line-height: 470px;
+    font-size: 52px;
+    top: 0;
+    margin-top: 0;
+    z-index: 1;
+
+    &.fore {
+      clip: rect(0, auto, 240px, 0);
+      color: black;
+      @media ( min-width: @screen-sm-min ) { 
+        clip: rect(0, 200px, auto, 0);
+      }
+    }
+
+    &.back {
+      clip: rect(240px, auto, auto, 0);
+      color: white;
+      @media ( min-width: @screen-sm-min ) { 
+        clip: rect(0, auto, auto, 500px);
+      }
+    }
+
+    @media ( min-width: @screen-sm-min ) { 
+      height: 100px; 
+      line-height: 100px;
+    }
+  }
+
   .role {
-    padding-top: 100px;
+    z-index: 2;
   }
 
   .ux {
@@ -339,8 +371,8 @@ section .container {
 
   a {
     display: block;
-    padding-bottom: 50px;
-    height: 100px;
+    height: 240px;
+    line-height: 240px;
   }
 }
 
