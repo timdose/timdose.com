@@ -1,26 +1,31 @@
 doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8  
+//if IE 8
+  html.no-js.lt-ie9  
+// [if gt IE 8] <!
+html.no-js
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
 
-<html>
-<head>
-<title>Art by Tim Dose</title>
-<link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" media="screen">
+    title Art by Tim Dosé
 
+    link(rel='stylesheet', href='/assets/styles/styles.css')
+    link(rel='stylesheet', href='/bower_components/shadowbox/shadowbox.css')
+    block styles
 
-<link rel="stylesheet" type="text/css" href="/bower_components/shadowbox/shadowbox.css">
-<script type="text/javascript" src="/bower_components/shadowbox/shadowbox.js"></script>
+    //- include include/analytics
 
-script.
-  Shadowbox.init( { players:['img', 'swf'], displayCounter: false } );
-
-
-
-// <? include('../templates/analytics.php') ?>
-
-</head>
-
-<body>
-
-block body
-
-</body>
-</html>
+  body
+    block body
+    
+    script(src='/bower_components/shadowbox/shadowbox.js')
+    script.
+      Shadowbox.init( { players:['img', 'swf'], displayCounter: false } );
+    block scripts
