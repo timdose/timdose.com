@@ -7,7 +7,7 @@ var controllers = require('./app/controllers');
 var app = express();
 module.exports = app; // expose for testing
 
-var logMode = 'default';
+var logMode = 'combined';
 
 if (app.get('env') === 'development') {
   logMode = 'dev';
