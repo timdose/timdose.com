@@ -319,6 +319,19 @@ section .container {
 
   .title {
     position: absolute;
+    right: 0;
+    color: #000;
+    .hidden-xs;
+  }
+
+  .title.right {
+    right: auto;
+    left: 0;
+    color: #fff;
+  }
+
+  .mobile-title {
+    position: absolute;
     width: 100%;
     height: 470px;
     line-height: 470px;
@@ -327,7 +340,7 @@ section .container {
     margin-top: 0;
     z-index: 1;
 
-    &.fore {
+    &.top {
       clip: rect(0, auto, 240px, 0);
       color: black;
       @media ( min-width: @screen-sm-min ) { 
@@ -335,7 +348,7 @@ section .container {
       }
     }
 
-    &.back {
+    &.btm {
       clip: rect(240px, auto, auto, 0);
       color: white;
       @media ( min-width: @screen-sm-min ) { 
@@ -344,13 +357,12 @@ section .container {
     }
 
     @media ( min-width: @screen-sm-min ) { 
-      height: 100px; 
-      line-height: 100px;
+      display: none;
     }
   }
 
   .role {
-    z-index: 2;
+    position: relative;
   }
 
   .ux {
