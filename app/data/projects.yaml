@@ -174,12 +174,14 @@
         - name: example-sites/www.champlinlandscaping.com.jpg
           thumbnail: example-sites/www.champlinlandscaping.com.th.jpg
         - name: example-sites/www.turnersvilleinsuranceservices.com.jpg
-          thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg        
+          thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg
+          permission: private
     - title: How a Page Is Rendered
       images:
         - name: renderer-process.png
           thumbnail: renderer-process.png
           width: 12
+          permission: private
 
 
 - name: yodle-self-signup

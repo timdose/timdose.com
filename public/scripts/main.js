@@ -16,3 +16,9 @@ function highlightCurrentPage() {
     }
   });
 }
+
+
+function privateImage() {
+  console.log('private image');
+  return false;
+}

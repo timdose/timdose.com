@@ -2,9 +2,19 @@ extends include/layouts/default-ux
 
 mixin imageContent( project, image, widthClass )
   div(class=widthClass)
-    .thumb-wrapper
-      a(href='/images/projects/' + project.name + '/' + image.name)
+    if image.permission == 'private'
+      .thumb-wrapper.private
         img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+        .message
+          div.icon.fa.fa-lock
+          div.text Sensitive business material
+          div.actions
+            a.active.btn.btn-primary.btn-xs.action(href='#', onclick='return privateImage();') Unlock
+
+    else
+      .thumb-wrapper
+        a(href='/images/projects/' + project.name + '/' + image.name)
+          img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
 
 mixin image( project, image )
   if ( image.width == undefined )
