@@ -2,30 +2,31 @@ extends include/layouts/art-layout
 
 
 block body
-  #wrapper
+  .container-fluid
     #header
-      #logo
-        a(href="/") timdose.com
-      #pages
-        include include/art-nav
+      .col-lg-9.col-lg-offset-1
+        #logo
+          a(href="/") timdose.com
+        #pages
+          include include/art-nav
     
     #content
-      #content-left.content
+      .col-lg-1.col-sm-2
         #section-links
           each section in genre.sections
-            .section-link
+            .section-link.text-center
               a(href='/art/' + genre.name + '/' + section.name)
                 img(src='/assets/images/art/'+section.thumbnail)
               p: a(href='/art/' + genre.name + '/' + section.name)=section.title
-
-      #content-center.content
+      
+      .col-lg-9.col-sm-10
         #main-content
           #portfolios
             each section, sectionTitle in portfolio.sections
               .portfolio
                 h2.portfolio-name= section.title
                 each image in section.images
-                  span.image
+                  .image
                     - var title = image.title + ' - ' + image.medium
                     a(href='/assets/images/art/'+image.filename, title=title, rel='shadowbox['+sectionTitle+']')
                       img(src='/assets/images/art/'+image.thumbnail)

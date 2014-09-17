@@ -16,11 +16,14 @@ html.no-js
 
     title Art by Tim Dosé
 
-    link(rel='stylesheet', href='/assets/styles/styles.css')
     link(rel='stylesheet', href='/bower_components/shadowbox/shadowbox.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/assets/styles/styles.css')
     block styles
+      //- custom styles
 
     //- include include/analytics
+    script(src='/bower_components/modernizr/modernizr.js')
 
   body
     block body
