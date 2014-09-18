@@ -19,7 +19,7 @@ block body
       .row
         .project-collection
           each project in projects
-            .col-sm-4
+            .col-sm-4.col-xs-6
               a.project(href='/ux/projects/' + project.name)
                 .thumb-wrapper
                   img.thumb(src='/images/projects/' + project.name + '/' + project.thumbnail)
@@ -33,7 +33,7 @@ block body
         .col-xs-12
           h2 About
       .row
-        .col-sm-3.headshot
+        .col-sm-3.hidden-xs.headshot
           img(src="/images/photos/headshot.jpg")
         .col-sm-9
           .content!= md(about.intro)
