@@ -8,9 +8,9 @@ mixin imageContent( project, image, widthClass )
 
 mixin image( project, image )
   if ( image.width == undefined )
-    +imageContent(project, image, 'col-sm-4' )
+    +imageContent(project, image, 'col-sm-4 col-xs-6' )
   else
-    +imageContent(project, image, 'col-sm-' + image.width )
+    +imageContent(project, image, 'col-xs-' + image.width )
     
 
   
@@ -63,3 +63,4 @@ block body
               p.lead!= set.lead
           each image in set.images
             +image(project, image)
+          .clearfix

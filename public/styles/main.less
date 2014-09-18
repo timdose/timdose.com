@@ -420,20 +420,31 @@ section .container {
   }
 
   .hero {
+    display: none;
     border: 1px solid #ccc;
+    width: 100%;
+    @media ( min-width: @screen-sm-min ) {
+      display: block;
+    }
   }
 
 
   .thumb-wrapper {
-    height: 250px;
+    height: 120px;
     overflow: hidden;
     margin-bottom: 30px;
     border: 1px solid #ccc;
+
+    @media ( min-width: 450px ) { height: 200px; }
+    @media ( min-width: 600px ) { height: 250px; }
+    @media ( min-width: @screen-sm-min ) { height: 170px; }
+    @media ( min-width: @screen-md-min ) { height: 200px; }
   }
 
 
-  .col-sm-12 .thumb-wrapper {
+  .col-xs-12 .thumb-wrapper {
     height: auto;
+
   }
 
   .thumb {
