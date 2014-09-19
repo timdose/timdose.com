@@ -2,7 +2,7 @@ extends include/layouts/default-ux
 
 mixin imageContent( project, image, widthClass )
   div(class=widthClass)
-    if image.permission == 'private'
+    if image.permission == 'private' && showPrivate === false
       .thumb-wrapper.private
         img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
         .message

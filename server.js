@@ -17,6 +17,21 @@ if (app.get('env') === 'development') {
 // global function to process markdown and return html
 app.locals.md = require("node-markdown").Markdown;
 
+var uxBefore = [
+  function( req, res, next ) {
+    app.locals.showPrivate = false;
+    if( req.query.source !== undefined ) {
+      app.locals.showPrivate = true;
+    }
+    next();
+  }
+]
+
+
+
+//-------------------------------------
+// Configuration
+//-------------------------------------
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'jade');
@@ -26,14 +41,18 @@ app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
 
 
+
+//-------------------------------------
+// Routes
+//-------------------------------------
 app.get('/', controllers.index );
 app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
 
-app.get('/ux', controllers.ux );
-app.get('/ux/about', controllers.uxAbout );
-app.get('/ux/projects/:project', controllers.uxProject );
-app.get('/ux/resume', controllers.resume );
+app.get('/ux',                    uxBefore, controllers.ux );
+app.get('/ux/about',              uxBefore, controllers.uxAbout );
+app.get('/ux/projects/:project',  uxBefore, controllers.uxProject );
+app.get('/ux/resume',             uxBefore, controllers.resume );
 
 
 
