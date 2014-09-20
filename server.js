@@ -21,7 +21,7 @@ app.locals.md = require("node-markdown").Markdown;
 var uxBefore = [
   function( req, res, next ) {
     app.locals.showPrivate = false;
-    if( req.query.source !== undefined && req.cookies.showPrivate != '1' ) {
+    if( privateOK(req) && req.cookies.showPrivate != '1' ) {
       app.locals.showPrivate = true;
       res.cookie('showPrivate', '1' );
     } else if ( req.cookies.showPrivate == '1' ) {
@@ -31,7 +31,10 @@ var uxBefore = [
   }
 ]
 
-
+function privateOK(req) {
+  if (req.query.source === undefined ) return false;
+  return (req.query.source.indexOf('email') > -1 ) || (req.query.source.indexOf('resume') > -1 );
+}
 
 //-------------------------------------
 // Configuration
