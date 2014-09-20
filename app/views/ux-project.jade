@@ -31,9 +31,9 @@ block body
   section.project-page
     .row
       .col-sm-4.col-sm-push-8.rail
-        if project.thumbnail
-          a(href='/images/projects/' + project.name + '/' + project.image)
-            img.hero(src='/images/projects/' + project.name + '/' + project.thumbnail)
+        if project.image.thumbnail
+          a(href='/images/projects/' + project.name + '/' + project.image.name)
+            img.hero(src='/images/projects/' + project.name + '/' + project.image.thumbnail)
       .col-sm-8.col-sm-pull-4
         h2= project.title
         p.lead!= project.description
