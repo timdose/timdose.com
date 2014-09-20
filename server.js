@@ -1,6 +1,7 @@
 var express = require('express');
 var logger = require('morgan');
 var lessMiddleware = require('less-middleware');
+var cookieParser = require('cookie-parser');
 
 var controllers = require('./app/controllers');
 
@@ -20,7 +21,10 @@ app.locals.md = require("node-markdown").Markdown;
 var uxBefore = [
   function( req, res, next ) {
     app.locals.showPrivate = false;
-    if( req.query.source !== undefined ) {
+    if( req.query.source !== undefined && req.cookies.showPrivate != '1' ) {
+      app.locals.showPrivate = true;
+      res.cookie('showPrivate', '1' );
+    } else if ( req.cookies.showPrivate == '1' ) {
       app.locals.showPrivate = true;
     }
     next();
@@ -37,6 +41,7 @@ app.set('views', __dirname + '/app/views');
 app.set('view engine', 'jade');
 
 app.use(logger(logMode));
+app.use(cookieParser());
 app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
 
