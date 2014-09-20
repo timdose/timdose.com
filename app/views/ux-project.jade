@@ -1,39 +1,39 @@
 extends include/layouts/default-ux
 
-mixin imageContent( project, image, widthClass )
-  div(class=widthClass)
-    if image.permission == 'private' && showPrivate === false
-      .thumb-wrapper.private
-        img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
-        .message
-          div.icon.fa.fa-lock
-          div.text Sensitive business material
-          div.actions
-            a.active.btn.btn-primary.btn-xs.action.unlockButton(data-toggle="modal",data-target="#unlockModal") Unlock
+mixin linkedImage( project, image )
+  if image.permission == 'private' && showPrivate === false
+    .thumb-wrapper.private
+      img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+      .message
+        div.icon.fa.fa-lock
+        div.text Sensitive business material
+        div.actions
+          a.active.btn.btn-primary.btn-xs.action.unlockButton(data-toggle="modal",data-target="#unlockModal") Unlock
 
-    else
-      .thumb-wrapper
-        a(href='/images/projects/' + project.name + '/' + image.name)
-          img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
-
-mixin image( project, image )
-  if ( image.width == undefined )
-    +imageContent(project, image, 'col-sm-4' )
   else
-    +imageContent(project, image, 'col-sm-' + image.width )
+    .thumb-wrapper
+      a(href='/images/projects/' + project.name + '/' + image.name)
+        img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+
+
+
+mixin linkedImageWithWidth( project, image )
+  - var widthClass
+  if ( image.width == undefined )
+    .col-sm-4
+      +linkedImage(project, image )
+  else
+    div(class='col-sm-' + image.width )
+      +linkedImage(project, image )
     
 
-
-
-  
 
 block body
   section.project-page
     .row
       .col-sm-4.col-sm-push-8.rail
         if project.image.thumbnail
-          a(href='/images/projects/' + project.name + '/' + project.image.name)
-            img.hero(src='/images/projects/' + project.name + '/' + project.image.thumbnail)
+          +linkedImage( project, project.image )
       .col-sm-8.col-sm-pull-4
         h2= project.title
         p.lead!= project.description
@@ -63,7 +63,7 @@ block body
       .between
       .row.images
         each image in project.images
-          +image(project, image)
+          +linkedImageWithWidth(project, image)
 
     if project.imageSets
       .between
@@ -74,7 +74,7 @@ block body
             if set.lead
               p.lead!= set.lead
           each image in set.images
-            +image(project, image)
+            +linkedImageWithWidth(project, image)
 
 
   #unlockModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='unlockModalLabel', aria-hidden='true')
