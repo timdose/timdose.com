@@ -25,9 +25,3 @@ function highlightCurrentPage() {
     window.location.href = link;
   });
 }
-
-
-function privateImage() {
-  console.log('private image');
-  return false;
-}
