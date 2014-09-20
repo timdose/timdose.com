@@ -441,6 +441,35 @@ section .container {
     @media ( min-width: @screen-md-min ) { height: 200px; }
   }
 
+  .thumb-wrapper.private {
+    position: relative;
+    background: url(/assets/img/overlay-pattern.png);
+  }
+
+  .private .message {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+
+    .icon {
+      font-size: 30px;
+      display: inline;
+      vertical-align: middle;
+    }
+
+    .text {
+      display: inline;
+      vertical-align: middle;
+      line-height: 1em;
+    }
+
+    .action {
+      .btn-sm;
+    }
+  }
+
 
   .col-xs-12 .thumb-wrapper {
     height: auto;
@@ -449,6 +478,11 @@ section .container {
 
   .thumb {
     width: 100%;
+  }
+
+
+  .private .thumb {
+    opacity: .1;
   }
 
 

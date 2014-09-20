@@ -15,4 +15,13 @@ function highlightCurrentPage() {
       $(target).addClass('active');
     }
   });
+
+  $('#requestUnlockLink').click(function(e){
+    e.preventDefault();
+    var link = "mailto:tim@timdose.com"
+             + "?subject=" + escape("Unlock Code for TimDose.com")
+    ;
+
+    window.location.href = link;
+  });
 }

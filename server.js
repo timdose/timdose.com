@@ -1,6 +1,7 @@
 var express = require('express');
 var logger = require('morgan');
 var lessMiddleware = require('less-middleware');
+var cookieParser = require('cookie-parser');
 
 var controllers = require('./app/controllers');
 
@@ -17,23 +18,56 @@ if (app.get('env') === 'development') {
 // global function to process markdown and return html
 app.locals.md = require("node-markdown").Markdown;
 
+var uxBefore = [
+  function( req, res, next ) {
+    app.locals.showPrivate = false;
+    if( privateOK(req) && req.cookies.showPrivate != '1' ) {
+      app.locals.showPrivate = true;
+      res.cookie('showPrivate', '1' );
+    } else if ( req.cookies.showPrivate == '1' ) {
+      app.locals.showPrivate = true;
+    }
+    next();
+  },
+
+  function( req, res, next ) {
+    if ( req.query.clear !== undefined ) {
+      res.clearCookie('showPrivate');
+    }
+    next();
+  }
+]
+
+function privateOK(req) {
+  if (req.query.source === undefined ) return false;
+  return (req.query.source.indexOf('email') > -1 ) || (req.query.source.indexOf('resume') > -1 );
+}
+
+//-------------------------------------
+// Configuration
+//-------------------------------------
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'jade');
 
 app.use(logger(logMode));
+app.use(cookieParser());
 app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(__dirname + '/public'));
 
 
+
+//-------------------------------------
+// Routes
+//-------------------------------------
 app.get('/', controllers.index );
 app.get('/art', controllers.art );
 app.get('/art/:genre/:section', controllers.art );
 
-app.get('/ux', controllers.ux );
-app.get('/ux/about', controllers.uxAbout );
-app.get('/ux/projects/:project', controllers.uxProject );
-app.get('/ux/resume', controllers.resume );
+app.get('/ux',                    uxBefore, controllers.ux );
+app.get('/ux/about',              uxBefore, controllers.uxAbout );
+app.get('/ux/projects/:project',  uxBefore, controllers.uxProject );
+app.get('/ux/resume',             uxBefore, controllers.resume );
 
 
 

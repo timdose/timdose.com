@@ -2,8 +2,9 @@
   title: Yodle.com UX
   blurb: Raised conversion 30%.
   status: In progress
-  image: thumbnail.jpg
-  thumbnail: thumbnail.jpg
+  image: 
+    name: home.jpg
+    thumbnail: home.th.jpg
   roles:
     - Lead Interaction Designer
   description: >
@@ -38,8 +39,9 @@
   title: Yodle.com Development
   blurb: Faster all around.
   status: Complete
-  image: code-sample.png
-  thumbnail: code-sample.th.jpg
+  image: 
+    name: code-sample.png
+    thumbnail: code-sample.th.jpg
   roles:
     - Lead Front End Developer
   description: >
@@ -93,8 +95,9 @@
     - Visual Design Lead
   status: Complete
   blurb: Raised Client Satisfaction 17%.
-  image: example-sites/www.newarkdesignarchitect.com.jpg
-  thumbnail: example-sites/www.newarkdesignarchitect.com.th.jpg
+  image: 
+    name: example-sites/www.newarkdesignarchitect.com.jpg
+    thumbnail: example-sites/www.newarkdesignarchitect.com.th.jpg
   description: >
     CMS3 is a modular microsite publisher optimized for scale, controlled customizability, and AB Testing.
   problem: >
@@ -174,20 +177,22 @@
         - name: example-sites/www.champlinlandscaping.com.jpg
           thumbnail: example-sites/www.champlinlandscaping.com.th.jpg
         - name: example-sites/www.turnersvilleinsuranceservices.com.jpg
-          thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg        
+          thumbnail: example-sites/www.turnersvilleinsuranceservices.com.th.jpg
     - title: How a Page Is Rendered
       images:
         - name: renderer-process.png
           thumbnail: renderer-process.png
           width: 12
+          permission: private
 
 
 - name: yodle-self-signup
   title: Yodle Self Signup
   blurb: "Goal: Reduce acquisition cost."
   status: In progress
-  image: v3-wireframe.jpg
-  thumbnail: v3-wireframe.th.jpg
+  image: 
+    name: v3-wireframe.png
+    thumbnail: v3-wireframe.th.jpg
   description: >
     Goal: Dramatically lower Acquisition Cost by allowing prospects to sign up online with
     minimal or no involvement from the Sales team.
@@ -222,8 +227,9 @@
   title: Yodle CMS3 Redesign
   blurb: "Goal: Increase Client Satisfaction."
   status: In progress
-  image: visual-design.jpg
-  thumbnail: thumbnail.jpg
+  image: 
+    name: visual-design.jpg
+    thumbnail: thumbnail.jpg
   description: >
     Goal: improve Client Satisfaction and Retention even further than the original designs.
   problem: >
@@ -251,8 +257,10 @@
   title: Yodle Marketing Funnel
   blurb: Clarified high-level landscape.
   status: Complete
-  image: funnel-map.jpg
-  thumbnail: funnel-map.th.jpg
+  image: 
+    name: funnel-map.jpg
+    thumbnail: funnel-map.th.jpg
+    permission: private  
   description: >
     A map of the various paths a prospect can take to signing up for Yodle.
   problem: >
