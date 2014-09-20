@@ -28,6 +28,13 @@ var uxBefore = [
       app.locals.showPrivate = true;
     }
     next();
+  },
+
+  function( req, res, next ) {
+    if ( req.query.clear !== undefined ) {
+      res.clearCookie('showPrivate');
+    }
+    next();
   }
 ]
 

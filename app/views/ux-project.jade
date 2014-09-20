@@ -9,7 +9,7 @@ mixin imageContent( project, image, widthClass )
           div.icon.fa.fa-lock
           div.text Sensitive business material
           div.actions
-            a.active.btn.btn-primary.btn-xs.action(href='#', onclick='return privateImage();') Unlock
+            a.active.btn.btn-primary.btn-xs.action(data-toggle="modal",data-target="#unlockModal") Unlock
 
     else
       .thumb-wrapper
@@ -22,6 +22,8 @@ mixin image( project, image )
   else
     +imageContent(project, image, 'col-sm-' + image.width )
     
+
+
 
   
 
@@ -73,3 +75,23 @@ block body
               p.lead!= set.lead
           each image in set.images
             +image(project, image)
+
+
+  #unlockModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='unlockModalLabel', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only Close
+            h4#myModalLabel.modal-title Unlock Sensitive Business Material
+          .modal-body
+            form(role='form')
+              .form-group
+                label(for='unlockCode') Enter unlock code
+                input(type='email', class='form-control', id='unlockCode', name='unlockCode')
+              a#requestUnlockLink(href='#') Request an unlock code
+
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+            button.btn.btn-primary(type='button') Done
