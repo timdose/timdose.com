@@ -26,6 +26,16 @@ exports.index = function(req, res) {
 };
 
 
+exports.artDefault = function(req, res) {
+  var url = req.originalUrl;
+  var queryString = '';
+  if (url.indexOf('?') > -1 ) {
+    queryString = url.substr(url.indexOf('?'));
+  }
+  res.redirect(301, '/art/fine-art/paintings' + queryString );
+}
+
+
 exports.art = function(req, res) {
   var portfolio = data.art[req.params.section];
   var genre = _(data.art.config.genres).findWhere({name:req.params.genre});

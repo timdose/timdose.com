@@ -61,7 +61,7 @@ app.use(express.static(__dirname + '/public'));
 // Routes
 //-------------------------------------
 app.get('/', controllers.index );
-app.get('/art', controllers.art );
+app.get('/art', controllers.artDefault );
 app.get('/art/:genre/:section', controllers.art );
 
 app.get('/ux',                    uxBefore, controllers.ux );
