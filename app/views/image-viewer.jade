@@ -1,0 +1,9 @@
+extends include/layouts/default-ux
+
+
+block body
+  .image-viewer
+    img.image.fit-on-page(src=image)
+
+block scripts
+  script(src='/scripts/image-viewer.js')

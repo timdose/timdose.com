@@ -69,6 +69,8 @@ app.get('/ux/about',              uxBefore, controllers.uxAbout );
 app.get('/ux/projects/:project',  uxBefore, controllers.uxProject );
 app.get('/ux/resume',             uxBefore, controllers.resume );
 
+app.get(/^\/ux\/image-viewer\/(.*)/, controllers.imageViewer );
+
 
 
 //-------------------------------------

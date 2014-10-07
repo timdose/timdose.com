@@ -91,3 +91,10 @@ exports.resume = function(req, res) {
   filestream.pipe(res);
 }
 
+
+exports.imageViewer = function( req, res ) {
+  var image = req.params[0]
+  data.image = '/' + req.params[0];
+  res.render( 'image-viewer', data );
+}
+
