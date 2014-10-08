@@ -39,8 +39,11 @@ var uxBefore = [
 ]
 
 function privateOK(req) {
-  if (req.query.source === undefined ) return false;
-  return (req.query.source.indexOf('email') > -1 ) || (req.query.source.indexOf('resume') > -1 );
+  if (req.query.source !== undefined ) {
+    return false;
+  } else {
+    return true
+  }
 }
 
 //-------------------------------------
