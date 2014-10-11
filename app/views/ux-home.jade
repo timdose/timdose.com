@@ -3,7 +3,7 @@ extends include/layouts/default-ux
 block header
   header.header
     .row
-      .col-sm-8
+      .col-sm-8.col-xs-10
         h1.heading Tim Dosé
         p.title UX Designer/Developer
         .lead!= md(about.blurb)
@@ -24,8 +24,10 @@ block body
                 .thumb-wrapper
                   img.thumb(src='/images/projects/' + project.name + '/' + project.image.thumbnail)
                   .screen
-                strong.title=project.title
-                span.blurb=project.blurb
+                strong.title
+                  span=project.title
+                  i.fa.fa-chevron-right
+                div.blurb=project.blurb
 
     .between
     section#about
@@ -41,4 +43,10 @@ block body
           //- .more
           //-   a(href='/ux/about') Read More 
           //-     span.fa.fa-angle-right
+  
+  //- .media-query-sniff
+    .visible-xs xs
+    .visible-sm sm
+    .visible-md md
+    .visible-lg lg
 
