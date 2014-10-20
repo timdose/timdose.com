@@ -15,7 +15,8 @@
   "devDependencies": {
     "gulp": "^3.8.2",
     "gulp-livereload": "^2.1.0",
-    "gulp-nodemon": "^1.0.4"
+    "gulp-nodemon": "^1.0.4",
+    "chai": "^1.9.2"
   },
   "engines": {
     "node": ">=0.8.0"

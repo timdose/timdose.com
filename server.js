@@ -21,7 +21,7 @@ app.locals.md = require("node-markdown").Markdown;
 var uxBefore = [
   function( req, res, next ) {
     app.locals.showPrivate = false;
-    if( privateOK(req) && req.cookies.showPrivate != '1' ) {
+    if( req.query.source !== undefined && req.cookies.showPrivate != '1' ) {
       app.locals.showPrivate = true;
       res.cookie('showPrivate', '1' );
     } else if ( req.cookies.showPrivate == '1' ) {
@@ -38,13 +38,7 @@ var uxBefore = [
   }
 ]
 
-function privateOK(req) {
-  if (req.query.source !== undefined ) {
-    return false;
-  } else {
-    return true
-  }
-}
+
 
 //-------------------------------------
 // Configuration
