@@ -4,6 +4,7 @@ var lessMiddleware = require('less-middleware');
 var cookieParser = require('cookie-parser');
 
 var controllers = require('./app/controllers');
+var util = require('./app/util');
 
 var app = express();
 module.exports = app; // expose for testing
@@ -20,12 +21,10 @@ app.locals.md = require("node-markdown").Markdown;
 
 var uxBefore = [
   function( req, res, next ) {
-    app.locals.showPrivate = false;
-    if( req.query.source !== undefined && req.cookies.showPrivate != '1' ) {
-      app.locals.showPrivate = true;
+    app.locals.showPrivate = util.privateOK(req);
+
+    if ( util.shouldSetPrivateCookie(req) ) {
       res.cookie('showPrivate', '1' );
-    } else if ( req.cookies.showPrivate == '1' ) {
-      app.locals.showPrivate = true;
     }
     next();
   },
