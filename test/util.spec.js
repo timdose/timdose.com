@@ -20,5 +20,13 @@ describe('util', function() {
             req = { query: {}, cookies: {} };
             expect(util.privateOK(req)).to.equal(false);
         });
+
+        it('recommend setting cookie if source is set and cookie doesn\'t exist', function() {
+            // var req = { query: {}, cookies: { showPrivate: '1' } };
+            // expect(util.shouldSetPrivateCookie(req)).to.equal(true);
+
+            req = { query: {}, cookies: {} };
+            expect(util.shouldSetPrivateCookie(req)).to.equal(false);
+        });
     });
 });
