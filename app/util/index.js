@@ -12,6 +12,8 @@ exports.privateOK = function(req) {
 exports.shouldSetPrivateCookie = function(req) {
     if (req.query === undefined) return false;
     if (req.cookies === undefined) return false;
-
-    if ( )
+    if ( req.query.source !== undefined && req.cookies.showPrivate === undefined ) {
+        return true;
+    }
+    return false; 
 }

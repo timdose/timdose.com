@@ -14,7 +14,7 @@ describe('util', function() {
         });
 
         it('should allow private if cookie is set', function() {
-            var req = { query: {}, cookies: { showPrivate: '1' } };
+            req = { query: {}, cookies: { showPrivate: '1' } };
             expect(util.privateOK(req)).to.equal(true);
 
             req = { query: {}, cookies: {} };
@@ -22,11 +22,17 @@ describe('util', function() {
         });
 
         it('recommend setting cookie if source is set and cookie doesn\'t exist', function() {
-            // var req = { query: {}, cookies: { showPrivate: '1' } };
-            // expect(util.shouldSetPrivateCookie(req)).to.equal(true);
-
             req = { query: {}, cookies: {} };
             expect(util.shouldSetPrivateCookie(req)).to.equal(false);
+
+            req = { query: {}, cookies: { showPrivate: '1' } };
+            expect(util.shouldSetPrivateCookie(req)).to.equal(false);
+
+            req = { query: { source: 'test' }, cookies: { showPrivate: '1' } };
+            expect(util.shouldSetPrivateCookie(req)).to.equal(false);
+
+            req = { query: { source: 'test' }, cookies: {} };
+            expect(util.shouldSetPrivateCookie(req)).to.equal(true);
         });
     });
 });
