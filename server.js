@@ -1,3 +1,5 @@
+var versionNumber = '1.1';
+
 var express = require('express');
 var logger = require('morgan');
 var lessMiddleware = require('less-middleware');
@@ -56,6 +58,8 @@ app.use(express.static(__dirname + '/public'));
 //-------------------------------------
 // Routes
 //-------------------------------------
+app.get('/version', function(req, res) { res.send(versionNumber)} );
+
 app.get('/', controllers.index );
 app.get('/art', controllers.artDefault );
 app.get('/art/:genre/:section', controllers.art );
