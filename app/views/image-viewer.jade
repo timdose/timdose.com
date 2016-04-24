@@ -3,4 +3,16 @@ extends include/layouts/default-ux
 
 block body
   .image-viewer
-    img.image.fit-on-page(src=image)
+    img.image.fit-in-window(src=image)
+
+
+block scripts
+  script.
+    $('img.image').click(function(){
+      if ( $(this).hasClass('fit-in-window')) {
+        $(this).removeClass('fit-in-window');
+      } else {
+        $(this).addClass('fit-in-window');
+      }
+    });
+  

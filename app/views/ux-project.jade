@@ -42,6 +42,10 @@ block body
         if project.problem
           h3 Problem
           .problem.content!= md(project.problem)
+
+        if project.opportunity
+          h3 Opportunity
+          .problem.content!= md(project.opportunity)
         
         if project.process
           h3 Process

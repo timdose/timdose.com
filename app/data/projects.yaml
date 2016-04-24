@@ -82,6 +82,29 @@
     name: visual-design/overview.png
     thumbnail: visual-design/overview.th.png
   role: Lead UX Designer
+
+  description: >
+    Dashboard for hedge funds to monitor performance of loans purchased from OnDeck.
+
+  problem: >
+    OnDeck was only providing its high profile investors with Excel spreadsheets sent via email.
+
+  process: >
+
+    - Reviewed initial assumptions and requirements. 
+
+    - Collaborative task analysis with Product and business stakeholders to uncover and prioritize features.
+
+    - Refined requirements by interviewing portfolio managers and data analysts at the hedge funds.
+
+    - Developed MVP prototype through user testing with customers and negotiation with Dev.
+
+    - Started visual design, but project was put on hold before completion.
+
+
+  results: >
+    - Project was put on hold when a game-changing opportunity came through for OnDeck.
+
   prototypes:
     - description: Lo fi MVP prototype
       link: http://l1hw7c.axshare.com/overview.html
@@ -115,27 +138,63 @@
         - name: visual-design/overview.png
           thumbnail: visual-design/overview.th.png
 
-  description: >
-    Dashboard for hedge funds to monitor performance of loans purchased from OnDeck.
 
-  problem: >
-    OnDeck was only providing its high profile investors with Excel spreadsheets sent via email.
+
+- name: yodle-cms3-delivery
+  title: Yodle CMS3 Customer Tool
+  blurb: Lightweight customization tool for customers
+  image: 
+    name: visual-design/visual-design-page-2.jpg
+    thumbnail: visual-design/visual-design-page-2.th.jpg
+  role:
+    - UX Manager
+  description: >
+    During the larger onboarding process with Yodle, customers use this tool to set up the basic look and feel of their microsite.
+  opportunity: >
+    - Customers were often surprised by the initial state of their microsite.
+
+    - Most customers were only upset about a few things with their site—colors not matching their logo, and the general look and feel.
+
+    - Hypothesis: giving customers input into these few items would solve the dissatisfaction, as well as give more of a sense of ownership over their site.
 
   process: >
+    - Documented current state in a process flow.
 
-    - Reviewed initial assumptions and requirements. 
+    - Created initial wireframes and process flow, then discussed with Dev and Product.
 
-    - Collaborative task analysis with Product and business stakeholders to uncover and prioritize features.
+    - Guerilla testing with local small business owners and a paper prototype.
 
-    - Refined requirements by interviewing portfolio managers and data analysts at the hedge funds.
+    - Back and forth with Dev and Product to find a solution that would make a difference but still fit within the small dev allocation.
 
-    - Developed MVP prototype through user testing with customers and negotiation with Dev.
-
-    - Started visual design, but project was put on hold before completion.
-
+    - Compromise solution reusing existing components using Yodle’s component library.
 
   results: >
-    - Project was put on hold when a game-changing opportunity came through for OnDeck.
+    - Increased customer satisfaction and fewer complaints involving their initial microsite.
+
+
+  imageSets:
+    - title: Process Flows
+      images:
+        - name: process-flows/process-flow-v1.png
+          thumbnail: process-flows/process-flow-v1.th.png
+        - name: process-flows/process-flow-v2.png
+          thumbnail: process-flows/process-flow-v2.th.png
+    - title: Wireframes
+      images: 
+        - name: wireframes/wireframes-experience.png
+          thumbnail: wireframes/wireframes-experience.th.png
+        - name: wireframes/wireframe-dashboard-cta.png
+          thumbnail: wireframes/wireframe-dashboard-cta.th.png
+        - name: wireframes/wireframe-admin-cta.png
+          thumbnail: wireframes/wireframe-admin-cta.th.png
+    - title: Visual Design
+      images: 
+        - name: visual-design/visual-design-page-1.png
+          thumbnail: visual-design/visual-design-page-1.th.png 
+        - name: visual-design/visual-design-page-2.jpg
+          thumbnail: visual-design/visual-design-page-2.th.jpg
+
+
 
 
 - name: yodle-com
