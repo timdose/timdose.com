@@ -9,11 +9,16 @@ mixin linkedImage( project, image )
         div.text Sensitive business material
         div.actions
           a.active.btn.btn-primary.btn-xs.action.unlockButton(data-toggle="modal",data-target="#unlockModal") Unlock
+  else if image.pdf
+    .thumb-wrapper.pdf
+      a(href='/images/projects/' + project.name + '/' + image.name, target="_blank")
+        img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
 
   else
     .thumb-wrapper
       a(href='/ux/image-viewer/images/projects/' + project.name + '/' + image.name)
         img.thumb(src='/images/projects/' + project.name + '/' + image.thumbnail)
+
 
 
 
@@ -25,6 +30,7 @@ mixin linkedImageWithWidth( project, image )
   else
     div(class='col-sm-' + image.width )
       +linkedImage(project, image )
+
 
 
 block body

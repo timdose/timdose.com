@@ -140,6 +140,57 @@
 
 
 
+- name: yodle-cms3-designer
+  title: Yodle CMS3 Adversite Designer
+  blurb: Rapid microsite creator
+  image: 
+    name: wireframes/03-flyout-open.png
+    thumbnail: wireframes/03-flyout-open.th.png
+  role:
+    - UX Manager
+  description: Tool for Yodle’s Customer Service team to rapidly create microsites for Yodle’s customers.
+  opportunity: >
+    - Yodle's process to set up microsites for their customers was very time consuming and error prone.
+  process: >
+    - Documented current state with process flow.
+
+    - Interviewed and observed Customer Service reps setting up microsites.
+
+    - Documented most common customer requests during site setup.
+      - Vast majority were very limited: colors, basic look and feel, contact info, adding logo.
+
+    - Created wireframes based on initial research.
+
+    - Iterated wireframes using a prototype tested with Customer Service reps.
+
+    - Visual design & launch.
+
+  results: >
+    - 60% improvement in setup time.
+
+  imageSets:
+    - title: Process Flows
+      images:
+        - name:      process-flows/process-flow-adversite-setup-original.pdf
+          thumbnail: process-flows/process-flow-adversite-setup-original.th.png
+          pdf: true
+        - name:      process-flows/process-flow.png
+          thumbnail: process-flows/process-flow.th.png
+    - title: Wireframes
+      images:
+        - name:      wireframes/01-side-nav.png
+          thumbnail: wireframes/01-side-nav.th.png
+        - name:      wireframes/02-open-subnav.png
+          thumbnail: wireframes/02-open-subnav.th.png
+        - name:      wireframes/03-flyout-open.png
+          thumbnail: wireframes/03-flyout-open.th.png
+    - title: Visual Design
+      images:
+        - name:      visual-design/visual-design.png
+          thumbnail: visual-design/visual-design.th.png
+
+
+
 - name: yodle-cms3-delivery
   title: Yodle CMS3 Customer Tool
   blurb: Lightweight customization tool for customers
