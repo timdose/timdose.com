@@ -77,7 +77,7 @@
 - name: ondeck-investor-portal
   title: OnDeck Investor Portal
   private: true
-  blurb: Dashboard for power users
+  blurb: Loan tracking for investors
   image: 
     name: visual-design/overview.png
     thumbnail: visual-design/overview.th.png
@@ -118,15 +118,18 @@
   description: >
     Dashboard for hedge funds to monitor performance of loans purchased from OnDeck.
 
+  problem: >
+    OnDeck was only providing its high profile investors with Excel spreadsheets sent via email.
+
   process: >
 
     - Reviewed initial assumptions and requirements. 
 
-    - Performed task analysis for feature prioritization.
+    - Collaborative task analysis with Product and business stakeholders to uncover and prioritize features.
 
-    - Refined requirements by interviewing customers.
+    - Refined requirements by interviewing portfolio managers and data analysts at the hedge funds.
 
-    - Developed lo fi prototype through user testing and negotiation with Dev.
+    - Developed MVP prototype through user testing with customers and negotiation with Dev.
 
     - Started visual design, but project was put on hold before completion.
 
