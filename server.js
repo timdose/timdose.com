@@ -64,10 +64,11 @@ app.get('/', controllers.index );
 app.get('/art', controllers.artDefault );
 app.get('/art/:genre/:section', controllers.art );
 
-app.get('/ux',                    uxBefore, controllers.ux );
-app.get('/ux/about',              uxBefore, controllers.uxAbout );
-app.get('/ux/projects/:project',  uxBefore, controllers.uxProject );
-app.get('/ux/resume',             uxBefore, controllers.resume );
+app.get('/ux',                    uxBefore, controllers.before, controllers.ux );
+app.get('/ux/about',              uxBefore, controllers.before, controllers.uxAbout );
+app.get('/ux/projects/:project',  uxBefore, controllers.before, controllers.uxProject );
+app.get('/ux/resume',             uxBefore, controllers.before, controllers.resume );
+app.get('/ux/schoology',          uxBefore, controllers.before, controllers.schoology );
 
 app.get(/^\/ux\/image-viewer\/(.*)/, controllers.imageViewer );
 

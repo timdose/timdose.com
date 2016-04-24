@@ -16,7 +16,7 @@ nav.navbar.navbar-default(role="navigation")
               | Work
               span.caret
             ul.dropdown-menu(role='menu')
-              each project in projects
+              each project in activeProjects
                 li: a(data-activate='work', href='/ux/projects/' + project.name )!= project.title
           li: a(href='/ux/resume') Resume 
             i.fa.fa-download

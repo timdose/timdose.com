@@ -36,11 +36,17 @@ block body
       .col-sm-8.col-sm-pull-4
         h2= project.title
         p.lead!= project.description
+          if project.role
+            small!= 'Role: ' + project.role
 
         if project.problem
           h3 Problem
           .problem.content!= md(project.problem)
         
+        if project.process
+          h3 Process
+          .results.content!= md(project.process)
+
         if project.results
           h3 Results
           .results.content!= md(project.results)
@@ -57,6 +63,16 @@ block body
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
 
+
+    if project.prototypes
+      h4 Prototypes
+      ul.tools
+        each prototype in project.prototypes
+          li
+            a(href=prototype.link,target='_blank')
+              span!=prototype.description
+              &nbsp
+              i.fa.fa-external-link
 
     if project.images
       .between

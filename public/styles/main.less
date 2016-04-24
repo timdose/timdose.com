@@ -41,10 +41,11 @@
 
 h1,h2,h3,h4,h5,h6 {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.2em;
   color: @headings-color;
   font-weight: 400;
   margin-top: .25em;
+  line-height: 1em;
 
   .fa {
     color: @icons-color;
@@ -63,7 +64,8 @@ ul {
 }
 
 .body li {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.6em;
+  line-height: 1.2em;
 }
 
 .body ul.condensed li {
@@ -87,6 +89,12 @@ ul {
 .lead strong {
   font-family: @font-family-sans-serif;
   font-weight: 600;
+}
+
+.lead small {
+  display: block;
+  font-size: 70%;
+  margin-top: 16px;
 }
 
 .thumbnail {

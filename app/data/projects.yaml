@@ -1,3 +1,140 @@
+
+
+- name: ondeck-firefly
+  title: OnDeck Project Firefly
+  private: true
+  blurb: Game-changing loan experience
+  image: 
+    name: lofi-desktop/01-choose-offer.png
+    thumbnail: thumbnail-desktop.png
+  role: Lead UX Designer
+  prototypes:
+    - description: Pre-research prototype (desktop)
+      link: http://nwk3vu.axshare.com/choose_offer.html
+    - description: Pre-research prototype (mobile)
+      link: http://nwk3vu.axshare.com/#p=choose_offer&view=default&c=1
+    - description: Post-research prototype (desktop)
+      link: http://v1dhj0.axshare.com/vanity_page_03b.html
+    - description: Post-research prototype (mobile)
+      link: http://v1dhj0.axshare.com/#p=choose_offer&c=1&view=default&g=1
+  imageSets:
+    - title: Final Mobile Prototype Screenshots
+      images: 
+        - name: lofi-mobile/01-choose-offer.png
+          thumbnail: lofi-mobile/01-choose-offer.th.png
+        - name: lofi-mobile/01-confirm-info.png
+          thumbnail: lofi-mobile/02-confirm-info.th.png
+        - name: lofi-mobile/03-checkout.png
+          thumbnail: lofi-mobile/03-checkout.th.png
+        - name: lofi-mobile/04-congrats.png
+          thumbnail: lofi-mobile/04-congrats.th.png
+        - name: lofi-mobile/05-dashboard.png
+          thumbnail: lofi-mobile/05-dashboard.th.png
+
+    - title: Final Desktop Prototype Screenshots
+      images: 
+        - name: lofi-desktop/01-choose-offer.png
+          thumbnail: lofi-desktop/01-choose-offer.png
+        - name: lofi-desktop/01-confirm-info.png
+          thumbnail: lofi-desktop/02-confirm-info.png
+        - name: lofi-desktop/03-checkout.png
+          thumbnail: lofi-desktop/03-checkout.png
+        - name: lofi-desktop/04-congrats.png
+          thumbnail: lofi-desktop/04-congrats.png
+        - name: lofi-desktop/05-dashboard.png
+          thumbnail: lofi-desktop/05-dashboard.png
+
+
+  description: >
+    Partnered with a top US bank to provide a game-changing loan experience for small businesses.
+  problem: >
+    - Getting a loan from the bank was painful and time consuming.
+
+  process: >
+    - Worked with Product and Business Development to clarify requirements. 
+
+    - Created a low fidelity, responsive prototype.
+
+    - Multiple cycles of user testing and iteration on prototype, with small business owners as test participants.
+
+    - After approval from the bank, Engineering started work on major functionality.
+
+    - In the meantime, collaborated with a visual designer to finalize look  and feel.
+
+    - Re-tested the final designs with small business owners.
+
+    - Front end coding and back-end loan pipeline was completed.
+
+
+  results: >
+    - Went live at the beginning of April with a pilot launch.
+
+    - As of April 22, already generated 9 loans for over $350,000 in revenue.
+
+    - One customer completed loan checkout in 10 minutes on their phone. Unheard of for the loan industry!
+
+
+- name: ondeck-investor-portal
+  title: OnDeck Investor Portal
+  private: true
+  blurb: Dashboard for power users
+  image: 
+    name: visual-design/overview.png
+    thumbnail: visual-design/overview.th.png
+  role: Lead UX Designer
+  prototypes:
+    - description: Lo fi MVP prototype
+      link: http://l1hw7c.axshare.com/overview.html
+    - description: Interactive graph prototype
+      link: http://mktip-prototype.herokuapp.com/
+  imageSets:
+    - title: Task Analysis
+      images:
+        - name: prep/task-analysis.jpg
+          thumbnail: prep/task-analysis.th.jpg
+    - title: Data Visualization Explorations
+      images: 
+        - name: data-visualization/datavis-01.png
+          thumbnail: data-visualization/datavis-01.th.png
+        - name: data-visualization/datavis-02.png
+          thumbnail: data-visualization/datavis-02.th.png
+    - title: MVP Prototype Screenshots
+      images: 
+        - name: prototype/overview.png
+          thumbnail: prototype/overview.th.png 
+        - name: prototype/search.png
+          thumbnail: prototype/search.th.png 
+        - name: prototype/benchmarking.png
+          thumbnail: prototype/benchmarking.th.png 
+        - name: prototype/downloads.png
+          thumbnail: prototype/downloads.th.png 
+        - name: prototype/settings.png
+          thumbnail: prototype/settings.th.png
+    - title: Preliminary Visual Design
+      images: 
+        - name: visual-design/overview.png
+          thumbnail: visual-design/overview.th.png
+
+  description: >
+    Dashboard for hedge funds to monitor performance of loans purchased from OnDeck.
+
+  process: >
+
+    - Reviewed initial assumptions and requirements. 
+
+    - Performed task analysis for feature prioritization.
+
+    - Refined requirements by interviewing customers.
+
+    - Developed lo fi prototype through user testing and negotiation with Dev.
+
+    - Started visual design, but project was put on hold before completion.
+
+
+  results: >
+    - Project was put on hold when a game-changing opportunity came through for OnDeck.
+
+
 - name: yodle-com
   title: Yodle.com UX
   blurb: Raised conversion 30%.

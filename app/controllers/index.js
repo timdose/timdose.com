@@ -6,6 +6,7 @@ var fs = require('fs');
 var _ = require('lodash/dist/lodash.underscore');
 var path = require('path');
 var mime = require('mime');
+var util = require('../../app/util');
 
 
 var data = { 
@@ -25,6 +26,14 @@ exports.index = function(req, res) {
   res.render('index');
 };
 
+exports.before = function( req, res, next ) {
+  if ( util.privateOK(req) ) {
+    data.activeProjects = data.projects;
+  } else {
+    data.activeProjects = _(data.projects).filter(function(o){return !o.private});
+  }
+  next();
+}
 
 exports.artDefault = function(req, res) {
   var url = req.originalUrl;
@@ -52,6 +61,14 @@ exports.art = function(req, res) {
 
 
 exports.ux = function(req, res) {
+  // data.activeProjects = _(data.projects).filter(function(o){return !o.private});
+  res.render('ux-home', data );
+};
+
+
+exports.schoology = function(req, res) {
+  data.audience = 'Schoology';
+  // data.activeProjects = data.projects;
   res.render('ux-home', data );
 };
 

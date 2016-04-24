@@ -15,5 +15,8 @@ exports.shouldSetPrivateCookie = function(req) {
     if ( req.query.source !== undefined && req.cookies.showPrivate === undefined ) {
         return true;
     }
+    if (req.originalUrl.indexOf('ux/schoology') !== -1 ) {
+        return true;
+    }
     return false; 
 }
