@@ -47,8 +47,16 @@
 
   description: >
     Partnered with a top US bank to provide a game-changing loan experience for small businesses.
-  problem: >
+  opportunity: >
     - Getting a loan from the bank was painful and time consuming.
+
+    - Since the bank already had the necessary info to make a credit decision, customers can be approved ahead of time.
+
+    - Approved customers can simply select the amount and term they want, confirm their info, and agree to the terms. No lengthy application.
+
+    - The bank can provide a best-in-class experience at much better rates than OnDeck can usually provide.
+
+    - OnDeck gets access to a large, stable base of customers in low-risk situation.
 
   process: >
     - Worked with Product and Business Development to clarify requirements. 
@@ -86,8 +94,12 @@
   description: >
     Dashboard for hedge funds to monitor performance of loans purchased from OnDeck.
 
-  problem: >
-    OnDeck was only providing its high profile investors with Excel spreadsheets sent via email.
+  opportunity: >
+    - OnDeck was only providing its high profile investors with Excel spreadsheets sent via email.
+
+    - The portal would dramatically improve their experience.
+
+    - The portal could also be used as a selling tool for future partners.
 
   process: >
 
@@ -151,6 +163,7 @@
   description: Tool for Yodle’s Customer Service team to rapidly create microsites for Yodle’s customers.
   opportunity: >
     - Yodle's process to set up microsites for their customers was very time consuming and error prone.
+    
   process: >
     - Documented current state with process flow.
 
