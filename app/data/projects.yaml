@@ -154,7 +154,7 @@
 
 
 - name: yodle-cms3-designer
-  title: Yodle CMS3 Adversite Designer
+  title: Yodle Adversite Designer
   blurb: Rapid microsite creator
   private: true
   image: 
