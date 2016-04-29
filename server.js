@@ -25,7 +25,7 @@ var uxBefore = [
   function( req, res, next ) {
     app.locals.showPrivate = util.privateOK(req);
 
-    if ( util.shouldSetPrivateCookie(req) ) {
+    if ( req.cookies.showPrivate === undefined && app.locals.showPrivate === true ) {
       res.cookie('showPrivate', '1' );
     }
     next();
@@ -34,6 +34,7 @@ var uxBefore = [
   function( req, res, next ) {
     if ( req.query.clear !== undefined ) {
       res.clearCookie('showPrivate');
+      app.locals.showPrivate = false;
     }
     next();
   }
