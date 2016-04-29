@@ -6,6 +6,7 @@ exports.privateOK = function(req) {
     if ( req.query.source === 'angellist' ) return true;
     if ( req.query.source === 'schoology' ) return true;
     if ( req.query.source === 'better' ) return true;
+    if ( req.query.source === 'me' ) return true;
 
 
     if ( req.query.source === '0' ) return true;
