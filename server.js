@@ -18,6 +18,8 @@ if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
 
+util.getSources();
+
 // global function to process markdown and return html
 app.locals.md = require("node-markdown").Markdown;
 
