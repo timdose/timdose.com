@@ -115,3 +115,10 @@ exports.imageViewer = function( req, res ) {
   res.render( 'image-viewer', data );
 }
 
+
+exports.sources = function( req, res ) {
+  util.fetchSources();
+  res.send(util.getSources());
+}
+
+

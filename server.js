@@ -18,7 +18,7 @@ if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
 
-util.getSources();
+util.fetchSources();
 
 // global function to process markdown and return html
 app.locals.md = require("node-markdown").Markdown;
@@ -72,6 +72,8 @@ app.get('/ux/about',              uxBefore, controllers.before, controllers.uxAb
 app.get('/ux/projects/:project',  uxBefore, controllers.before, controllers.uxProject );
 app.get('/ux/resume',             uxBefore, controllers.before, controllers.resume );
 app.get('/ux/schoology',          uxBefore, controllers.before, controllers.schoology );
+
+app.get('/ux/sources',            controllers.sources );
 
 app.get(/^\/ux\/image-viewer\/(.*)/, controllers.imageViewer );
 
