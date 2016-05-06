@@ -1,13 +1,14 @@
+var sources = [
+    "resume",
+    "angellist",
+    "schoology",
+    "better",
+    "me"
+];
 
 exports.privateOK = function(req) {
     if (req.query === undefined) return false;
     if (req.cookies === undefined) return false;
-
-    if ( req.query.source === 'angellist' ) return true;
-    if ( req.query.source === 'schoology' ) return true;
-    if ( req.query.source === 'better' ) return true;
-    if ( req.query.source === 'me' ) return true;
-
 
     if ( req.query.source === '0' ) return true;
     if ( req.query.source === '1' ) return true;
@@ -22,7 +23,7 @@ exports.privateOK = function(req) {
     if (req.cookies.showPrivate == '1') return true;
     
     if (req.query.source === undefined) return false;
-    if ( req.query.source.indexOf('resume') === 0 ) return true;
+    if (sources.indexOf(req.query.source) !== -1 ) return true;
 
     return false;
 }
