@@ -3,12 +3,12 @@ extends include/layouts/default-ux
 block header
   header.header
     .row
-      .col-sm-8.col-xs-10
-        h1.heading Tim Dosé
-        p.title User Experience Designer
-        .lead!= md(about.blurb)
-      .col-sm-4.hidden-xs.portrait
+      .col-sm-4.col-sm-push-8.col-xs-4.col-lg-3.portrait
         img(src='/images/illustration/portrait.png')
+      .col-sm-8.col-sm-pull-4.col-xs-12.col-lg-pull-3
+        h1.heading Tim Dosé
+        p.title Product &amp; UX Design
+        .lead!= md(about.blurb)
 
 block body
   .main-content
@@ -24,12 +24,11 @@ block body
                 .thumb-wrapper
                   img.thumb(src='/images/projects/' + project.name + '/' + project.image.thumbnail)
                   .screen
-                strong.title
+                div.title
                   span=project.title
-                  i.fa.fa-chevron-right
+                  //- i.fa.fa-chevron-right
                 div.blurb=project.blurb
 
-    .between
     section#about
       .row.heading
         .col-xs-12

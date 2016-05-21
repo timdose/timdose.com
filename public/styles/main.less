@@ -5,6 +5,9 @@
 @import 'nav';
 @import 'lightbox';
 
+b, strong {
+  font-weight: normal;
+}
 
 .browsehappy {
     margin: 0.2em 0;
@@ -19,10 +22,9 @@
 
 
 .portrait {
-  padding-top: 20px;
+  padding-top: 30px;
   img { 
-    width: 50%;
-    @media ( min-width: @screen-sm-min ) { width: 80%; }
+    width: 100%;
   }
 }
 
@@ -38,13 +40,14 @@
 }
 
 .navbar-collapse { overflow: hidden; }
+.navbar-brand { font-size: 16px; }
 
 h1,h2,h3,h4,h5,h6 {
   text-align: left;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
   color: @headings-color;
   font-weight: 400;
-  margin-top: .25em;
+  margin-top: 1.2em;
   line-height: 1em;
 
   .fa {
@@ -52,9 +55,6 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-@media ( min-width: @screen-sm-min ) { 
-  h2, .h2 { font-size: 50px; }
-}
 
 
 
@@ -64,8 +64,8 @@ ul {
 }
 
 .body li {
-  margin-bottom: 0.6em;
-  line-height: 1.2em;
+  margin-bottom: 0.8em;
+  line-height: 1.4em;
 }
 
 .body ul.condensed li {
@@ -115,35 +115,37 @@ ul {
       color: @headings-color;
       font-size: 50px;
       margin-bottom: 0;
-      line-height: .7em;
-      @media ( min-width: @screen-sm-min ) { font-size: 72px; }
+      line-height: .8em;
       @media ( min-width: @screen-md-min ) { 
-        font-size: 100px; 
+        font-size: 60px; 
         padding-left: 0;
+        margin-top: 60px;
       }
-      @media ( min-width: @screen-lg-min ) { margin-top: 70px; }
 
     }
 
     .title {
       font-size: 20px;
-      line-height: 1em;
+      line-height: 1.5em;
       font-family: @headings-font-family;
-      @media ( min-width: @screen-sm-min ) { font-size: 39px; }
+      @media ( min-width: @screen-sm-min ) { font-size: 24px; }
     }
 
     .lead {
       color: #555;
       font-family: @headings-font-family;
-      line-height: 1em;
-      @media ( min-width: @screen-sm-min ) { font-size: 32px; }
+      line-height: 1.5em;
+      @media ( min-width: @screen-sm-min ) { font-size: 20px; }
+      font-size: 20px;
     }
 }
 
 .main-content {  
   h2 {
     border-bottom: 1px solid @divider-color;
-    margin-bottom: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    margin-top: 40px;
   }
 }
 
@@ -254,7 +256,7 @@ section .container {
 .project-collection {
   .project {
     display: block;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     overflow: hidden;
     color: @link-color;
     @media ( min-width: @screen-sm-min ) { height: 240px; }
@@ -306,13 +308,12 @@ section .container {
     .title {
       display: block;
       font-family: @headings-font-family;
-      font-size: 22px;
+      font-size: 18px;
       line-height: .9em;
       margin-top: 11px;
       margin-bottom: 10px;
       color: @link-color;
-      @media ( min-width: @screen-sm-min ) { font-size: 25px; }
-      @media ( min-width: @screen-md-min ) { font-size: 29px; }
+
 
       i {
         font-size: 13px;
@@ -322,7 +323,7 @@ section .container {
 
     .blurb {
       line-height: 1.1em;
-      font-size: 17px;  
+      font-size: 16px;  
       color: @text-color;
     }
 

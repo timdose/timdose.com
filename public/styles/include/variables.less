@@ -1,15 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 // Bootstrap Variables
 @gray: #666;
 @text-color: @gray;
-@brand-primary: #333;
+@brand-primary: #555;
 @gray-light: #ccc;
 
 @divider-color: fade(@brand-primary, 40%);
 
-@headings-color: darken(@brand-primary, 25% );
+@headings-color: darken(@brand-primary, 10% );
 @icons-color: lighten(@headings-color, 20% );
 
 @link-color: #1b73b0;
@@ -55,18 +55,19 @@
 
 @fa-font-path: 'fonts';
 
-@headings-font-family: 'Rokkitt', sans-serif;
-@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
+@headings-font-family: 'Montserrat', sans-serif;
+@font-family-sans-serif:  "Montserrat", Helvetica, Arial, sans-serif;
 @headings-font-weight:    500;
 
 
-@font-size-base: 18px;
+@font-size-base: 16px;
+@line-height-base:        1.5; // 20/14
 
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.5); // ~18px
-@font-size-h5:            ceil(@font-size-base * 1.25);
+@font-size-h1:            floor(@font-size-base * 2.2); // ~36px
+@font-size-h2:            floor(@font-size-base * 2); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.5); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.4); // ~18px
+@font-size-h5:            ceil(@font-size-base * 1.2);
 @font-size-h6:            @font-size-base;
 
 @font-size-lg-h1:            floor(@font-size-base * 5);
