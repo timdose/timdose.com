@@ -1,8 +1,36 @@
+- name: ondeck-renewals-explanation
+  title: OnDeck Product Explanation
+  blurb: Made it easy to understand
+  image:
+      name: renewals-explanation.png
+      thumbnail: renewals-explanation.th.png
+  role: Lead Designer
+  description: Made a complex problem easy to understand with a step-by-step explanation
+  problem: >
+    OnDeck's Renewal Loan product is fairly complicated. When customers don't understand
+    how the product works, it can lead to disastrous customer experiences: they're expecting
+    a certain amount will be deposited in their account, but instead it's much lower.
+    Some of the worst customer calls I've listened to are when this happens.
+  opportunity: >
+    When a major partner wanted to use the Renewal Loan product in their offering,
+    we took the opportunity to explain it more clearly.
+  process: >
+    - When bullets and paragraphs failed, looked to design. Came up with "web comic" format.
+
+    - Sketched initial solution then created first draft in Sketch.
+
+    - Circulated internally to build support.
+
+    - After receiving internal feedback, tested with small business owners on UserTesting.com.
+
+    - Refined and revised until all participants on UserTesting.com could easily answer critical questions about the product.
+
+    - This will also serve as a storyboard for a video explanation.
+
 
 
 - name: ondeck-firefly
   title: OnDeck Project Firefly
-  private: true
   blurb: Game-changing loan experience
   image: 
     name: lofi-desktop/01-choose-offer.png
