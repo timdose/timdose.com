@@ -1,6 +1,6 @@
 var request = require('request');
 
-var sources = null;
+var sources = ['me'];
 var sourcesUrl = 'https://gist.githubusercontent.com/timdose/aa7606e7fddf9f19648859ab231a82ed/raw/timdose-com-sources.txt';
 
 
