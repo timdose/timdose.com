@@ -41,6 +41,10 @@ b, strong {
   height: 110px;
   background: url(/images/identity/icons.png);
   background-position: middle;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      background: url(/images/identity/icons-2x.png);
+      background-size: 1600px 110px;
+  }
 }
 
 .home-page a {
