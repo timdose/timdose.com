@@ -72,6 +72,13 @@ exports.schoology = function(req, res) {
   res.render('ux-home', data );
 };
 
+
+
+exports.aboutZD = function(req, res) {
+  res.render('about-zd', data );
+};
+
+
 exports.uxAbout = function(req, res) {
   res.render('ux-about', data );
 };

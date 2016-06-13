@@ -72,6 +72,7 @@ app.get('/ux/about',              uxBefore, controllers.before, controllers.uxAb
 app.get('/ux/projects/:project',  uxBefore, controllers.before, controllers.uxProject );
 app.get('/ux/resume',             uxBefore, controllers.before, controllers.resume );
 app.get('/ux/schoology',          uxBefore, controllers.before, controllers.schoology );
+app.get('/ux/about-zd',           uxBefore, controllers.before, controllers.aboutZD );
 
 app.get('/ux/sources',            controllers.sources );
 
