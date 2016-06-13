@@ -13,6 +13,10 @@
     a certain amount will be deposited in their account, but instead it's much lower.
     Some of the worst customer calls I've listened to are when this happens.
 
+  sketches:
+    - description: Pricing module & slider sketches
+      link: /images/projects/ondeck-firefly-renewals/sketches.pdf
+
   prototypes:
     - description: Branded prototype (desktop)
       link: http://rox83z.axshare.com/renewals_explanation_branded.html

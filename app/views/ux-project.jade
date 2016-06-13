@@ -73,6 +73,15 @@ block body
                 strong!= tool.name
                 span.function!= ' (' + tool.function + ')'
 
+    if project.sketches
+      h4 Sketches
+      ul.tools
+        each sketch in project.sketches
+          li
+            a(href=sketch.link,target='_blank')
+              span!=sketch.description
+              &nbsp
+              i.fa.fa-external-link
 
     if project.prototypes
       h4 Prototypes
