@@ -1,0 +1,13 @@
+{
+  "name": "TextStatistics",
+  "homepage": "https://github.com/cgiffard/TextStatistics.js",
+  "_release": "43e0e3ac8d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "43e0e3ac8d87492b3466679b9e6b8c6204a47ffa"
+  },
+  "_source": "https://github.com/cgiffard/TextStatistics.js.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/cgiffard/TextStatistics.js.git"
+}

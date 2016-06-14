@@ -74,6 +74,8 @@ app.get('/ux/resume',             uxBefore, controllers.before, controllers.resu
 app.get('/ux/schoology',          uxBefore, controllers.before, controllers.schoology );
 app.get('/ux/about-zd',           uxBefore, controllers.before, controllers.aboutZD );
 
+app.get('/ux/readability',            controllers.readability );
+
 app.get('/ux/sources',            controllers.sources );
 
 app.get(/^\/ux\/image-viewer\/(.*)/, controllers.imageViewer );
