@@ -66,6 +66,11 @@ exports.ux = function(req, res) {
 };
 
 
+exports.readability = function(req, res) {
+  res.render('readability' );
+};
+
+
 exports.schoology = function(req, res) {
   data.audience = 'Schoology';
   // data.activeProjects = data.projects;

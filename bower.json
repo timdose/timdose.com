@@ -2,14 +2,16 @@
   "name": "bootstrap",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.0.0",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.10.2",
-    "holderjs": "~2.3.1",
-    "font-awesome": "~4.0.3",
     "ScrollMagic": "~1.0.0",
+    "TextStatistics": "https://github.com/cgiffard/TextStatistics.js.git",
+    "bootstrap": "~3.0.0",
+    "font-awesome": "~4.0.3",
+    "holderjs": "~2.3.1",
+    "jQuery-One-Page-Nav": "~3.0.0",
+    "jquery": "~1.10.2",
     "lightbox2": "*",
-    "jQuery-One-Page-Nav": "~3.0.0"
+    "modernizr": "~2.6.2",
+    "TextStatistics.js": "https://github.com/cgiffard/TextStatistics.js.git"
   },
   "devDependencies": {}
 }
