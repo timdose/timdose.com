@@ -75,6 +75,14 @@ exports.schoology = function(req, res) {
 
 
 exports.aboutZD = function(req, res) {
+  data.modifier = 'zocdoc';
+  res.render('about-zd', data );
+};
+
+
+
+exports.aboutBetterment = function(req, res) {
+  data.modifier = 'betterment';
   res.render('about-zd', data );
 };
 

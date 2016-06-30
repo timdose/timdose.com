@@ -23,6 +23,13 @@
     - description: Branded prototype (mobile)
       link: http://rox83z.axshare.com/#g=1&p=renewals_explanation_branded&view=default&c=1
 
+  imageSets:
+    - title: Existing experience
+      images: 
+        - name: account-home.png
+          thumbnail: account-home.png
+        - name: offer.png
+          thumbnail: offer.png
 
 
 

@@ -52,11 +52,16 @@ b, strong {
   width: 1280px;
   height: 2680px;
   background: url(/images/identity/about.png);
+  &.betterment { background: url(/images/identity/about--betterment.png) }
   background-position: middle;
   background-repeat: none;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
       background: url(/images/identity/about-2x.png);
       background-size: 1280px 2680px;
+      &.betterment {
+        background: url(/images/identity/about--betterment-2x.png);
+        background-size: 1280px 2680px;
+      }
   }
 }
 
