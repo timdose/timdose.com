@@ -1,15 +1,15 @@
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #000;
   }
   /*Basic Phone styling*/
   
   .phone {
-    border: 40px solid #444;
+    border: 40px solid #2a2a2a;
     border-width: 55px 7px;
     border-radius: 40px;
-    margin: 50px auto;
+    margin: 20px auto;
     overflow: hidden;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -20,6 +20,7 @@
     width: 100%;
     height: 100%;
     background: #fff;
+    overflow: hidden;
   }
   /*Different Perspectives*/
   
@@ -85,23 +86,11 @@
     background-color: #eee;
   }
   
-  @media (max-width:900px) {
-    #wrapper {
-      -webkit-transform: scale(0.8, 0.8);
-              transform: scale(0.8, 0.8);
-    }
-  }
-  
-  @media (max-width:700px) {
-    #wrapper {
-      -webkit-transform: scale(0.6, 0.6);
-              transform: scale(0.6, 0.6);
-    }
-  }
-  
-  @media (max-width:500px) {
-    #wrapper {
-      -webkit-transform: scale(0.4, 0.4);
-              transform: scale(0.4, 0.4);
-    }
+  #message {
+    color: #666;
+    font-size: 16px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }

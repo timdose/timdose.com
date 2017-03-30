@@ -19,7 +19,7 @@ var paths = {
 
 
 gulp.task('develop', function () {
-  nodemon({ script: 'server.js', ext: 'html js yaml yml', ignore: ['ignored.js'] })
+  nodemon({ script: 'server.js', ext: 'html js yaml yml', ignore: ['ignored.js', 'public/preview/*'] })
     .on('restart', function () {
       console.log('restarted!')
       setTimeout(function() {
