@@ -20,7 +20,7 @@
     "chai": "^1.9.2"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=6.11.1"
   },
   "scripts": {
     "start": "node server.js"
