@@ -1,5 +1,5 @@
 - name: ondeck-firefly-renewals
-  private: true
+  private: false
   title: OnDeck Firefly Renewals
   blurb: Tricky product made easy
   image:
@@ -146,7 +146,7 @@
 
 - name: ondeck-investor-portal
   title: OnDeck Investor Portal
-  private: true
+  private: false
   blurb: Loan tracking for investors
   image: 
     name: visual-design/overview.png
@@ -309,7 +309,7 @@
 - name: yodle-cms3-designer
   title: Yodle Adversite Designer
   blurb: Rapid microsite creator
-  private: true
+  private: false
   image: 
     name: wireframes/03-flyout-open.png
     thumbnail: wireframes/03-flyout-open.th.png
@@ -362,7 +362,7 @@
 - name: yodle-cms3-delivery
   title: Yodle CMS3 Customer Tool
   blurb: Lightweight customization tool for customers
-  private: true
+  private: false
   image: 
     name: visual-design/visual-design-page-2.jpg
     thumbnail: visual-design/visual-design-page-2.th.jpg
